@@ -1,0 +1,335 @@
+[
+  {
+    "DisplayName": "choices (Views)",
+    "Name": "_cr0c5_choices_views",
+    "RelatedEntityName": "choices",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0445d54d-86f3-45c8-a872-57056c20ceb4": "choices Lookup View",
+      "27199f71-f29e-425d-9c59-47a7a007c81d": "choices Associated View",
+      "447265ce-c1d1-4fb1-84d5-45d670eca854": "Active choices",
+      "d65d668b-e6a1-49be-9ada-71192801d5f8": "Inactive choices",
+      "e7242253-2adb-40aa-9027-6141c51adc0b": "choices Advanced Find View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c5_choiceses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c5_choices",
+    "MaxGetRowsCount": 500,
+    "Name": "choices",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_accidentcause": "Accident Cause",
+      "cr0c5_accidenttype": "Accident Type",
+      "cr0c5_choices_AsyncOperations": "System Jobs",
+      "cr0c5_choices_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c5_choices_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c5_choices_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c5_choices_ProcessSession": "Process Sessions",
+      "cr0c5_choices_SyncErrors": "Sync Errors",
+      "cr0c5_choicesid": "choices",
+      "cr0c5_injurylocation": "Injury Location",
+      "cr0c5_injurytype": "injury type",
+      "cr0c5_newcolumn": "New column",
+      "cr0c5_rootcause": "Root Cause",
+      "cr0c5_sourcehazard": "Source Hazard",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "choices",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Accidental cause ",
+    "Name": "cr0c5_accidentalcause",
+    "OptionSetInfoNameMapping": {
+      "189890000": "Fall From Height",
+      "189890001": "Fall On The Same Level",
+      "189890002": "Fall down stairs/steps",
+      "189890003": "Stuck By Moving Object",
+      "189890004": "Stuck by Falling Object",
+      "189890005": "Stuck/Trapped by Something Collapsed",
+      "189890006": "Trapped Between Objects",
+      "189890007": "Step On/Stuck against Stationary Object",
+      "189890008": "Manual Handling",
+      "189890009": "Cont. with tool/equip/machinery",
+      "189890010": "Cont. with Flying Particle",
+      "189890011": "Cont. with Electricity",
+      "189890012": "Cont. with/Exposed to heat/acid",
+      "189890013": "Cont. with/Exposed to air/water pressure",
+      "189890014": "cont. with /exposed to Haz substance ",
+      "189890015": "Exposure to noise/Vibration",
+      "189890016": "Repetitive motion/Action",
+      "189890017": "Collision",
+      "189890018": "Fire",
+      "189890019": "Explosion",
+      "189890020": "Drowning",
+      "189890021": "Loss of Containment/unintentional release ",
+      "189890022": "Asphyxiation",
+      "189890023": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_accidentcause",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "cr0c5_accidentcause",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Accident Type",
+    "Name": "cr0c5_accidenttype",
+    "OptionSetInfoNameMapping": {
+      "189890000": "Fatality",
+      "189890001": "Major Injury",
+      "189890002": "Over 7 Day Injury",
+      "189890003": "Reportable Disease",
+      "189890004": "Ill Health",
+      "189890005": "First Aid(On site)",
+      "189890006": "Medical Treatment(Off Site)",
+      "189890007": "Minor Incident/Injury(No First Aid)"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_accidenttype",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "cr0c5_accidenttype",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (choices)",
+    "Name": "cr0c5_choices_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (choices)",
+    "Name": "cr0c5_choices_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Injury Location",
+    "Name": "cr0c5_injurylocation",
+    "OptionSetInfoNameMapping": {
+      "189890000": "Head",
+      "189890001": "Face/Neck",
+      "189890002": "Eye",
+      "189890003": "Chest",
+      "189890004": "Abdomen",
+      "189890005": "Back",
+      "189890006": "Arm/Shoulder",
+      "189890007": "Wrist",
+      "189890008": "Hand",
+      "189890009": "Finger",
+      "189890010": "Leg/Hip",
+      "189890011": "Ankle",
+      "189890012": "Foot",
+      "189890013": "Respiratory System",
+      "189890014": "Digestive System",
+      "189890015": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_injurylocation",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "cr0c5_injurylocation",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Injury Type ",
+    "Name": "cr0c5_injurytype",
+    "OptionSetInfoNameMapping": {
+      "189890000": "Amputation",
+      "189890001": "Bruising/Swelling",
+      "189890002": "Dislocation",
+      "189890003": "Electric Shock",
+      "189890004": "Strain/Sprain",
+      "189890005": "Asphyxiation/Gassing",
+      "189890006": "Loss of Consciousness",
+      "189890007": "Cut/Laceration/Abrasion",
+      "189890008": "Foreign Body",
+      "189890009": "Fracture",
+      "189890010": "Burn/Scald",
+      "189890011": "Whiplash",
+      "189890012": "Multiple",
+      "189890013": "Shock/Concussion",
+      "189890014": "Puncture",
+      "189890015": "Ill Health",
+      "189890016": "Crush",
+      "189890017": "Ingestion",
+      "189890018": "Internal",
+      "189890019": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_injurytype",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "cr0c5_injurytype",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Root Causes",
+    "Name": "cr0c5_rootcauses",
+    "OptionSetInfoNameMapping": {
+      "189890000": "Defective Workplace",
+      "189890001": "Housekeeping",
+      "189890002": "Lighting",
+      "189890003": "Weather",
+      "189890004": "Design-Layout",
+      "189890005": "Lack of Room",
+      "189890006": "Noise/Distraction",
+      "189890007": "Access/Egress",
+      "189890008": "Instructions Misunderstood",
+      "189890009": "Error Of Judgement",
+      "189890010": "Lack of Experience",
+      "189890011": "Unsafe Attitude",
+      "189890012": "Failure to Adhere To Risk Assessment",
+      "189890013": "Horseplay",
+      "189890014": "Lapse of Concentration",
+      "189890015": "Fatigue",
+      "189890016": "Working without Authorisation",
+      "189890017": "Design",
+      "189890018": "Wrong Type Used",
+      "189890019": "Maintenance/Defective",
+      "189890020": "Not Provided/Unavailable",
+      "189890021": "Not Used",
+      "189890022": "Non Communication of Risk",
+      "189890023": "Supervision",
+      "189890024": "Training",
+      "189890025": "System Failure",
+      "189890026": "Construction/Design",
+      "189890027": "Installation",
+      "189890028": "Operation/Use",
+      "189890029": "Mechanical Failure ",
+      "189890030": "Maintenance ",
+      "189890031": "Third party",
+      "189890032": "Under Investigation",
+      "189890033": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_rootcause",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "cr0c5_rootcause",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Source Hazard",
+    "Name": "cr0c5_sourcehazard",
+    "OptionSetInfoNameMapping": {
+      "189890000": "Lifting Equipment",
+      "189890001": "Vehicle/Mobile Equipment",
+      "189890002": "Static Equipment/Machinery",
+      "189890003": "Moving Parts Of Machinery",
+      "189890004": "Power Tool",
+      "189890005": "Hand Tool",
+      "189890006": "Scaffold",
+      "189890007": "Excavation",
+      "189890008": "Stairs/Steps",
+      "189890009": "Working Surface",
+      "189890010": "Structure",
+      "189890011": "Ladder",
+      "189890012": "Temporary Works",
+      "189890013": "Materials",
+      "189890014": "Floor/Ground Condition",
+      "189890015": "Lack Of Oxygen",
+      "189890016": "Heat/Hot work",
+      "189890017": "Cold",
+      "189890018": "Flying Particle",
+      "189890019": "Dust",
+      "189890020": "Proximity To Water",
+      "189890021": "Workstation Layout",
+      "189890022": "Hazardous Substance",
+      "189890023": "Other"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_sourcehazard",
+        "OptionSetReferenceEntityName": "choices"
+      }
+    },
+    "OptionSetTypeKey": "MultiSelectPicklistType",
+    "RelatedColumnInvariantName": "cr0c5_sourcehazard",
+    "RelatedEntityName": "choices",
+    "Type": "OptionSetInfo"
+  }
+]

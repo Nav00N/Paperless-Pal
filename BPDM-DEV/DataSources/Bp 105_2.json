@@ -1,0 +1,213 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bp105s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bp105",
+    "MaxGetRowsCount": 500,
+    "Name": "Bp 105_2",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_attachment1": "Attachment 1 ",
+      "cr0c5_attachment2": "Attachment 2",
+      "cr0c5_attachment3": "Attachment 3",
+      "cr0c5_attachment4": "Attachment 4",
+      "cr0c5_attachment5": "Attachment 5",
+      "cr0c5_attachment6": "Attachment 6",
+      "cr0c5_carriersignature": "Carrier Signature:",
+      "cr0c5_carriersignatureid": "cr0c5_CarrierSignatureId",
+      "cr0c5_consignersignature": "Consigner Signature",
+      "cr0c5_consignersignatureid": "cr0c5_ConsignerSignatureId",
+      "cr0c5_consignmentnotecode5digits": " Consignment Note Code -5 digits",
+      "cr0c5_partecompanyname": "Part E Company Name",
+      "cr0c5_partedate": "Part E Date",
+      "cr0c5_parteicertify": "Part E I certify",
+      "cr0c5_partename": "Part E Name",
+      "cr0c5_partesignature": "Part E Signature",
+      "cr0c5_partesignatureid": "cr0c5_PartESignatureId",
+      "cr0c5_partevehicleno": "Part E Vehicle No",
+      "cr0c5_partewherewasteisrejected": "Part E Where Waste is rejected",
+      "cr948_bp105_AsyncOperations": "System Jobs",
+      "cr948_bp105_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bp105_DuplicateBaseRecord": "Duplicate Records (cr948_bp105_DuplicateBaseRecord)",
+      "cr948_bp105_DuplicateMatchingRecord": "Duplicate Records (cr948_bp105_DuplicateMatchingRecord)",
+      "cr948_bp105_FileAttachments": "FileAttachments",
+      "cr948_bp105_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bp105_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bp105_ProcessSession": "Process Sessions",
+      "cr948_bp105_SyncErrors": "Sync Errors",
+      "cr948_bp105id": "Bp 105",
+      "cr948_carriercompanynameaddress": "Carrier Company Name & Address:",
+      "cr948_carriername": "Carrier name:",
+      "cr948_carrierregistrationno": "Carrier registration no.:",
+      "cr948_carriersdate": "Carriers Date",
+      "cr948_classes1": "Classes.1",
+      "cr948_classes2": "Classes.2",
+      "cr948_companynameaddress": "Company Name & Address:",
+      "cr948_component": "1.Component",
+      "cr948_component2": "Component. 2",
+      "cr948_concentration": "2.Concentration",
+      "cr948_concentrationormgkg": "1.Concentration (% or mg/kg)",
+      "cr948_consigneedate": "Consignee Date",
+      "cr948_consigneename": "Consignee Name",
+      "cr948_consigneenameaddress": "Consignee Name & Address",
+      "cr948_consigneesignature": "Consignee Signature ",
+      "cr948_consigneesignatureid": "cr948_ConsigneeSignatureId",
+      "cr948_consigneevehicleregistrationno": "Consignee Vehicle registration No",
+      "cr948_containertypenumberandsize": "1.Container type, number and size",
+      "cr948_containertypenumberandsize2": "Container type, number and size. 2",
+      "cr948_cosignersdate": "Co-signer's Date",
+      "cr948_descriptionofwaste": "2.Description of waste",
+      "cr948_descriptionofwaste1": "Description of waste.1",
+      "cr948_ewccode6digits": "1.EWC code (6 digits)",
+      "cr948_ewccode6digits2": "EWC Code (6 Digits). 2",
+      "cr948_ewccodeacceptedrejected1": "EWC code accepted / rejected.1",
+      "cr948_ewccodeacceptedrejected2": "EWC code accepted / rejected.2",
+      "cr948_hazardcodes": "1.Hazard code(s)",
+      "cr948_hazardcodes2": "Hazard code(s).2 ",
+      "cr948_icertifythatwastemanagementlicense": "I certify that waste management license ",
+      "cr948_individualewccodesreceived": "1.Individual EWC code(s) received",
+      "cr948_individualewccodesreceived2": "Individual EWC code(s) received.2",
+      "cr948_ireceivedthiswasteattheaddressgiveninpart": "I received this waste at the address given in Part",
+      "cr948_name": "Consignment Note Code",
+      "cr948_packaginggroup": "1.Packaging Group",
+      "cr948_packaginggroup2": "Packaging Group.2",
+      "cr948_physicalformgasliquidsolidpowder": "1.Physical form (gas, liquid, solid, powder)",
+      "cr948_physicalformgasliquidsolidpowder2": "Physical form (gas, liquid, solid, powder).2 ",
+      "cr948_propershippingname": "1.Proper shipping name",
+      "cr948_propershippingname2": "Proper shipping name.2",
+      "cr948_qty": "2.Qty",
+      "cr948_qtykg": "1.Qty (kg)",
+      "cr948_quantityofeachewccodereceivedkg": "1.Quantity of each EWC code received (kg)",
+      "cr948_quantityofeachewccodereceivedkg2": "Quantity of each EWC code received (kg).2",
+      "cr948_specialhandlingrequirements": "1.Special handling requirements",
+      "cr948_specialhandlingrequirements2": "Special handling requirements.2",
+      "cr948_theprocessgivingrisetothewastewas": "The process giving rise to the waste was:",
+      "cr948_thewastedescribedbelowistoberemovedfrom": "The waste described below is to be removed from:",
+      "cr948_thewasteproducerwasifdifferent": "The waste producer was (if different):",
+      "cr948_thewastewillbetakento": "The waste will be taken to:",
+      "cr948_tickifnothazardousforcarriage": "1.Tick if not Hazardous for Carriage",
+      "cr948_tickifnothazardousforcarriage2": "Tick if not Hazardous for Carriage.2",
+      "cr948_unno1": "UN NO.1",
+      "cr948_unno2": "UN.NO.2",
+      "cr948_vehicleregistrationno": "Vehicle registration no.:",
+      "cr948_wastemanagementoperationrordcode": "1.Waste management operation (R or D code)",
+      "cr948_wastemanagementoperationrordcode2": "Waste management operation (R or D code).2",
+      "cr948_wherewasteisrejectedpleaseprovidedetails": "Where waste is rejected please provide details:",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Bp 105_2",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Bp 105_2 (Views)",
+    "Name": "_cr948_bp105_views",
+    "RelatedEntityName": "Bp 105_2",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "194edfd0-eb4e-4860-9cbc-224033c6c993": "BP 105 Hazardous Waste Consignment Note Form",
+      "7950bf8e-319b-4363-90b2-248f66cf99be": "Bp 105 Associated View",
+      "af90acef-dd3f-4c7f-b2cc-6626aad090c4": "Bp 105 Lookup View",
+      "b0d0d165-964e-4239-8a33-a78b173012f0": "Inactive Bp 105S",
+      "f8085e6a-a7b2-4e88-b2b1-bbc87c879c03": "Bp 105 Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "1.Tick if not Hazardous for Carriage (Bp 105_2)",
+    "Name": "cr948_bp105_cr948_tickifnothazardousforcarriage",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr948_tickifnothazardousforcarriage",
+        "OptionSetReferenceEntityName": "Bp 105_2"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr948_tickifnothazardousforcarriage",
+    "RelatedEntityName": "Bp 105_2",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Tick if not Hazardous for Carriage.2 (Bp 105_2)",
+    "Name": "cr948_bp105_cr948_tickifnothazardousforcarriage2",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr948_tickifnothazardousforcarriage2",
+        "OptionSetReferenceEntityName": "Bp 105_2"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr948_tickifnothazardousforcarriage2",
+    "RelatedEntityName": "Bp 105_2",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Bp 105_2)",
+    "Name": "cr948_bp105_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Bp 105_2"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Bp 105_2",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Bp 105_2)",
+    "Name": "cr948_bp105_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Bp 105_2"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Bp 105_2",
+    "Type": "OptionSetInfo"
+  }
+]

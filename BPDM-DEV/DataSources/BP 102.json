@@ -1,0 +1,127 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bp102s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bp102",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 102",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr948_accessegresssuitabilityof": "Access / Egress (Suitability of)",
+      "cr948_airconditioning": "Air Conditioning",
+      "cr948_alllights": "All Lights",
+      "cr948_bodyupbuzzerorrampsareingoodcondition": "Body up Buzzer, or ramps are in good condition",
+      "cr948_bp102_AsyncOperations": "System Jobs",
+      "cr948_bp102_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bp102_DuplicateBaseRecord": "Duplicate Records (cr948_bp102_DuplicateBaseRecord)",
+      "cr948_bp102_DuplicateMatchingRecord": "Duplicate Records (cr948_bp102_DuplicateMatchingRecord)",
+      "cr948_bp102_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bp102_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bp102_ProcessSession": "Process Sessions",
+      "cr948_bp102_SyncErrors": "Sync Errors",
+      "cr948_bp102id": "BP 102 ",
+      "cr948_brakes": "Brakes",
+      "cr948_cameraradar": "Camera / Radar",
+      "cr948_dangerouspartsguarded": "Dangerous Parts Guarded ",
+      "cr948_date": "Date",
+      "cr948_depot": "Depot ",
+      "cr948_driversignature": "Driver Signature",
+      "cr948_driversignatureid": "cr948_DriverSignatureId",
+      "cr948_emissionsvisualinspection": "Emissions (Visual Inspection)",
+      "cr948_enginecoolingsystem": "Engine Cooling System",
+      "cr948_engineoillevel": "Engine Oil Level",
+      "cr948_fireextinguisher": "Fire Extinguisher",
+      "cr948_flashingbeacon": "Flashing Beacon",
+      "cr948_fuellevel": "Fuel Level",
+      "cr948_generalcondition": "General Condition",
+      "cr948_hiab12monthlythoroughinspection": "HIAB 12 monthly thorough inspection",
+      "cr948_hornreversingalarm": "Horn & Reversing Alarm",
+      "cr948_hydraulicoillevel": "Hydraulic Oil Level",
+      "cr948_instrumentgauges": "Instrument Gauges",
+      "cr948_lastservicedate": "Last Service Date",
+      "cr948_liftingattachment": "Lifting Attachment",
+      "cr948_mirrorsforconditionposition": "Mirrors for Condition & Position",
+      "cr948_nextserviceduedate": "Next Service Due date",
+      "cr948_seatseatbeltcondition": "Seat & Seat Belt Condition",
+      "cr948_tyresforcutsbulgesorinsufficienttread": "Tyres for cuts, bulges, or insufficient tread",
+      "cr948_vehicletype": "Vehicle Type",
+      "cr948_windscreenandotherglass": "Windscreen and other Glass",
+      "cr948_wireropeconditionincludingwinch": "Wire Rope Condition including winch",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 102",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 102 (Views)",
+    "Name": "_cr948_bp102_views",
+    "RelatedEntityName": "BP 102",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2cd10d84-ceca-4d4b-9f2a-40b711cb038e": "BP 102  Advanced Find View",
+      "92107d52-b68b-4f22-a3e8-319e57afcee6": "Active BP 102",
+      "9c47957c-037f-4fe9-b5ef-531e9df78627": "BP 102  Associated View",
+      "e8e73a25-24bd-42ca-92e8-aa30389da9eb": "Inactive BP 102",
+      "f333c1eb-c3e0-432a-a494-5af4a31ddd3f": "BP 102  Lookup View"
+    }
+  },
+  {
+    "DisplayName": "Status (BP 102)",
+    "Name": "cr948_bp102_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 102"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 102",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 102)",
+    "Name": "cr948_bp102_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 102"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 102",
+    "Type": "OptionSetInfo"
+  }
+]

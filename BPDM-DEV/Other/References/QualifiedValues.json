@@ -1,0 +1,223 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_cr948_bannercmindex_forms",
+      "Namespace": "Banner CM Indices (Forms)",
+      "Values": {
+        "Information": "79033692-3c16-4ff0-8551-a956a072c25b"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bannergenericriskassessment_forms",
+      "Namespace": "Banner (Generic Risk Assessment)S (Forms)",
+      "Values": {
+        "Information": "ffa5b2d9-a421-4345-aa4d-fa457966052b"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp105_forms",
+      "Namespace": "Bp 105_2 (Forms)",
+      "Values": {
+        "Information": "9c8b3e3c-2a7c-4dd5-85dc-d289a6e3e731"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp100_forms",
+      "Namespace": "Bp 100 (Forms)",
+      "Values": {
+        "Information": "414d0592-cf76-45a8-a638-cc82f6f4a481"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp102_forms",
+      "Namespace": "BP 102 (Forms)",
+      "Values": {
+        "Information": "7603b704-76e1-4c31-95c1-ffb911253231"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp101_forms",
+      "Namespace": "BP 101 (Forms)",
+      "Values": {
+        "Information": "15e1d147-c73f-4f12-9a10-eecd394e08fa"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp104_forms",
+      "Namespace": "BP 104S (Forms)",
+      "Values": {
+        "Information": "3bf59197-9636-475c-804f-49b59e36e0f2"
+      }
+    },
+    {
+      "Kind": "default.cds_systemuser_forms",
+      "Namespace": "Users (Forms)",
+      "Values": {
+        "Application User": "d26924ef-4d80-46f7-ab1d-e6ae80a54ce8",
+        "Information": "094fb08a-77bb-49e0-b7ea-8dbddfd01294",
+        "User": "c2cd9e55-d4b4-4b55-9951-16ead79643e5",
+        "User form – Business": "c2413504-7eb2-4c59-a087-95d819866114",
+        "User Hierarchy Tile Form": "c68d6c09-d7a7-4959-8d0f-44b8cff9b452"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp112_forms",
+      "Namespace": "BP 112S (Forms)",
+      "Values": {
+        "Information": "db997068-e780-408b-a737-b4ed870bbe95"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp112s_forms",
+      "Namespace": "BP 112S_1 (Forms)",
+      "Values": {
+        "Information": "490b4583-011f-4673-87e7-84b5e3bfa3f4"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp108_forms",
+      "Namespace": "BP 108S (Forms)",
+      "Values": {
+        "Information": "58c85824-948e-4db0-9a23-ab0d4ec6e384"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp115_forms",
+      "Namespace": "BP 115S (Forms)",
+      "Values": {
+        "Information": "ac1ae337-b895-4970-bec6-546d4ab3965a"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bo114_forms",
+      "Namespace": "Bp 114S (Forms)",
+      "Values": {
+        "Information": "97f7229e-b906-4f30-b0e8-74fb9937c260"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp117_forms",
+      "Namespace": "BP 117S (Forms)",
+      "Values": {
+        "Information": "0bf612e1-5b72-492b-b81e-bef02d15278d"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp106_forms",
+      "Namespace": "BP 107S (Forms)",
+      "Values": {
+        "Information": "d0adb820-4ebd-4c93-9461-fffbe8c3b248"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_newtable_forms",
+      "Namespace": "New tables (Forms)",
+      "Values": {
+        "Information": "d3356882-b8a3-4f5a-bfa4-8045944f0f66"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_emissiontoatmosphere_forms",
+      "Namespace": "BP ToolBox Talks (Forms)",
+      "Values": {
+        "Information": "10d7b98b-a166-4abe-8763-bf3e2745d2df"
+      }
+    },
+    {
+      "Kind": "default.cds_cr948_bp109_forms",
+      "Namespace": "BP 109S (Forms)",
+      "Values": {
+        "Information": "edee81f9-4a23-4c75-be08-e682810fb12e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp118_forms",
+      "Namespace": "BP 118S (Forms)",
+      "Values": {
+        "Information": "909da8ff-4aa1-412f-a117-ebaf0c847586"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp106_forms",
+      "Namespace": "BP 106S (Forms)",
+      "Values": {
+        "Information": "a7b1f543-829f-4700-bb08-988466288b3e"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp111_forms",
+      "Namespace": "BP 111S (Forms)",
+      "Values": {
+        "Information": "88bc75ec-92f9-4c6f-8232-e09a57944647"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp121_forms",
+      "Namespace": "BP 121S (Forms)",
+      "Values": {
+        "Information": "1728c705-abf0-4d92-aa72-ed8eb42d7cca"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp119_forms",
+      "Namespace": "BP 119S (Forms)",
+      "Values": {
+        "Information": "8b699cdb-ebb5-4862-98c5-ba6966b7ca2b"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp116_forms",
+      "Namespace": "BP 116S (Forms)",
+      "Values": {
+        "Information": "52059f34-204e-46ed-9175-e45f5239519c"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp113_forms",
+      "Namespace": "BP 113S (Forms)",
+      "Values": {
+        "Information": "6f5d014a-5369-41d2-a235-e7740cc55944"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp103_forms",
+      "Namespace": "BP 103S (Forms)",
+      "Values": {
+        "Information": "79ac03f8-9104-466c-b463-e1986548e3dc"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_choices_forms",
+      "Namespace": "choices (Forms)",
+      "Values": {
+        "Information": "1c9d2f45-dbc8-4b77-af09-e1ce5f4be17a"
+      }
+    },
+    {
+      "Kind": "default.cds_supportusertable_forms",
+      "Namespace": "SupportUserTables (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp123_forms",
+      "Namespace": "BP 123S (Forms)",
+      "Values": {
+        "Information": "d6c9f9b4-d19c-4fa8-8bb3-cc5bb12b7e69"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bp124_forms",
+      "Namespace": "BP 124 (Forms)",
+      "Values": {
+        "Information": "835e9a62-851a-42e9-81c4-fca8442fd248"
+      }
+    },
+    {
+      "Kind": "default.cds_cr0c5_bpnews_forms",
+      "Namespace": "Bp News (Forms)",
+      "Values": {
+        "Information": "f54ffa67-5cd9-473f-a801-c27e01f5b928"
+      }
+    }
+  ]
+}

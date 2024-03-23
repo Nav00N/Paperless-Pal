@@ -1,0 +1,2627 @@
+"'BP 113 Waste Transfer Note Form' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(215, 223, 240, .5)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =Reset(gal_SideNav_3);
+        Reset(gal_SideNav_4);
+        UpdateContext({First:true,gal:false});
+        NewForm(Form18);
+
+    Rectangle1_315 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =50
+        Width: =1366
+        ZIndex: =1
+
+    gal_SideNav_3 As gallery.galleryVertical:
+        BorderColor: =RGBA(51, 51, 51, 1)
+        Default: |-
+            =LookUp(Table(
+                {Value: "A (Description Of Waste)"},
+                {Value: "B (Producer)"},
+                {Value: "C (Carrier)"},
+                {Value: "D (Transfer)"},
+                {Value: "E (Disposer)"},
+                {Value: "More"}
+               
+             ), Value = "A (Description Of Waste)")
+        Height: =41
+        Items: |-
+            =Table(
+                {Value: "A (Description Of Waste)"},
+                {Value: "B (Producer)"},
+                {Value: "C (Carrier)"},
+                {Value: "D (Transfer)"},
+                {Value: "E (Disposer)"},
+                {Value: "More"}
+               
+             )
+        Layout: =Layout.Vertical
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =45
+        Transition: =Transition.Push
+        Visible: =First
+        Width: =818
+        WrapCount: |
+            =6
+        X: =273
+        Y: =64
+        ZIndex: =2
+
+        lbl_SideNav_Current_3 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(237, 237, 237, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =If(ThisItem.IsSelected,Color.Black,RGBA(0,0,0,0))
+            Height: =4
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =""
+            Visible: |
+                =true
+            Width: =136.33333333333334
+            Y: =35
+            ZIndex: =3
+
+        Label25_3 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.Value
+            Width: =126.33333333333334
+            X: =10
+            Y: =5
+            ZIndex: =5
+
+    Label1_565 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =29
+        Size: =9
+        Text: ="1.Description of Waste "
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =316
+        X: =492
+        Y: =254
+        ZIndex: =3
+
+    TextInput1_490 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Description Of Waste')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =145
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =312
+        X: =496
+        Y: =283
+        ZIndex: =4
+
+    Label1_566 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =29
+        Size: =9
+        Text: ="2. Quantity of Waste "
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =316
+        X: =492
+        Y: =447
+        ZIndex: =5
+
+    TextInput1_491 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Quantity Of Waste')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =29
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =312
+        X: =500
+        Y: =476
+        ZIndex: =6
+
+    Label1_567 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =29
+        Size: =9
+        Text: ="3. How is the waste contained?"
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =316
+        X: =492
+        Y: =526
+        ZIndex: =7
+
+    Dropdown2_262 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form18.Mode= FormMode.New,"Loose",Gallery4_16.Selected.'How is the Waste Contained')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverColor: =RGBA(179, 36, 36, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =["Loose","Skips","Sacks","Drums","Other"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =121
+        X: =687
+        Y: =526
+        ZIndex: =8
+
+    Label1_568 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =9
+        Text: ="EWC Waste Classification Code"
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =243
+        X: =559
+        Y: =173
+        ZIndex: =9
+
+    TextInput1_492 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'EWC Code')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =29
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =312
+        X: =496
+        Y: =207
+        ZIndex: =10
+
+    Label1_569 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =29
+        Size: =9
+        Text: |-
+            ="1. Name & address of transferer (Banner Plant Ltd producing waste):"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =542
+        X: =448
+        Y: =179
+        ZIndex: =11
+
+    TextInput1_493 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Name and address of the Transferer ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =85
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =495
+        X: =452
+        Y: =208
+        ZIndex: =12
+
+    Label1_570 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =29
+        Size: =9
+        Text: ="2. Which of the following are you?"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =316
+        X: =452
+        Y: =322
+        ZIndex: =13
+
+    Dropdown2_263 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form18.Mode= FormMode.New,"Waste Producer(Banner Plant Ltd Waste)",Gallery4_16.Selected.'which of the Following are You?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =25
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Waste Producer(Banner Plant Ltd Waste)","Broker(Subcontractor Waste)","Waste Importer(Materials From offshore","Waste Management License Holder"," Registered Carrier"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =8
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =279
+        X: =668
+        Y: =322
+        ZIndex: =14
+
+    Label1_571 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Number: "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =100
+        X: =601
+        Y: =358
+        ZIndex: =15
+
+    TextInput1_494 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.Number)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =21
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =279
+        X: =668
+        Y: =362
+        ZIndex: =16
+
+    Label1_572 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Issued By:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =100
+        X: =601
+        Y: =392
+        ZIndex: =17
+
+    TextInput1_495 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Issued By')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =21
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "B (Producer)",true,false)
+        Width: =279
+        X: =668
+        Y: =396
+        ZIndex: =18
+
+    TextInput1_496 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'How is the Waste Contained Specify')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =84
+        HintText: ="(Specify)"
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value ="A (Description Of Waste)",true,false)
+        Width: =312
+        X: =500
+        Y: =571
+        ZIndex: =19
+
+    Label1_573 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="1. Name & address of registered carrier:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "C (Carrier)",true,false)
+        Width: =258
+        X: =527
+        Y: =205
+        ZIndex: =20
+
+    TextInput1_497 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Name and Address of Registered Carrier')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =110
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "C (Carrier)",true,false)
+        Width: =279
+        X: =533
+        Y: =235
+        ZIndex: =21
+
+    Label1_574 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="2. Carrier’s registration number: "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "C (Carrier)",true,false)
+        Width: =258
+        X: =527
+        Y: =356
+        ZIndex: =22
+
+    TextInput1_498 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Carrier''s Registration Number')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "C (Carrier)",true,false)
+        Width: =279
+        X: =533
+        Y: =386
+        ZIndex: =23
+
+    Label1_575 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="3. Issued by: "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "C (Carrier)",true,false)
+        Width: =258
+        X: =527
+        Y: =421
+        ZIndex: =24
+
+    TextInput1_499 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Issued By')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "C (Carrier)",true,false)
+        Width: =279
+        X: =533
+        Y: =451
+        ZIndex: =25
+
+    Label1_576 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="1. Place of transfer (Depot address) 
+            "
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =258
+        X: =399
+        Y: =159
+        ZIndex: =26
+
+    TextInput1_500 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Place of transfer')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =98
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =279
+        X: =405
+        Y: =189
+        ZIndex: =27
+
+    Label1_577 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: ="2. Date & time of transfer "
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =258
+        X: =732
+        Y: =159
+        ZIndex: =28
+
+    DatePicker1_23 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: |-
+            =If(Form18.Mode= FormMode.New,Today(),Gallery4_16.Selected.'Date and Time of Transfer:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =27
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =278
+        X: =732
+        Y: =188
+        ZIndex: =29
+
+    Label1_578 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: ="3. Or Transfer note between (dates) "
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =258
+        X: =732
+        Y: =231
+        ZIndex: =30
+
+    DatePicker1_24 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form18.Mode= FormMode.New,Today(),Gallery4_16.Selected.'Transfer From Date')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =27
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =124
+        X: =732
+        Y: =260
+        ZIndex: =31
+
+    DatePicker1_25 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form18.Mode= FormMode.New,Today(),Gallery4_16.Selected.'Transfer End Date ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =27
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =124
+        X: =887
+        Y: =260
+        ZIndex: =32
+
+    Label1_579 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =14
+        Size: =11
+        Text: ="&"
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =27
+        X: =860
+        Y: =266
+        ZIndex: =33
+
+    gal_SideNav_4 As gallery.galleryVertical:
+        BorderColor: =RGBA(51, 51, 51, 1)
+        Default: |-
+            =LookUp(Table(
+                {Value: "Waste Producer"},
+                {Value: "Waste Carrier"}
+                
+               
+             ), Value = "Waste Producer")
+        Height: =37
+        Items: |-
+            =Table(
+                {Value: "Waste Producer"},
+                {Value: "Waste Carrier"}
+                
+               
+             )
+        Layout: =Layout.Vertical
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =45
+        Transition: =Transition.Push
+        Visible: =First &&If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false)
+        Width: =300
+        WrapCount: =2
+        X: =575
+        Y: =312
+        ZIndex: =34
+
+        lbl_SideNav_Current_4 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(237, 237, 237, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =If(ThisItem.IsSelected,Color.Black,RGBA(0,0,0,0))
+            Height: =4
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =""
+            Visible: |
+                =true
+            Width: =136.33333333333334
+            Y: =35
+            ZIndex: =3
+
+        Label25_4 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            OnSelect: =Select(Parent)
+            Size: =10
+            Text: =ThisItem.Value
+            Width: =126.33333333333334
+            X: =10
+            Y: =5
+            ZIndex: =5
+
+    Label1_580 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Name (print):"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =258
+        X: =399
+        Y: =366
+        ZIndex: =35
+
+    TextInput1_501 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Producer Name(Print):')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =183
+        X: =488
+        Y: =366
+        ZIndex: =36
+
+    Label1_581 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: ="Signature"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =258
+        X: =695
+        Y: =367
+        ZIndex: =37
+
+    PenInput8 As inkControl:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =232
+        Reset: =setVar
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =370
+        X: =774
+        Y: =366
+        ZIndex: =38
+
+    Label1_582 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Position:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =258
+        X: =399
+        Y: =409
+        ZIndex: =39
+
+    TextInput1_502 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Producer Position')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =183
+        X: =488
+        Y: =409
+        ZIndex: =40
+
+    Label1_583 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Representing:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =258
+        X: =399
+        Y: =448
+        ZIndex: =41
+
+    TextInput1_503 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Producer  Representing')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =183
+        X: =488
+        Y: =448
+        ZIndex: =42
+
+    Label1_584 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Date:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =258
+        X: =399
+        Y: =492
+        ZIndex: =43
+
+    DatePicker1_26 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: |-
+            =If(Form18.Mode= FormMode.New,Today(),Gallery4_16.Selected.'Waste Producer  Date:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =27
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Producer",true, false)
+        Width: =182
+        X: =489
+        Y: =490
+        ZIndex: =44
+
+    Label1_585 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Name (print):"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =258
+        X: =399
+        Y: =367
+        ZIndex: =45
+
+    TextInput1_504 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Carrier Name (Print)')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =183
+        X: =488
+        Y: =367
+        ZIndex: =46
+
+    Label1_586 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: ="Signature"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =258
+        X: =695
+        Y: =368
+        ZIndex: =47
+
+    PenInput8_1 As inkControl:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =231
+        Reset: =setVar
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =370
+        X: =774
+        Y: =367
+        ZIndex: =48
+
+    Label1_587 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Position:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =258
+        X: =399
+        Y: =410
+        ZIndex: =49
+
+    TextInput1_505 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Carrier Position')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =183
+        X: =488
+        Y: =410
+        ZIndex: =50
+
+    Label1_588 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Representing:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =258
+        X: =399
+        Y: =449
+        ZIndex: =51
+
+    TextInput1_506 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Carrier Representing')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =183
+        X: =488
+        Y: =449
+        ZIndex: =52
+
+    Label1_589 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="Date:"
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =258
+        X: =399
+        Y: =493
+        ZIndex: =53
+
+    DatePicker1_27 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: |-
+            =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Carrier Date:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =27
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First && If(gal_SideNav_3.Selected.Value = "D (Transfer)", true, false) && If(gal_SideNav_4.Selected.Value = "Waste Carrier",true, false)
+        Width: =182
+        X: =489
+        Y: =491
+        ZIndex: =54
+
+    Label1_590 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =24
+        Size: =9
+        Text: |-
+            ="1. Waste is being transferred to (name & address of tip):"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =319
+        X: =500
+        Y: =207
+        ZIndex: =55
+
+    TextInput1_507 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Name and address of waste transferred tro')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =110
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =296
+        X: =506
+        Y: =237
+        ZIndex: =56
+
+    Label1_591 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="2. Waste Management License No :"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =258
+        X: =500
+        Y: =358
+        ZIndex: =57
+
+    TextInput1_508 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Waste Management License nO')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =296
+        X: =506
+        Y: =388
+        ZIndex: =58
+
+    Label1_592 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =25
+        Size: =9
+        Text: |-
+            ="3. Issued by: "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =258
+        X: =500
+        Y: =423
+        ZIndex: =59
+
+    TextInput1_509 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form18.Mode= FormMode.New,"",Gallery4_16.Selected.'Disposer Issued By')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HintText: =""
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =296
+        X: =506
+        Y: =453
+        ZIndex: =60
+
+    Label1_593 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =9
+        Text: ="INSTRUCTIONS ON COMPLETING WASTE TRANSFER DOCUMENT"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =416
+        X: =475
+        Y: =113
+        ZIndex: =61
+
+    Label1_594 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =9
+        Text: ="Section A – Description of Waste"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =416
+        X: =371
+        Y: =159
+        ZIndex: =62
+
+    Label1_595 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =81
+        Size: =9
+        Text: |-
+            ="A full, written description of the waste must be provided.  Stating ‘Builders/General Waste’ is not an acceptable description.
+            A 6 figured European Waste Catalogue classification code must be entered onto the waste transfer note.
+            European Waste Catalogue classification codes can be supplied by the carrier
+            For use as a “Season Ticket”, e.g. 12 months; enter the “from” and “to” dates in the “quantity of waste” box.
+             Hazardous waste must be transferred using a consignment note.  
+            "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =657
+        X: =371
+        Y: =187
+        ZIndex: =63
+
+    Label1_596 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =9
+        Text: ="Section B – Holder of the Waste"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =416
+        X: =371
+        Y: =268
+        ZIndex: =64
+
+    Label1_597 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =75
+        Size: =9
+        Text: |-
+            ="To be filled in by the producer of the waste
+            Full Name: of the component person completing the Waste Transfer Note
+            Exempt from requirement to register: ask to see their proof.  An exemption certificate will have been issued from the Environment Agency
+            "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =657
+        X: =371
+        Y: =294
+        ZIndex: =65
+
+    Label1_598 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =9
+        Text: ="Section C – Carrier of the Waste"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =416
+        X: =371
+        Y: =362
+        ZIndex: =66
+
+    Label1_599 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =126
+        Size: =9
+        Text: |-
+            ="To be completed by the company collecting the waste
+            Full Name: of the component person completing the Waste Transfer Note
+            The carrier of the waste will either be:
+            •	Registered waste carrier: ask to see their proof.  Ensure the company transporting the waste has a valid registration certificate issued by the Environment Agency
+            •	Exempt from carrier regulations: ask to see their proof.  An exemption certificate will have been issued from the Environment Agency
+            "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =657
+        X: =371
+        Y: =378
+        ZIndex: =67
+
+    Label1_600 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =92
+        Size: =9
+        Text: |-
+            ="To be completed by the disposer of the waste (i.e. the landfill site company)
+            The company disposing of the waste will either be:
+            •	Holder of disposal or waste management licence: ask for proof.  A valid disposal / waste management licence will be issued by the Environment Agency
+            •	Exempt from licensing requirements: ask for proof.  An exemption certificate will have been issued from the Environment Agency
+            "
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =657
+        X: =371
+        Y: =531
+        ZIndex: =68
+
+    Label1_601 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =9
+        Text: ="Section D – Disposer of the Waste"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =416
+        X: =371
+        Y: =499
+        ZIndex: =69
+
+    Label1_602 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =32
+        Size: =9
+        Text: ="Section E – First Transfer (Holder to Carrier)"
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =416
+        X: =371
+        Y: =630
+        ZIndex: =70
+
+    Label1_603 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =42
+        Size: =9
+        Text: ="To be completed if waste is removed from the place where it is produced and moved to a transfer station."
+        Visible: =First && If(gal_SideNav_3.Selected.Value= "More",true,false)
+        Width: =657
+        X: =371
+        Y: =662
+        ZIndex: =71
+
+    Label1_604 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =22
+        Size: =11
+        Text: ="BP 113 Waste Transfer Note Form"
+        Width: =497
+        X: =96
+        Y: =16
+        ZIndex: =72
+
+    Rectangle1_64 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        X: =65
+        Y: =112
+        ZIndex: =73
+
+    Rectangle1_65 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        X: =65
+        Y: =187
+        ZIndex: =74
+
+    Rectangle1_275 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =72
+        ZIndex: =75
+
+    "'User Logo_72' As image":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+        ImagePosition: =ImagePosition.Stretch
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =41
+        X: =17
+        Y: =713
+        ZIndex: =76
+
+    Image8_342 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-settings-64'
+        Tooltip: ="SETTINGS"
+        Width: =43
+        X: =11
+        Y: =440
+        ZIndex: =77
+
+    Image8_343 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        Image: ='icons8-user-manual-100'
+        ImagePosition: =ImagePosition.Stretch
+        OnSelect: |-
+            =Launch("https://henryboot.sharepoint.com/:w:/r/sites/itsystems/BPDM/_layouts/15/Doc.aspx?sourcedoc=%7B29F6C5EE-6186-45E5-A006-D8A31415DE8D%7D&file=Banner%20DMS%20Quick%20Start%20Guide.docx&action=default&mobileredirect=true");
+        Tooltip: ="USER GUIDE"
+        Width: =55
+        X: =6
+        Y: =520
+        ZIndex: =78
+
+    Rectangle1_276 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        Y: =112
+        ZIndex: =79
+
+    Rectangle1_277 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        Y: =187
+        ZIndex: =80
+
+    Rectangle1_278 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen3,true,false)
+        Width: =6
+        Y: =265
+        ZIndex: =81
+
+    Rectangle1_279 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen4,true,false)
+        Width: =6
+        Y: =344
+        ZIndex: =82
+
+    Rectangle3_196 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Visible: =If(App.ActiveScreen=Screen1,true,false)
+        Width: =71
+        Y: =112
+        ZIndex: =83
+
+    Rectangle3_197 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen2);
+        Visible: =If(App.ActiveScreen=Screen2,true,false)
+        Width: =71
+        Y: =188
+        ZIndex: =84
+
+    Rectangle3_198 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen3);
+        Visible: =If(App.ActiveScreen=Screen3,true,false)
+        Width: =71
+        Y: =265
+        ZIndex: =85
+
+    Rectangle3_199 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen4);
+        Visible: =If(App.ActiveScreen=Screen4,true,false)
+        Width: =72
+        Y: =344
+        ZIndex: =86
+
+    Image8_344 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-fill-and-sign-48'
+        OnSelect: =Navigate(Screen4);
+        Tooltip: ="TOOLBOX TALKS"
+        Width: =43
+        X: =12
+        Y: =355
+        ZIndex: =87
+
+    Image8_345 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-wpforms-36'
+        OnSelect: =Navigate(Screen3);
+        Tooltip: ="STANDARD FORMS"
+        Width: =43
+        X: =13
+        Y: =270
+        ZIndex: =88
+
+    Image8_346 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-policy-document-100'
+        OnSelect: =Navigate(Screen2);
+        Tooltip: ="DRIVER POLICIES "
+        Width: =43
+        X: =12
+        Y: =194
+        ZIndex: =89
+
+    Image8_347 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-project-management-100'
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Tooltip: ="CORE MANAGEMENT"
+        Width: =43
+        X: =18
+        Y: =114
+        ZIndex: =90
+
+    Icon1_69 As icon.Hamburger:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Hamburger
+        Width: =43
+        X: =16
+        Y: =21
+        ZIndex: =91
+
+    Label1_730 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Size: =6
+        Text: ="Core Management System"
+        Width: =66
+        X: =6
+        Y: =154
+        ZIndex: =92
+
+    Label1_731 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: =Navigate(Screen2);
+        Size: =6
+        Text: ="Driver Policies"
+        Width: =66
+        X: =3
+        Y: =232
+        ZIndex: =93
+
+    Label1_732 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =24
+        OnSelect: =Navigate(Screen3);
+        Size: =6
+        Text: ="Standard Forms"
+        Width: =66
+        Y: =311
+        ZIndex: =94
+
+    Label1_733 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        OnSelect: =Navigate(Screen4);
+        Size: =6
+        Text: ="ToolBox Talks"
+        Width: =52
+        X: =6
+        Y: =393
+        ZIndex: =95
+
+    Label1_734 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="Settings"
+        Width: =66
+        Y: =480
+        ZIndex: =96
+
+    Label1_846 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="User Guide"
+        Width: =66
+        X: =2
+        Y: =567
+        ZIndex: =97
+
+    Button9_22 As button:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =26
+        HoverColor: =RGBA(39, 113, 194, 1)
+        HoverFill: =
+        OnSelect: |-
+            =Patch('BP 113S',Defaults('BP 113S'),
+            {'EWC Code':TextInput1_492.Text,
+            'Description Of Waste':TextInput1_490.Text,
+            'Quantity Of Waste':TextInput1_491.Text,
+            'How is the Waste Contained':Dropdown2_262.Selected.Value,
+            'How is the Waste Contained Specify':TextInput1_496.Text,
+            'Name and address of the Transferer ':TextInput1_493.Text,
+            'which of the Following are You?':Dropdown2_263.Selected.Value,
+            Number:TextInput1_494.Text,
+            'Issued By':TextInput1_495.Text,
+            'Name and Address of Registered Carrier':TextInput1_497.Text,
+            'Carrier''s Registration Number':TextInput1_498.Text,
+            '(Carrier)Issued By :':TextInput1_499.Text,
+            'Place of transfer':TextInput1_500.Text,
+            'Date and Time of Transfer:':DatePicker1_23.SelectedDate,
+            'Transfer From Date':DatePicker1_24.SelectedDate,
+            'Transfer End Date ':DatePicker1_25.SelectedDate,
+            'Waste Producer Name(Print):':TextInput1_501.Text,
+            'Waste Producer Position':TextInput1_502.Text,
+            'Waste Producer  Representing':TextInput1_503.Text,
+            'Waste Producer  Date:':DatePicker1_26.SelectedDate,
+            'Waste Carrier Name (Print)':TextInput1_504.Text,
+            'Waste Carrier Position':TextInput1_505.Text,
+            'Waste Carrier Representing':TextInput1_506.Text,
+            'Waste Carrier Date:':DatePicker1_27.SelectedDate,
+            'Waste Carrier Signature:':PenInput8_1.Image,
+            'Waste Producer Signature':PenInput8.Image,
+            'Name and address of waste transferred tro':TextInput1_507.Text,
+            'Waste Management License nO':TextInput1_508.Text,
+            'Disposer Issued By':TextInput1_509.Text,
+            'Attachment 1 ':{FileName:First(DataCardValue79_31.Attachments).Name,Value:First(DataCardValue79_31.Attachments).Value},
+            'Attachment 2':{FileName:First(DataCardValue79_36.Attachments).Name,Value:First(DataCardValue79_36.Attachments).Value},
+            'Attachment 3':{FileName:First(DataCardValue79_32.Attachments).Name,Value:First(DataCardValue79_32.Attachments).Value},
+            'Attachment 4 ':{FileName:First(DataCardValue79_34.Attachments).Name,Value:First(DataCardValue79_34.Attachments).Value},
+            'Attachment 5':{FileName:First(DataCardValue79_33.Attachments).Name,Value:First(DataCardValue79_33.Attachments).Value},
+            'Attachment 6':{FileName:First(DataCardValue79_35.Attachments).Name,Value:First(DataCardValue79_35.Attachments).Value}
+            });
+            Set(setVar,false);
+            Set(setVar,true);
+            Reset(gal_SideNav_3);
+            Reset(gal_SideNav_4);
+            NewForm(Form18);
+            UpdateContext({First:false,gal:true});
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =First && If(Form18.Mode = FormMode.New,true, false) && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =93
+        X: =601
+        Y: =513
+        ZIndex: =98
+
+    Icon15_12 As icon.History:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =21
+        Icon: =Icon.History
+        OnSelect: |-
+            =UpdateContext({First:false,gal:true})
+        Width: =43
+        X: =1311
+        Y: =16
+        ZIndex: =99
+
+    Icon2_16 As icon.Add:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.Add
+        OnSelect: |-
+            =NewForm(Form18);
+            UpdateContext({First:true,gal:false});
+            Reset(gal_SideNav_3);
+            Reset(gal_SideNav_4);
+            Set(setVar,false);
+            Set(setVar,true);
+        Width: =23
+        X: =1279
+        Y: =13
+        ZIndex: =100
+
+    "Gallery4_16 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DelayItemLoading: =true
+        Height: =616
+        Items: ='BP 113S'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplateSize: =38
+        Transition: =Transition.Push
+        Visible: =gal
+        Width: =741
+        X: =311
+        Y: =80
+        ZIndex: =101
+
+        Button10_16 As button:
+            BorderColor: =
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =If(ThisItem.IsSelected,RGBA(24, 0, 102, 0.35), 50%,Color.WhiteSmoke)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =""
+            Width: =721
+            X: =10
+            ZIndex: =1
+
+        Label1_1310 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =21
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'EWC Code'
+            Width: =186
+            X: =36
+            Y: =9
+            ZIndex: =2
+
+        Label1_1312 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'Created By'.'Full Name'
+            X: =364
+            Y: =11
+            ZIndex: =5
+
+        Icon1_21 As icon.Edit:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =22
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =EditForm(Form18);
+                UpdateContext({First:true,gal:false});
+                Reset(gal_SideNav_3);
+                Reset(gal_SideNav_4);
+            Visible: =gal
+            Width: =24
+            X: =694
+            Y: =8
+            ZIndex: =6
+
+        Icon16_15 As icon.Trash:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =Remove('BP 113S', Gallery4_16.Selected); If (IsEmpty(Errors('BP 113S',Gallery4_16.Selected)),'BP 107S');
+                UpdateContext({Delete:false});
+                Notify("Bp 113 Record Deleted", NotificationType.Success);
+                NewForm(Form1)
+            Visible: =false
+            Width: =23
+            X: =655
+            Y: =8
+            ZIndex: =9
+
+        Label1_1311 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'Created By'.City
+            Width: =142
+            X: =222
+            Y: =11
+            ZIndex: =10
+
+        Label1_1313 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'Created On'
+            X: =544
+            Y: =11
+            ZIndex: =11
+
+    "'Division name label_34' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =30
+        OnSelect: =
+        Size: =9
+        Text: ="EWC Waste Classification Code"
+        Visible: =gal
+        Width: =132
+        X: =348
+        Y: =55
+        ZIndex: =102
+
+    "'Company name label_15' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =9
+        Text: ="Created On"
+        Visible: =gal
+        Width: =140
+        X: =859
+        Y: =64
+        ZIndex: =103
+
+    "'Division name label_35' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =9
+        Text: ="Depot Name"
+        Visible: =gal
+        Width: =152
+        X: =523
+        Y: =64
+        ZIndex: =104
+
+    "'Division name label_36' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =9
+        Text: ="Created By"
+        Visible: =gal
+        Width: =152
+        X: =677
+        Y: =64
+        ZIndex: =105
+
+    Form18 As form:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DataSource: ='BP 113S'
+        Visible: =false
+        Width: =519
+        X: =40
+        Y: =40
+        ZIndex: =106
+
+        "'EWC Code_DataCard1' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr0c5_ewccode"
+            Default: =ThisItem.'EWC Code'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'BP 113S'],DataSourceInfo.DisplayName,"cr0c5_ewccode")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'BP 113S'], DataSourceInfo.MaxLength, "cr0c5_ewccode")
+            Required: =true
+            Update: =DataCardValue62.Text
+            Width: =173
+            X: =0
+            Y: =0
+            ZIndex: =107
+
+            DataCardKey66 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue62 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(62, 74, 83, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey66.Y + DataCardKey66.Height + 5
+                ZIndex: =2
+
+            ErrorMessage27 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue62.Y + DataCardValue62.Height
+                ZIndex: =3
+
+            StarVisible27 As label:
+                Align: =Align.Center
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey66.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey66.Y
+                ZIndex: =4
+
+        "'Created On_DataCard16' As typedDataCard.textualViewCard":
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="createdon"
+            Default: =ThisItem.'Created On'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'BP 113S'],DataSourceInfo.DisplayName,"createdon")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =173
+            X: =1
+            Y: =0
+            ZIndex: =107
+
+            DataCardKey67 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue63 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =13
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey67.Y + DataCardKey67.Height + 5
+                ZIndex: =2
+
+    Button9_25 As button:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        HoverColor: =RGBA(39, 113, 194, 1)
+        HoverFill: =
+        OnSelect: |-
+            =Patch('BP 113S',LookUp('BP 113S','Version Number'=Gallery4_16.Selected.'Version Number'),
+            {'EWC Code':TextInput1_492.Text,
+            'Description Of Waste':TextInput1_490.Text,
+            'Quantity Of Waste':TextInput1_491.Text,
+            'How is the Waste Contained':Dropdown2_262.Selected.Value,
+            'How is the Waste Contained Specify':TextInput1_496.Text,
+            'Name and address of the Transferer ':TextInput1_493.Text,
+            'which of the Following are You?':Dropdown2_263.Selected.Value,
+            Number:TextInput1_494.Text,
+            'Issued By':TextInput1_495.Text,
+            'Name and Address of Registered Carrier':TextInput1_497.Text,
+            'Carrier''s Registration Number':TextInput1_498.Text,
+            '(Carrier)Issued By :':TextInput1_499.Text,
+            'Place of transfer':TextInput1_500.Text,
+            'Date and Time of Transfer:':DatePicker1_23.SelectedDate,
+            'Transfer From Date':DatePicker1_24.SelectedDate,
+            'Transfer End Date ':DatePicker1_25.SelectedDate,
+            'Waste Producer Name(Print):':TextInput1_501.Text,
+            'Waste Producer Position':TextInput1_502.Text,
+            'Waste Producer  Representing':TextInput1_503.Text,
+            'Waste Producer  Date:':DatePicker1_26.SelectedDate,
+            'Waste Carrier Name (Print)':TextInput1_504.Text,
+            'Waste Carrier Position':TextInput1_505.Text,
+            'Waste Carrier Representing':TextInput1_506.Text,
+            'Waste Carrier Date:':DatePicker1_27.SelectedDate,
+            'Waste Carrier Signature:':PenInput8_1.Image,
+            'Waste Producer Signature':PenInput8.Image,
+            'Name and address of waste transferred tro':TextInput1_507.Text,
+            'Waste Management License nO':TextInput1_508.Text,
+            'Disposer Issued By':TextInput1_509.Text,
+            'Attachment 1 ':{FileName:First(DataCardValue79_31.Attachments).Name,Value:First(DataCardValue79_31.Attachments).Value},
+            'Attachment 2':{FileName:First(DataCardValue79_36.Attachments).Name,Value:First(DataCardValue79_36.Attachments).Value},
+            'Attachment 3':{FileName:First(DataCardValue79_32.Attachments).Name,Value:First(DataCardValue79_32.Attachments).Value},
+            'Attachment 4 ':{FileName:First(DataCardValue79_34.Attachments).Name,Value:First(DataCardValue79_34.Attachments).Value},
+            'Attachment 5':{FileName:First(DataCardValue79_33.Attachments).Name,Value:First(DataCardValue79_33.Attachments).Value},
+            'Attachment 6':{FileName:First(DataCardValue79_35.Attachments).Name,Value:First(DataCardValue79_35.Attachments).Value}});
+            Set(setVar,false);
+            Set(setVar,true);
+            Reset(gal_SideNav_3);
+            Reset(gal_SideNav_4);
+            NewForm(Form18);
+            UpdateContext({First:false,gal:true});
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =First && If(Form18.Mode = FormMode.Edit,true, false) && If(gal_SideNav_3.Selected.Value= "E (Disposer)",true,false)
+        Width: =98
+        X: =596
+        Y: =511
+        ZIndex: =107
+
+    Label1_991 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        Size: =9
+        Text: |-
+            ="Attachments:"
+        Visible: =First
+        Width: =91
+        X: =1222
+        Y: =65
+        ZIndex: =109
+
+    Image13_5 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Image: ='icons8-attachment-50'
+        OnSelect: |-
+            =UpdateContext({form:true})
+        Visible: =First
+        Width: =29
+        X: =1311
+        Y: =63
+        ZIndex: =110
+
+    Rectangle10_5 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(0, 0, 0, .8)
+        Height: =768
+        Visible: =form
+        Width: =1366
+        ZIndex: =111
+
+    Button25_5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =653
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        Size: =15
+        Text: =""
+        Visible: =form
+        Width: =462
+        X: =443
+        Y: =59
+        ZIndex: =112
+
+    DataCardValue79_31 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =73
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(255, 255, 255, 1)
+        ItemFill: =RGBA(100, 118, 132, 1)
+        ItemHoverColor: =RGBA(255, 255, 255, 1)
+        ItemHoverFill: =RGBA(62, 74, 83, 1)
+        Items: |
+            =If(
+                Form18.Mode = FormMode.New,
+                Table(),
+                If(!IsBlank(Gallery4_16.Selected.'Attachment 1 '.FileName), Table({DisplayName: Gallery4_16.Selected.'Attachment 1 '.FileName, Value:Gallery4_16.Selected.'Attachment 1 '.Value}), Blank())
+            )
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="There is no file."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        Size: =9
+        Tooltip: =
+        Visible: =form
+        Width: =346
+        X: =503
+        Y: =104
+        ZIndex: =113
+
+    DataCardValue79_32 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =73
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(255, 255, 255, 1)
+        ItemFill: =RGBA(100, 118, 132, 1)
+        ItemHoverColor: =RGBA(255, 255, 255, 1)
+        ItemHoverFill: =RGBA(62, 74, 83, 1)
+        Items: |+
+            =If(
+                Form18
+                .Mode = FormMode.New,
+                Table(),
+                If(!IsBlank(Gallery4_16.Selected.'Attachment 3'.FileName), Table({DisplayName: Gallery4_16.Selected.'Attachment 3'.FileName, Value:Gallery4_16.Selected.'Attachment 3'.Value}), Blank())
+            )
+            
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="There is no file."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        Size: =9
+        Tooltip: =
+        Visible: =form
+        Width: =346
+        X: =503
+        Y: =281
+        ZIndex: =114
+
+    DataCardValue79_33 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =73
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(255, 255, 255, 1)
+        ItemFill: =RGBA(100, 118, 132, 1)
+        ItemHoverColor: =RGBA(255, 255, 255, 1)
+        ItemHoverFill: =RGBA(62, 74, 83, 1)
+        Items: |
+            =If(
+                Form18.Mode = FormMode.New,
+                Table(),
+                If(!IsBlank(Gallery4_16.Selected.'Attachment 5'.FileName), Table({DisplayName: Gallery4_16.Selected.'Attachment 5'.FileName, Value:Gallery4_16.Selected.'Attachment 5'.Value}), Blank())
+            )
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="There is no file."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        Size: =9
+        Tooltip: =
+        Visible: =form
+        Width: =346
+        X: =503
+        Y: =461
+        ZIndex: =115
+
+    DataCardValue79_34 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =73
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(255, 255, 255, 1)
+        ItemFill: =RGBA(100, 118, 132, 1)
+        ItemHoverColor: =RGBA(255, 255, 255, 1)
+        ItemHoverFill: =RGBA(62, 74, 83, 1)
+        Items: |+
+            =If(
+                Form18.Mode = FormMode.New,
+                Table(),
+                If(!IsBlank(Gallery4_16.Selected.'Attachment 4 '.FileName), Table({DisplayName: Gallery4_16.Selected.'Attachment 4 '.FileName, Value:Gallery4_16.Selected.'Attachment 4 '.Value}), Blank())
+            )
+            
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="There is no file."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        Size: =9
+        Tooltip: =
+        Visible: =form
+        Width: =346
+        X: =503
+        Y: =372
+        ZIndex: =116
+
+    DataCardValue79_35 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =73
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(255, 255, 255, 1)
+        ItemFill: =RGBA(100, 118, 132, 1)
+        ItemHoverColor: =RGBA(255, 255, 255, 1)
+        ItemHoverFill: =RGBA(62, 74, 83, 1)
+        Items: |
+            =If(
+                Form18.Mode = FormMode.New,
+                Table(),
+                If(!IsBlank(Gallery4_16.Selected.'Attachment 6'.FileName), Table({DisplayName: Gallery4_16.Selected.'Attachment 6'.FileName, Value:Gallery4_16.Selected.'Attachment 6'.Value}), Blank())
+            )
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="There is no file."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        Size: =9
+        Tooltip: =
+        Visible: =form
+        Width: =346
+        X: =503
+        Y: =551
+        ZIndex: =117
+
+    Button26_5 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =29
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({form:false})
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Text: ="Back"
+        Visible: =form
+        Width: =90
+        X: =620
+        Y: =656
+        ZIndex: =118
+
+    DataCardValue79_36 As attachments:
+        AddAttachmentText: ="Upload file"
+        BorderColor: =
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =
+        Fill: =RGBA(0, 0, 0, 1)
+        FocusedBorderThickness: =4
+        Height: =73
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        IsInDataCard: =true
+        ItemColor: =RGBA(255, 255, 255, 1)
+        ItemFill: =RGBA(100, 118, 132, 1)
+        ItemHoverColor: =RGBA(255, 255, 255, 1)
+        ItemHoverFill: =RGBA(62, 74, 83, 1)
+        Items: |-
+            =If(
+                Form18.Mode = FormMode.New,
+                Table(),
+                If(
+                    !IsBlank(Gallery4_16.Selected.'Attachment 2'.FileName),
+                    Table(
+                        {
+                            DisplayName: Gallery4_16.Selected.'Attachment 2'.FileName,
+                            Value: Gallery4_16.Selected.'Attachment 2'.Value
+                        }
+                    ),
+                    Blank()
+                )
+            )
+        MaxAttachments: =1
+        MaxAttachmentsText: =""
+        NoAttachmentsText: ="There is no file."
+        PaddingBottom: =5
+        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+        PaddingRight: =5
+        PaddingTop: =5
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar
+        Size: =9
+        Tooltip: =
+        Visible: =form
+        Width: =346
+        X: =503
+        Y: =191
+        ZIndex: =119
+

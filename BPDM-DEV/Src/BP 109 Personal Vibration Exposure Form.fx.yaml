@@ -1,0 +1,2348 @@
+"'BP 109 Personal Vibration Exposure Form' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(215, 223, 240, .5)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({First:true,gal:false});
+        NewForm(Form10);
+
+    Rectangle1_191 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =50
+        Width: =1366
+        ZIndex: =1
+
+    Label1_259 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Depot Name:"
+        Visible: =First
+        Width: =193
+        X: =149
+        Y: =77
+        ZIndex: =2
+
+    TextInput1_240 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.Depot)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =225
+        X: =334
+        Y: =77
+        ZIndex: =3
+
+    Label1_267 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Depot Manager:"
+        Visible: =First
+        Width: =193
+        X: =149
+        Y: =112
+        ZIndex: =4
+
+    TextInput1_241 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Depot Manager:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =225
+        X: =334
+        Y: =112
+        ZIndex: =5
+
+    Label1_268 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Full description of equipment:"
+        Visible: =First
+        Width: =193
+        X: =589
+        Y: =77
+        ZIndex: =6
+
+    TextInput1_242 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Full description of equipment:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =225
+        X: =920
+        Y: =77
+        ZIndex: =7
+
+    Label1_269 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =9
+        Text: |-
+            ="List all PPE available and required 
+            for equipment use when operating:
+            "
+        Visible: =First
+        Width: =326
+        X: =589
+        Y: =112
+        ZIndex: =8
+
+    TextInput1_243 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'List all PPE available and required  for equipment')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =225
+        X: =920
+        Y: =112
+        ZIndex: =9
+
+    Label1_270 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Pre-Check Use:"
+        Visible: =First
+        Width: =115
+        X: =149
+        Y: =168
+        ZIndex: =10
+
+    Label1_271 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Manufacturers
+            Vibration Level:
+            "
+        Visible: =First
+        Width: =115
+        X: =342
+        Y: =168
+        ZIndex: =11
+
+    Label1_272 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Maximum Use Per Day: hrs.mins"
+        Visible: =First
+        Width: =115
+        X: =559
+        Y: =168
+        ZIndex: =12
+
+    Label1_273 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Date / Time Out:"
+        Visible: =First
+        Width: =115
+        X: =782
+        Y: =168
+        ZIndex: =13
+
+    Label1_274 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Date / Time In:"
+        Visible: =First
+        Width: =115
+        X: =969
+        Y: =168
+        ZIndex: =14
+
+    Label1_275 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: ="Print Name"
+        Visible: =First
+        Width: =115
+        X: =1200
+        Y: =168
+        ZIndex: =15
+
+    TextInput1_244 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =206
+        ZIndex: =16
+
+    TextInput1_245 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Manufacturers Vibration Level: - 1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =206
+        ZIndex: =17
+
+    TextInput1_246 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =206
+        ZIndex: =18
+
+    TextInput1_247 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =206
+        ZIndex: =19
+
+    TextInput1_248 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time In: -1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =206
+        ZIndex: =20
+
+    TextInput1_249 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =206
+        ZIndex: =21
+
+    TextInput1_250 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =243
+        ZIndex: =22
+
+    TextInput1_251 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Manufacturers Vibration Level: - 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =243
+        ZIndex: =23
+
+    TextInput1_252 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =243
+        ZIndex: =24
+
+    TextInput1_253 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =243
+        ZIndex: =25
+
+    TextInput1_254 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time In: -2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =243
+        ZIndex: =26
+
+    TextInput1_255 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =243
+        ZIndex: =27
+
+    TextInput1_256 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =280
+        ZIndex: =28
+
+    TextInput1_257 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Manufacturers Vibration Level: - 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =280
+        ZIndex: =29
+
+    TextInput1_258 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =280
+        ZIndex: =30
+
+    TextInput1_259 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =280
+        ZIndex: =31
+
+    TextInput1_260 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time In: -3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =280
+        ZIndex: =32
+
+    TextInput1_261 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =280
+        ZIndex: =33
+
+    TextInput1_262 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =320
+        ZIndex: =34
+
+    TextInput1_263 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Manufacturers Vibration Level: - 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =320
+        ZIndex: =35
+
+    TextInput1_264 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =320
+        ZIndex: =36
+
+    TextInput1_265 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =320
+        ZIndex: =37
+
+    TextInput1_266 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time In: -4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =320
+        ZIndex: =38
+
+    TextInput1_267 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =320
+        ZIndex: =39
+
+    TextInput1_268 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =356
+        ZIndex: =40
+
+    TextInput1_269 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Manufacturers Vibration Level: - 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =356
+        ZIndex: =41
+
+    TextInput1_270 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =356
+        ZIndex: =42
+
+    TextInput1_271 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =356
+        ZIndex: =43
+
+    TextInput1_272 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time In: -5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =356
+        ZIndex: =44
+
+    TextInput1_273 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =356
+        ZIndex: =45
+
+    TextInput1_274 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =393
+        ZIndex: =46
+
+    TextInput1_275 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Manufacturers Vibration Level: - 6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =393
+        ZIndex: =47
+
+    TextInput1_276 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =393
+        ZIndex: =48
+
+    TextInput1_277 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =393
+        ZIndex: =49
+
+    TextInput1_278 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time In: -6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =393
+        ZIndex: =50
+
+    TextInput1_279 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =393
+        ZIndex: =51
+
+    TextInput1_280 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Pre-Check Use: - 7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =142
+        X: =149
+        Y: =430
+        ZIndex: =52
+
+    TextInput1_281 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =201
+        X: =328
+        Y: =430
+        ZIndex: =53
+
+    TextInput1_282 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Maximum Use Per Day: hrs.mins -7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =171
+        X: =561
+        Y: =430
+        ZIndex: =54
+
+    TextInput1_283 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Date / Time Out: -7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =155
+        X: =760
+        Y: =430
+        ZIndex: =55
+
+    TextInput1_284 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =151
+        X: =951
+        Y: =430
+        ZIndex: =56
+
+    TextInput1_285 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name: -7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =163
+        X: =1168
+        Y: =430
+        ZIndex: =57
+
+    Label1_276 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Declaration:"
+        Visible: =First
+        Width: =115
+        X: =149
+        Y: =469
+        ZIndex: =58
+
+    Label1_277 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =88
+        Size: =9
+        Text: ="I confirm that the equipment indicated above has been used to the recom-mended daily time limits, and I under-stand that I (user) must report equip-ment defects, and use said equipment in the correct manner. I also under-stand that it is my responsibility to request issue of new PPE as and when required."
+        Visible: =First
+        Width: =1092
+        X: =239
+        Y: =441
+        ZIndex: =59
+
+    Label1_278 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =27
+        Size: =9
+        Text: |-
+            ="Depot Manger / Workshop Foreman Check Weekly And Sign Off: Sign & Print	"
+        Visible: =First
+        Width: =448
+        X: =149
+        Y: =518
+        ZIndex: =60
+
+    Label1_279 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Print Name:"
+        Visible: =First
+        Width: =193
+        X: =150
+        Y: =556
+        ZIndex: =61
+
+    TextInput1_292 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Print Name')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =25
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =268
+        X: =291
+        Y: =556
+        ZIndex: =62
+
+    DatePicker1_15 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form10.Mode= FormMode.New,Today(),Gallery4_9.Selected.'Date Created')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =23
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =162
+        X: =1166
+        Y: =558
+        ZIndex: =63
+
+    Label1_280 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Date:"
+        Visible: =First
+        Width: =136
+        X: =1102
+        Y: =556
+        ZIndex: =64
+
+    Label1_281 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =21
+        Size: =9
+        Text: |-
+            ="Signature:"
+        Visible: =First
+        Width: =77
+        X: =597
+        Y: =523
+        ZIndex: =65
+
+    PenInput5_1 As inkControl:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =235
+        Visible: =First
+        Width: =362
+        X: =668
+        Y: =520
+        ZIndex: =66
+
+    Label1_282 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =28
+        Size: =9
+        Text: |-
+            ="Defects/Comments:"
+        Visible: =First
+        Width: =141
+        X: =150
+        Y: =595
+        ZIndex: =67
+
+    TextInput1_293 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form10.Mode= FormMode.New,"",Gallery4_9.Selected.'Defects / Comments:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =160
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Mode: =TextMode.MultiLine
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =268
+        X: =290
+        Y: =595
+        ZIndex: =68
+
+    Button9_4 As button:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =28
+        HoverColor: =RGBA(39, 113, 194, 1)
+        HoverFill: =
+        OnSelect: |-
+            =Patch('BP 109S',Defaults('BP 109S'),{Depot:TextInput1_240.Text,
+            'Depot Manager:':TextInput1_241.Text,
+            'Full description of equipment:':TextInput1_242.Text,
+            'List all PPE available and required  for equipment':TextInput1_243.Text,
+            'Pre-Check Use: - 1':TextInput1_244.Text,
+            'Pre-Check Use: - 2':TextInput1_250.Text,
+            'Pre-Check Use: - 3':TextInput1_256.Text,
+            'Pre-Check Use: - 4':TextInput1_262.Text,
+            'Pre-Check Use: - 5':TextInput1_268.Text,
+            'Pre-Check Use: - 6':TextInput1_274.Text,
+            'Pre-Check Use: - 7':TextInput1_280.Text,
+            'Manufacturers Vibration Level: - 1':TextInput1_245.Text,
+            'Manufacturers Vibration Level: - 2':TextInput1_251.Text,
+            'Manufacturers Vibration Level: - 3':TextInput1_257.Text,
+            'Manufacturers Vibration Level: - 4':TextInput1_263.Text,
+            'Manufacturers Vibration Level: - 5':TextInput1_269.Text,
+            'Manufacturers Vibration Level: - 6':TextInput1_275.Text,
+            'Manufacturers Vibration Level: - 7':TextInput1_281.Text,
+            'Maximum Use Per Day: hrs.mins -1':TextInput1_246.Text,
+            'Maximum Use Per Day: hrs.mins -2':TextInput1_252.Text,
+            'Maximum Use Per Day: hrs.mins -3':TextInput1_258.Text,
+            'Maximum Use Per Day: hrs.mins -4':TextInput1_264.Text,
+            'Maximum Use Per Day: hrs.mins -5':TextInput1_270.Text,
+            'Maximum Use Per Day: hrs.mins -6':TextInput1_276.Text,
+            'Maximum Use Per Day: hrs.mins -7':TextInput1_282.Text,
+            'Date / Time Out: -1':TextInput1_247.Text,
+            'Date / Time Out: -2':TextInput1_253.Text,
+            'Date / Time Out: -3':TextInput1_259.Text,
+            'Date / Time Out: -4':TextInput1_265.Text,
+            'Date / Time Out: -5':TextInput1_271.Text,
+            'Date / Time Out: -6':TextInput1_277.Text,
+            'Date / Time Out: -7':TextInput1_283.Text,
+            'Date / Time In: -1':TextInput1_248.Text,
+            'Date / Time In: -2':TextInput1_254.Text,
+            'Date / Time In: -3':TextInput1_260.Text,
+            'Date / Time In: -4':TextInput1_266.Text,
+            'Date / Time In: -5':TextInput1_272.Text,
+            'Date / Time In: -6':TextInput1_278.Text,
+            'Date / Time In: -7':TextInput1_284.Text,
+            'Print Name: -1':TextInput1_249.Text,
+            'Print Name: -2':TextInput1_255.Text,
+            'Print Name: -3':TextInput1_261.Text,
+            'Print Name: -4':TextInput1_267.Text,
+            'Print Name: -5':TextInput1_273.Text,
+            'Print Name: -6':TextInput1_279.Text,
+            'Print Name: -7':TextInput1_285.Text,
+            'Defects / Comments:':TextInput1_293.Text,
+            'Date Created':DatePicker1_15.SelectedDate,
+            'Print Name':TextInput1_292.Text} );
+            Set(setVar,false);
+            Set(setVar,true);
+            NewForm(Form10);
+            UpdateContext({First:false,gal:true});
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =First && If(Form10.Mode = FormMode.New,true, false)
+        Width: =98
+        X: =1200
+        Y: =639
+        ZIndex: =69
+
+    Label1_295 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =22
+        Size: =10
+        Text: ="BP 109  Daily Personal HAV's Exposure Record"
+        Width: =497
+        X: =92
+        Y: =14
+        ZIndex: =70
+
+    Rectangle1_58 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        X: =65
+        Y: =112
+        ZIndex: =71
+
+    Rectangle1_59 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        X: =65
+        Y: =187
+        ZIndex: =72
+
+    Rectangle1_260 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =72
+        ZIndex: =73
+
+    "'User Logo_69' As image":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+        ImagePosition: =ImagePosition.Stretch
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =41
+        X: =17
+        Y: =713
+        ZIndex: =74
+
+    Image8_324 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-settings-64'
+        Tooltip: ="SETTINGS"
+        Width: =43
+        X: =11
+        Y: =440
+        ZIndex: =75
+
+    Image8_325 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        Image: ='icons8-user-manual-100'
+        ImagePosition: =ImagePosition.Stretch
+        OnSelect: |-
+            =Launch("https://henryboot.sharepoint.com/:w:/r/sites/itsystems/BPDM/_layouts/15/Doc.aspx?sourcedoc=%7B29F6C5EE-6186-45E5-A006-D8A31415DE8D%7D&file=Banner%20DMS%20Quick%20Start%20Guide.docx&action=default&mobileredirect=true");
+        Tooltip: ="USER GUIDE"
+        Width: =55
+        X: =6
+        Y: =520
+        ZIndex: =76
+
+    Rectangle1_261 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        Y: =112
+        ZIndex: =77
+
+    Rectangle1_262 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        Y: =187
+        ZIndex: =78
+
+    Rectangle1_263 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen3,true,false)
+        Width: =6
+        Y: =265
+        ZIndex: =79
+
+    Rectangle1_264 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen4,true,false)
+        Width: =6
+        Y: =344
+        ZIndex: =80
+
+    Rectangle3_184 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Visible: =If(App.ActiveScreen=Screen1,true,false)
+        Width: =71
+        Y: =112
+        ZIndex: =81
+
+    Rectangle3_185 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen2);
+        Visible: =If(App.ActiveScreen=Screen2,true,false)
+        Width: =71
+        Y: =188
+        ZIndex: =82
+
+    Rectangle3_186 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen3);
+        Visible: =If(App.ActiveScreen=Screen3,true,false)
+        Width: =71
+        Y: =265
+        ZIndex: =83
+
+    Rectangle3_187 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen4);
+        Visible: =If(App.ActiveScreen=Screen4,true,false)
+        Width: =72
+        Y: =344
+        ZIndex: =84
+
+    Image8_326 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-fill-and-sign-48'
+        OnSelect: =Navigate(Screen4);
+        Tooltip: ="TOOLBOX TALKS"
+        Width: =43
+        X: =12
+        Y: =355
+        ZIndex: =85
+
+    Image8_327 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-wpforms-36'
+        OnSelect: =Navigate(Screen3);
+        Tooltip: ="STANDARD FORMS"
+        Width: =43
+        X: =13
+        Y: =270
+        ZIndex: =86
+
+    Image8_328 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-policy-document-100'
+        OnSelect: =Navigate(Screen2);
+        Tooltip: ="DRIVER POLICIES "
+        Width: =43
+        X: =12
+        Y: =194
+        ZIndex: =87
+
+    Image8_329 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-project-management-100'
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Tooltip: ="CORE MANAGEMENT"
+        Width: =43
+        X: =18
+        Y: =114
+        ZIndex: =88
+
+    Icon1_66 As icon.Hamburger:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Hamburger
+        Width: =43
+        X: =16
+        Y: =21
+        ZIndex: =89
+
+    Label1_679 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Size: =6
+        Text: ="Core Management System"
+        Width: =66
+        X: =6
+        Y: =154
+        ZIndex: =90
+
+    Label1_680 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: =Navigate(Screen2);
+        Size: =6
+        Text: ="Driver Policies"
+        Width: =66
+        X: =3
+        Y: =232
+        ZIndex: =91
+
+    Label1_681 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =24
+        OnSelect: =Navigate(Screen3);
+        Size: =6
+        Text: ="Standard Forms"
+        Width: =66
+        Y: =311
+        ZIndex: =92
+
+    Label1_682 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        OnSelect: =Navigate(Screen4);
+        Size: =6
+        Text: ="ToolBox Talks"
+        Width: =52
+        X: =6
+        Y: =393
+        ZIndex: =93
+
+    Label1_683 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="Settings"
+        Width: =66
+        Y: =480
+        ZIndex: =94
+
+    Label1_843 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="User Guide"
+        Width: =66
+        X: =2
+        Y: =567
+        ZIndex: =95
+
+    Icon15_3 As icon.History:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =21
+        Icon: =Icon.History
+        OnSelect: |-
+            =UpdateContext({First:false,gal:true})
+        Width: =43
+        X: =1311
+        Y: =16
+        ZIndex: =96
+
+    Icon2_9 As icon.Add:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.Add
+        OnSelect: |-
+            =NewForm(Form10);
+            UpdateContext({First:true,gal:false});
+            Set(setVar,false);
+            Set(setVar,true);
+        Width: =23
+        X: =1279
+        Y: =13
+        ZIndex: =97
+
+    "Gallery4_9 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DelayItemLoading: =true
+        Height: =616
+        Items: ='BP 109S'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplateSize: =38
+        Transition: =Transition.Push
+        Visible: =gal
+        Width: =706
+        X: =346
+        Y: =80
+        ZIndex: =98
+
+        Button10_9 As button:
+            BorderColor: =
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =If(ThisItem.IsSelected,RGBA(24, 0, 102, 0.35), 50%,Color.WhiteSmoke)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =""
+            Width: =668
+            X: =10
+            ZIndex: =1
+
+        Label1_951 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Depot
+            Width: =113
+            X: =21
+            Y: =14
+            ZIndex: =2
+
+        Label1_983 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'Date Created'
+            X: =276
+            Y: =14
+            ZIndex: =5
+
+        Icon1_13 As icon.Edit:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =22
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =EditForm(Form10);
+                UpdateContext({First:true,gal:false})
+            Visible: =gal
+            Width: =24
+            X: =617
+            Y: =8
+            ZIndex: =6
+
+        Label1_984 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'Print Name'
+            X: =426
+            Y: =14
+            ZIndex: =8
+
+        Icon16_8 As icon.Trash:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =Remove('BP 109S', Gallery4_9.Selected); If (IsEmpty(Errors('BP 109S',Gallery4_9.Selected)),'BP 109S');
+                UpdateContext({Delete:false});
+                Notify("Bp 109 Record Deleted", NotificationType.Success);
+                NewForm(Form3)
+            Visible: =false
+            Width: =23
+            X: =655
+            Y: =8
+            ZIndex: =9
+
+        Label1_981 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: |-
+                =ThisItem.'Depot Manager:'
+            Width: =113
+            X: =134
+            Y: =14
+            ZIndex: =10
+
+    "'Assessor name label_7' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Print Name"
+        Visible: =gal
+        X: =763
+        Y: =65
+        ZIndex: =99
+
+    "'Division name label_16' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Depot Name"
+        Visible: =gal
+        Width: =121
+        X: =363
+        Y: =65
+        ZIndex: =100
+
+    "'Company name label_8' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Date Completed"
+        Visible: =gal
+        Width: =140
+        X: =624
+        Y: =65
+        ZIndex: =101
+
+    "'Division name label_17' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Date "
+        Visible: =gal
+        Width: =121
+        X: =484
+        Y: =65
+        ZIndex: =104
+
+    Form10 As form:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DataSource: ='BP 109S'
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =105
+
+        Depot_DataCard3 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr948_depot"
+            Default: =ThisItem.Depot
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'BP 109S'],DataSourceInfo.DisplayName,"cr948_depot")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'BP 109S'], DataSourceInfo.MaxLength, "cr948_depot")
+            Required: =true
+            Update: =DataCardValue19.Text
+            Width: =266
+            X: =0
+            Y: =0
+            ZIndex: =106
+
+            DataCardKey22 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue19 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(62, 74, 83, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey22.Y + DataCardKey22.Height + 5
+                ZIndex: =2
+
+            ErrorMessage15 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue19.Y + DataCardValue19.Height
+                ZIndex: =3
+
+            StarVisible15 As label:
+                Align: =Align.Center
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey22.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey22.Y
+                ZIndex: =4
+
+        "'Created On_DataCard8' As typedDataCard.textualViewCard":
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="createdon"
+            Default: =ThisItem.'Created On'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'BP 109S'],DataSourceInfo.DisplayName,"createdon")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =266
+            X: =1
+            Y: =0
+            ZIndex: =106
+
+            DataCardKey23 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue20 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =13
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey23.Y + DataCardKey23.Height + 5
+                ZIndex: =2
+
+    "'Update Record_1' As button":
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =28
+        HoverColor: =RGBA(39, 113, 194, 1)
+        HoverFill: =
+        OnSelect: |-
+            =Patch('BP 109S',LookUp('BP 109S','Version Number'=Gallery4_9.Selected.'Version Number'),{Depot:TextInput1_240.Text,
+            'Depot Manager:':TextInput1_241.Text,
+            'Full description of equipment:':TextInput1_242.Text,
+            'List all PPE available and required  for equipment':TextInput1_243.Text,
+            'Pre-Check Use: - 1':TextInput1_244.Text,
+            'Pre-Check Use: - 2':TextInput1_250.Text,
+            'Pre-Check Use: - 3':TextInput1_256.Text,
+            'Pre-Check Use: - 4':TextInput1_262.Text,
+            'Pre-Check Use: - 5':TextInput1_268.Text,
+            'Pre-Check Use: - 6':TextInput1_274.Text,
+            'Pre-Check Use: - 7':TextInput1_280.Text,
+            'Manufacturers Vibration Level: - 1':TextInput1_245.Text,
+            'Manufacturers Vibration Level: - 2':TextInput1_251.Text,
+            'Manufacturers Vibration Level: - 3':TextInput1_257.Text,
+            'Manufacturers Vibration Level: - 4':TextInput1_263.Text,
+            'Manufacturers Vibration Level: - 5':TextInput1_269.Text,
+            'Manufacturers Vibration Level: - 6':TextInput1_275.Text,
+            'Manufacturers Vibration Level: - 7':TextInput1_281.Text,
+            'Maximum Use Per Day: hrs.mins -1':TextInput1_246.Text,
+            'Maximum Use Per Day: hrs.mins -2':TextInput1_252.Text,
+            'Maximum Use Per Day: hrs.mins -3':TextInput1_258.Text,
+            'Maximum Use Per Day: hrs.mins -4':TextInput1_264.Text,
+            'Maximum Use Per Day: hrs.mins -5':TextInput1_270.Text,
+            'Maximum Use Per Day: hrs.mins -6':TextInput1_276.Text,
+            'Maximum Use Per Day: hrs.mins -7':TextInput1_282.Text,
+            'Date / Time Out: -1':TextInput1_247.Text,
+            'Date / Time Out: -2':TextInput1_253.Text,
+            'Date / Time Out: -3':TextInput1_259.Text,
+            'Date / Time Out: -4':TextInput1_265.Text,
+            'Date / Time Out: -5':TextInput1_271.Text,
+            'Date / Time Out: -6':TextInput1_277.Text,
+            'Date / Time Out: -7':TextInput1_283.Text,
+            'Date / Time In: -1':TextInput1_248.Text,
+            'Date / Time In: -2':TextInput1_254.Text,
+            'Date / Time In: -3':TextInput1_260.Text,
+            'Date / Time In: -4':TextInput1_266.Text,
+            'Date / Time In: -5':TextInput1_272.Text,
+            'Date / Time In: -6':TextInput1_278.Text,
+            'Date / Time In: -7':TextInput1_284.Text,
+            'Print Name: -1':TextInput1_249.Text,
+            'Print Name: -2':TextInput1_255.Text,
+            'Print Name: -3':TextInput1_261.Text,
+            'Print Name: -4':TextInput1_267.Text,
+            'Print Name: -5':TextInput1_273.Text,
+            'Print Name: -6':TextInput1_279.Text,
+            'Print Name: -7':TextInput1_285.Text,
+            'Defects / Comments:':TextInput1_293.Text,
+            'Date Created':DatePicker1_15.SelectedDate,
+            'Print Name':TextInput1_292.Text} );
+            Set(setVar,false);
+            Set(setVar,true);
+            NewForm(Form10);
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =First && If(Form10.Mode = FormMode.Edit,true, false)
+        Width: =93
+        X: =1202
+        Y: =641
+        ZIndex: =106
+

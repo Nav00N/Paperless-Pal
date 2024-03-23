@@ -1,0 +1,99 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bannercmindexes",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bannercmindex",
+    "MaxGetRowsCount": 500,
+    "Name": "Banner CM Indices",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr948_bannercmindex_AsyncOperations": "System Jobs",
+      "cr948_bannercmindex_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bannercmindex_DuplicateBaseRecord": "Duplicate Records (cr948_bannercmindex_DuplicateBaseRecord)",
+      "cr948_bannercmindex_DuplicateMatchingRecord": "Duplicate Records (cr948_bannercmindex_DuplicateMatchingRecord)",
+      "cr948_bannercmindex_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bannercmindex_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bannercmindex_ProcessSession": "Process Sessions",
+      "cr948_bannercmindex_SyncErrors": "Sync Errors",
+      "cr948_bannercmindexid": "Banner CM Index",
+      "cr948_bywhom": "By whom",
+      "cr948_changes": "Changes",
+      "cr948_date": "Date ",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Banner CM Indices",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Banner CM Indices (Views)",
+    "Name": "_cr948_bannercmindex_views",
+    "RelatedEntityName": "Banner CM Indices",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "39164dfa-6012-4c60-b032-3bfeb5aa2a41": "Inactive Banner CM Indices",
+      "4d7b9a54-4526-409d-9de5-3b535cbd17c6": "Active Banner CM Indices",
+      "79a9d3a3-a02d-4b54-a73f-6a845b1cee9d": "Banner CM Index Associated View",
+      "d00d47c3-fffa-486f-a8a1-e22f890700ef": "Banner CM Index Lookup View",
+      "e85951a4-dd0e-4d8e-99a0-214c6c2883d0": "Banner CM Index Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Banner CM Indices)",
+    "Name": "cr948_bannercmindex_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Banner CM Indices"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Banner CM Indices",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Banner CM Indices)",
+    "Name": "cr948_bannercmindex_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Banner CM Indices"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Banner CM Indices",
+    "Type": "OptionSetInfo"
+  }
+]

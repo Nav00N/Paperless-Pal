@@ -1,0 +1,118 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "supportusertables",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "supportusertable",
+    "MaxGetRowsCount": 500,
+    "Name": "SupportUserTables",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "aaduserobjectid": "aaduserobjectid",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "enabledforsoftdelete": "EnabledforSoftDelete",
+      "expirydatetime": "ExpiryDateTime",
+      "identityprovider": "IdentityProvider",
+      "importsequencenumber": "Import Sequence Number",
+      "isactive": "IsActive",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "organizationid": "Organization Id",
+      "overriddencreatedon": "Record Created On",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "supportusertable_AsyncOperations": "System Jobs",
+      "supportusertable_BulkDeleteFailures": "Bulk Delete Failures",
+      "supportusertable_DuplicateBaseRecord": "Duplicate Records (supportusertable_DuplicateBaseRecord)",
+      "supportusertable_DuplicateMatchingRecord": "Duplicate Records (supportusertable_DuplicateMatchingRecord)",
+      "supportusertable_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "supportusertable_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "supportusertable_ProcessSession": "Process Sessions",
+      "supportusertable_SyncErrors": "Sync Errors",
+      "supportusertableid": "SupportUserTable",
+      "tenantid": "TenantId",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "upn": "UPN",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "SupportUserTables",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "SupportUserTables (Views)",
+    "Name": "_supportusertable_views",
+    "RelatedEntityName": "SupportUserTables",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {}
+  },
+  {
+    "DisplayName": "A Yes or No boolean",
+    "Name": "field_security_permission_type",
+    "OptionSetInfoNameMapping": {
+      "0": "Not Allowed",
+      "4": "Allowed"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "enabledforsoftdelete",
+        "OptionSetReferenceEntityName": "SupportUserTables"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "isactive",
+        "OptionSetReferenceEntityName": "SupportUserTables"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "enabledforsoftdelete",
+    "RelatedEntityName": "SupportUserTables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (SupportUserTables)",
+    "Name": "supportusertable_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "SupportUserTables"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "SupportUserTables",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (SupportUserTables)",
+    "Name": "supportusertable_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "SupportUserTables"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "SupportUserTables",
+    "Type": "OptionSetInfo"
+  }
+]

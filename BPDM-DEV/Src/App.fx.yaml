@@ -1,0 +1,39 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |
+        =Set(
+            ColSideBarMenu,
+            Table(
+                {
+                    Value: "Core Management",
+                     Screen: Screen1
+                 
+                },
+                {
+                    Value: "Driver Policies & Procedures",
+                      Screen: Screen2
+                   
+                },
+             
+                {
+                    Value: "Standard Forms",
+                      Screen: Screen3
+                   
+                },
+                {
+                    Value: "Tool Box Talks",
+                      Screen: Screen4
+                }
+        
+            )
+        );
+        Set(PDFURL, "https://henryboot.sharepoint.com/sites/plc/groupit/dev/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2Fplc%2Fgroupit%2Fdev%2FShared%20Documents%2FSHESystem%2Epdf&parent=%2Fsites%2Fplc%2Fgroupit%2Fdev%2FShared%20Documents")
+    Theme: =TeamsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

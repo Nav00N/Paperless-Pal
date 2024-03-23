@@ -1,0 +1,134 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c5_bp113s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c5_bp113",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 113S",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_attachment1": "Attachment 1 ",
+      "cr0c5_attachment2": "Attachment 2",
+      "cr0c5_attachment3": "Attachment 3",
+      "cr0c5_attachment4": "Attachment 4 ",
+      "cr0c5_attachment5": "Attachment 5",
+      "cr0c5_attachment6": "Attachment 6",
+      "cr0c5_bp113_AsyncOperations": "System Jobs",
+      "cr0c5_bp113_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c5_bp113_DuplicateBaseRecord": "Duplicate Records (cr0c5_bp113_DuplicateBaseRecord)",
+      "cr0c5_bp113_DuplicateMatchingRecord": "Duplicate Records (cr0c5_bp113_DuplicateMatchingRecord)",
+      "cr0c5_bp113_FileAttachments": "FileAttachments",
+      "cr0c5_bp113_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c5_bp113_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c5_bp113_ProcessSession": "Process Sessions",
+      "cr0c5_bp113_SyncErrors": "Sync Errors",
+      "cr0c5_bp113id": "BP 113",
+      "cr0c5_carrierissuedby": "(Carrier)Issued By :",
+      "cr0c5_carriersregistrationnumber": "Carrier's Registration Number",
+      "cr0c5_dateandtimeoftransfer": "Date and Time of Transfer:",
+      "cr0c5_descriptionofwaste": "Description Of Waste",
+      "cr0c5_disposerissuedby": "Disposer Issued By",
+      "cr0c5_ewccode": "EWC Code",
+      "cr0c5_howisthewastecontained": "How is the Waste Contained",
+      "cr0c5_howisthewastecontainedspecify": "How is the Waste Contained Specify",
+      "cr0c5_issuedby": "Issued By",
+      "cr0c5_nameandaddressofregisteredcarrier": "Name and Address of Registered Carrier",
+      "cr0c5_nameandaddressofthetransferer": "Name and address of the Transferer ",
+      "cr0c5_nameandaddressofwastetransferredtro": "Name and address of waste transferred tro",
+      "cr0c5_number": "Number",
+      "cr0c5_placeoftransfer": "Place of transfer",
+      "cr0c5_quantityofwaste": "Quantity Of Waste",
+      "cr0c5_transferenddate": "Transfer End Date ",
+      "cr0c5_transferfromdate": "Transfer From Date",
+      "cr0c5_wastecarrierdate": "Waste Carrier Date:",
+      "cr0c5_wastecarriernameprint": "Waste Carrier Name (Print)",
+      "cr0c5_wastecarrierposition": "Waste Carrier Position",
+      "cr0c5_wastecarrierrepresenting": "Waste Carrier Representing",
+      "cr0c5_wastecarriersignature": "Waste Carrier Signature:",
+      "cr0c5_wastecarriersignatureid": "cr0c5_WasteCarrierSignatureId",
+      "cr0c5_wastemanagementlicenseno": "Waste Management License nO",
+      "cr0c5_wasteproducerdate": "Waste Producer  Date:",
+      "cr0c5_wasteproducernameprint": "Waste Producer Name(Print):",
+      "cr0c5_wasteproducerposition": "Waste Producer Position",
+      "cr0c5_wasteproducerrepresenting": "Waste Producer  Representing",
+      "cr0c5_wasteproducersignature": "Waste Producer Signature",
+      "cr0c5_wasteproducersignatureid": "cr0c5_WasteProducerSignatureId",
+      "cr0c5_whichofthefollowingareyou": "which of the Following are You?",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 113S",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 113S (Views)",
+    "Name": "_cr0c5_bp113_views",
+    "RelatedEntityName": "BP 113S",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "4e8c03b3-018b-433d-99df-a63a39d401cb": "BP 113 Advanced Find View",
+      "4ee052c3-1362-4a5d-a683-e636d95a666f": "BP 113 Lookup View",
+      "99972814-640b-4df9-a94e-43edc3aadc46": "Inactive BP 113S",
+      "de038bcb-fed3-4eaa-b16d-73cd9eecf8ad": "BP 113 Associated View",
+      "fdc342e1-7f46-4ec7-ae7b-5a4073513d87": "BP 113 Waste Transfer Note Form"
+    }
+  },
+  {
+    "DisplayName": "Status (BP 113S)",
+    "Name": "cr0c5_bp113_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 113S"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 113S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 113S)",
+    "Name": "cr0c5_bp113_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 113S"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 113S",
+    "Type": "OptionSetInfo"
+  }
+]

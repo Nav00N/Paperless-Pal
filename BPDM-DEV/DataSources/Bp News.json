@@ -1,0 +1,95 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c5_bpnewses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c5_bpnews",
+    "MaxGetRowsCount": 500,
+    "Name": "Bp News",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_bpnews_AsyncOperations": "System Jobs",
+      "cr0c5_bpnews_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c5_bpnews_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c5_bpnews_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c5_bpnews_ProcessSession": "Process Sessions",
+      "cr0c5_bpnews_SyncErrors": "Sync Errors",
+      "cr0c5_bpnewsid": "Bp News",
+      "cr0c5_newcolumn": "BP News",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Bp News",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Bp News (Views)",
+    "Name": "_cr0c5_bpnews_views",
+    "RelatedEntityName": "Bp News",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "177e563e-bd23-4d03-a396-05d4ec16249b": "Bp News Lookup View",
+      "376dba83-bc62-47c3-a020-0cdc7ba4b7cf": "Inactive Bp News",
+      "6ebd993c-e3db-48ef-8388-bfb944bc3dae": "Active Bp News",
+      "c8ef521d-1596-4ec7-a2ab-c1ceb0087170": "Bp News Advanced Find View",
+      "fb2c25a9-810d-4531-864b-67a8aa9cab55": "Bp News Associated View"
+    }
+  },
+  {
+    "DisplayName": "Status (Bp News)",
+    "Name": "cr0c5_bpnews_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Bp News"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Bp News",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Bp News)",
+    "Name": "cr0c5_bpnews_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Bp News"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Bp News",
+    "Type": "OptionSetInfo"
+  }
+]

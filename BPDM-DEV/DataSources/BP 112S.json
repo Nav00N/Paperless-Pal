@@ -1,0 +1,105 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bp112s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bp112",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 112S",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr948_actionsthrough": "Actions Through:",
+      "cr948_bp112_AsyncOperations": "System Jobs",
+      "cr948_bp112_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bp112_DuplicateBaseRecord": "Duplicate Records (cr948_bp112_DuplicateBaseRecord)",
+      "cr948_bp112_DuplicateMatchingRecord": "Duplicate Records (cr948_bp112_DuplicateMatchingRecord)",
+      "cr948_bp112_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bp112_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bp112_ProcessSession": "Process Sessions",
+      "cr948_bp112_SyncErrors": "Sync Errors",
+      "cr948_bp112id": "BP 112",
+      "cr948_contact": "Contact:",
+      "cr948_dateofissue": "Date Of Issue",
+      "cr948_issuedto": "Issued To",
+      "cr948_location": "Location",
+      "cr948_overviewas": "Overview As:",
+      "cr948_photo": "Photo",
+      "cr948_photoid": "cr948_PhotoId",
+      "cr948_title": "Title",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 112S",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 112S (Views)",
+    "Name": "_cr948_bp112_views",
+    "RelatedEntityName": "BP 112S",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "7ce02857-7256-4bbc-bfc5-340b6432ab0b": "BP 112 Associated View",
+      "ba0cfde3-737a-47d3-8576-b46be33b5dfd": "BP 112 Advanced Find View",
+      "bb5cab77-7685-4f5f-9d9a-2ebfe730ecf3": "BP 122 H&S Bulletin",
+      "d0cc260b-4a40-4af5-b975-8d199580c4f2": "BP 112 Lookup View",
+      "e0a097c2-f144-4722-973d-96cf78408c99": "Inactive BP 112S"
+    }
+  },
+  {
+    "DisplayName": "Status (BP 112S)",
+    "Name": "cr948_bp112_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 112S"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 112S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 112S)",
+    "Name": "cr948_bp112_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 112S"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 112S",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,2449 @@
+"'BP 108 Personal Protective Equipment Form' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(215, 223, 240, .5)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({First:true,gal:false});
+        NewForm(Form11);
+
+    Rectangle1_190 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =50
+        Width: =1366
+        ZIndex: =1
+
+    Label1_257 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Depot Name:"
+        Visible: =First
+        Width: =193
+        X: =455
+        Y: =71
+        ZIndex: =2
+
+    txtDepotName_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Depot Name:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =225
+        X: =640
+        Y: =78
+        ZIndex: =3
+
+    dte_Date_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.Date)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =21
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =225
+        X: =640
+        Y: =107
+        ZIndex: =4
+
+    Label1_260 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Date:"
+        Visible: =First
+        Width: =136
+        X: =457
+        Y: =101
+        ZIndex: =5
+
+    Label1_261 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: |-
+            ="Name:"
+        Visible: =First
+        Width: =136
+        X: =457
+        Y: =134
+        ZIndex: =6
+
+    txtName_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: |-
+            =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Name:')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =225
+        X: =640
+        Y: =134
+        ZIndex: =7
+
+    Label1_262 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =28
+        Size: =10
+        Text: =" BP 108 PERSONAL PROTECTIVE EQUIPMENT ISSUE/RETURNS RECORD"
+        Width: =559
+        X: =89
+        Y: =11
+        ZIndex: =8
+
+    Label1_258 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        Size: =9
+        Text: ="Item (be specific, i.e. Grade, BS EN Number etc."
+        Visible: =First
+        Width: =193
+        X: =156
+        Y: =188
+        ZIndex: =9
+
+    Label1_263 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="Issue Date"
+        Visible: =First
+        Width: =193
+        X: =424
+        Y: =188
+        ZIndex: =10
+
+    Label1_265 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="Issued by (Print)"
+        Visible: =First
+        Width: =193
+        X: =1077
+        Y: =188
+        ZIndex: =11
+
+    Label1_264 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="Received by (Print)"
+        Visible: =First
+        Width: =193
+        X: =832
+        Y: =188
+        ZIndex: =12
+
+    Label1_266 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="Instruction Given Y/N"
+        Visible: =First
+        Width: =193
+        X: =617
+        Y: =188
+        ZIndex: =13
+
+    dteIssueDateOne_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 1 ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =237
+        ZIndex: =14
+
+    txtItemOne_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 1 ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =237
+        ZIndex: =15
+
+    tglInstructionOne_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 1')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =237
+        ZIndex: =16
+
+    txtRecievedByOne_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by -1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =235
+        ZIndex: =17
+
+    txtIssuedByOne_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =233
+        ZIndex: =18
+
+    dteIssueDateTwo_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =276
+        ZIndex: =19
+
+    txtItemTwo_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =276
+        ZIndex: =20
+
+    tglInstructionTwo_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 2')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =276
+        ZIndex: =21
+
+    txtRecievedByTwo_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =274
+        ZIndex: =22
+
+    txtIssuedByTwo_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =272
+        ZIndex: =23
+
+    dteIssueDateThree_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =315
+        ZIndex: =24
+
+    txtItemThree_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =315
+        ZIndex: =25
+
+    tglInstructionThree_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 3')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =315
+        ZIndex: =26
+
+    txtRecievedByThree_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =313
+        ZIndex: =27
+
+    txtIssuedByThree_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =311
+        ZIndex: =28
+
+    dteIssueDateFour_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =354
+        ZIndex: =29
+
+    txtItemFour_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =354
+        ZIndex: =30
+
+    tglInstructionFour_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 4')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =354
+        ZIndex: =31
+
+    txtRecievedByFour_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =352
+        ZIndex: =32
+
+    txtIssuedByFour_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =350
+        ZIndex: =33
+
+    dteIssueDateFive_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =394
+        ZIndex: =34
+
+    txtItemFive_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =394
+        ZIndex: =35
+
+    tglInstructionFive_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 5')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =394
+        ZIndex: =36
+
+    txtRecievedByFive_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =392
+        ZIndex: =37
+
+    txtIssuedByFive_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =390
+        ZIndex: =38
+
+    dteIssueDatesSix_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =433
+        ZIndex: =39
+
+    txtItemSix_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =433
+        ZIndex: =40
+
+    tglInstructionSix_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 6')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =433
+        ZIndex: =41
+
+    txtRecievedBySix_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =431
+        ZIndex: =42
+
+    txtIssuedBySix_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 6')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =429
+        ZIndex: =43
+
+    dteIssueDatesSeven_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =472
+        ZIndex: =44
+
+    txtItemSeven_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =472
+        ZIndex: =45
+
+    tglInstructionEight_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 7')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =472
+        ZIndex: =46
+
+    txtRecievedBySeven_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =470
+        ZIndex: =47
+
+    txtIssuedBySeven_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 7')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =468
+        ZIndex: =48
+
+    dteIssueDatesEight_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 8')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =511
+        ZIndex: =49
+
+    txtItemEight_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 8')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =511
+        ZIndex: =50
+
+    tglInstructionNine_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 8')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =511
+        ZIndex: =51
+
+    txtRecievedByEight_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 8')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =509
+        ZIndex: =52
+
+    txtIssuedByEight_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 8')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =507
+        ZIndex: =53
+
+    dteIssueDatesNine_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 9')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =551
+        ZIndex: =54
+
+    txtItemNine_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 9')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =551
+        ZIndex: =55
+
+    tglInstructionTen_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 9')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =551
+        ZIndex: =56
+
+    txtRecievedByNine_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 9')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =549
+        ZIndex: =57
+
+    txtIssuedByNine_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 9')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =547
+        ZIndex: =58
+
+    dteIssueDatesTen_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 10')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =590
+        ZIndex: =59
+
+    txtItemTen_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 10')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =590
+        ZIndex: =60
+
+    tglInstructionEleven_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 10')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =590
+        ZIndex: =61
+
+    txtRecievedByTen_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 10')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =588
+        ZIndex: =62
+
+    txtIssuedByTen_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 10')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =586
+        ZIndex: =63
+
+    dteIssueDatesEleven_BP108 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form11.Mode= FormMode.New,Today(),Gallery4_10.Selected.'Issue Date - 11')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =24
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: =First
+        Width: =160
+        X: =392
+        Y: =629
+        ZIndex: =64
+
+    txtItemEleven_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,"",Gallery4_10.Selected.'Item (be specific, i.e. Grade, BS EN Number)- 11')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =156
+        Y: =629
+        ZIndex: =65
+
+    tglInstructionTwelve_BP108 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New,false,Gallery4_10.Selected.'Instruction Given Y/N - 11')
+        FalseFill: =RGBA(184, 0, 0, 1)
+        FalseText: ="No"
+        Font: =Font.Lato
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =24
+        Reset: =setVar
+        Size: =10
+        TrueFill: =RGBA(54, 176, 75, 1)
+        TrueText: ="Yes"
+        Visible: =First
+        Width: =90
+        X: =641
+        Y: =629
+        ZIndex: =66
+
+    txtRecievedByEleven_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Received by - 11')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =832
+        Y: =627
+        ZIndex: =67
+
+    txtIssuedByEleven_BP108 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form11.Mode= FormMode.New," ",Gallery4_10.Selected.'Issued by - 11')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =24
+        HoverBorderColor: =RGBA(0, 0, 0, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar
+        Size: =9
+        Visible: =First
+        Width: =170
+        X: =1077
+        Y: =625
+        ZIndex: =68
+
+    Button9_3 As button:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverColor: =RGBA(39, 113, 194, 1)
+        HoverFill: =
+        OnSelect: |
+            =Patch('BP 108S',Defaults('BP 108S'),
+            {'Depot Name:':txtDepotName_BP108.Text,
+            Date:dte_Date_BP108.SelectedDate,
+            'Name:':txtName_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 1 ':txtItemOne_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 2':txtItemTwo_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 3':txtItemThree_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 4':txtItemFour_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 5':txtItemFive_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 6':txtItemSix_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 7':txtItemSeven_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 8':txtItemEight_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 9':txtItemNine_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 10':txtItemTen_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 11':txtItemEleven_BP108.Text,
+            'Issue Date - 1 ':dteIssueDateOne_BP108.SelectedDate,
+            'Issue Date - 2':dteIssueDateTwo_BP108.SelectedDate,
+            'Issue Date - 3':dteIssueDateThree_BP108.SelectedDate,
+            'Issue Date - 4':dteIssueDateFour_BP108.SelectedDate,
+            'Issue Date - 5':dteIssueDateFive_BP108.SelectedDate,
+            'Issue Date - 6':dteIssueDatesSix_BP108.SelectedDate,
+            'Issue Date - 7':dteIssueDatesSeven_BP108.SelectedDate,
+            'Issue Date - 8':dteIssueDatesEight_BP108.SelectedDate,
+            'Issue Date - 9':dteIssueDatesNine_BP108.SelectedDate,
+            'Issue Date - 10':dteIssueDatesTen_BP108.SelectedDate,
+            'Issue Date - 11':dteIssueDatesEleven_BP108.SelectedDate,
+            'Instruction Given Y/N - 1':tglInstructionOne_BP108.Value,
+            'Instruction Given Y/N - 2':tglInstructionTwo_BP108.Value,
+            'Instruction Given Y/N - 3':tglInstructionThree_BP108.Value,
+            'Instruction Given Y/N - 4':tglInstructionFour_BP108.Value,
+            'Instruction Given Y/N - 5':tglInstructionFive_BP108.Value,
+            'Instruction Given Y/N - 6':tglInstructionSix_BP108.Value,
+            'Instruction Given Y/N - 7':tglInstructionEight_BP108.Value,
+            'Instruction Given Y/N - 8':tglInstructionNine_BP108.Value,
+            'Instruction Given Y/N - 9':tglInstructionTen_BP108.Value,
+            'Instruction Given Y/N - 10':tglInstructionEleven_BP108.Value,
+            'Instruction Given Y/N - 11':tglInstructionTwelve_BP108.Value,
+            'Received by -1':txtRecievedByOne_BP108.Text,
+            'Received by - 2':txtRecievedByTwo_BP108.Text,
+            'Received by - 3':txtRecievedByThree_BP108.Text,
+            'Received by - 4':txtRecievedByFour_BP108.Text,
+            'Received by - 5':txtRecievedByFive_BP108.Text,
+            'Received by - 6':txtRecievedBySix_BP108.Text,
+            'Received by - 7':txtRecievedBySeven_BP108.Text,
+            'Received by - 8':txtRecievedByEight_BP108.Text,
+            'Received by - 9':txtRecievedByNine_BP108.Text,
+            'Received by - 10':txtRecievedByTen_BP108.Text,
+            'Received by - 11':txtRecievedByEleven_BP108.Text,
+            'Issued by - 1':txtIssuedByOne_BP108.Text,
+            'Issued by - 2':txtIssuedByTwo_BP108.Text,
+            'Issued by - 3':txtIssuedByThree_BP108.Text,
+            'Issued by - 4':txtIssuedByFour_BP108.Text,
+            'Issued by - 5':txtIssuedByFive_BP108.Text,
+            'Issued by - 6':txtIssuedBySix_BP108.Text,
+            'Issued by - 7':txtIssuedBySeven_BP108.Text,
+            'Issued by - 8':txtIssuedByEight_BP108.Text,
+            'Issued by - 9':txtIssuedByNine_BP108.Text,
+            'Issued by - 10':txtIssuedByTen_BP108.Text,
+            'Issued by - 11':txtIssuedByEleven_BP108.Text});
+            Set(setVar,false);
+            Set(setVar,true);
+            NewForm(Form11);
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =First && If(Form11.Mode = FormMode.New,true, false)
+        Width: =98
+        X: =637
+        Y: =685
+        ZIndex: =69
+
+    Rectangle1_56 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        X: =65
+        Y: =112
+        ZIndex: =70
+
+    Rectangle1_57 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        X: =65
+        Y: =187
+        ZIndex: =71
+
+    Rectangle1_255 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =72
+        ZIndex: =72
+
+    "'User Logo_68' As image":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+        ImagePosition: =ImagePosition.Stretch
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =41
+        X: =17
+        Y: =713
+        ZIndex: =73
+
+    Image8_318 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-settings-64'
+        Tooltip: ="SETTINGS"
+        Width: =43
+        X: =11
+        Y: =440
+        ZIndex: =74
+
+    Image8_319 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        Image: ='icons8-user-manual-100'
+        ImagePosition: =ImagePosition.Stretch
+        OnSelect: |-
+            =Launch("https://henryboot.sharepoint.com/:w:/r/sites/itsystems/BPDM/_layouts/15/Doc.aspx?sourcedoc=%7B29F6C5EE-6186-45E5-A006-D8A31415DE8D%7D&file=Banner%20DMS%20Quick%20Start%20Guide.docx&action=default&mobileredirect=true");
+        Tooltip: ="USER GUIDE"
+        Width: =55
+        X: =6
+        Y: =520
+        ZIndex: =75
+
+    Rectangle1_256 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        Y: =112
+        ZIndex: =76
+
+    Rectangle1_257 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        Y: =187
+        ZIndex: =77
+
+    Rectangle1_258 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen3,true,false)
+        Width: =6
+        Y: =265
+        ZIndex: =78
+
+    Rectangle1_259 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen4,true,false)
+        Width: =6
+        Y: =344
+        ZIndex: =79
+
+    Rectangle3_180 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Visible: =If(App.ActiveScreen=Screen1,true,false)
+        Width: =71
+        Y: =112
+        ZIndex: =80
+
+    Rectangle3_181 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen2);
+        Visible: =If(App.ActiveScreen=Screen2,true,false)
+        Width: =71
+        Y: =188
+        ZIndex: =81
+
+    Rectangle3_182 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen3);
+        Visible: =If(App.ActiveScreen=Screen3,true,false)
+        Width: =71
+        Y: =265
+        ZIndex: =82
+
+    Rectangle3_183 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen4);
+        Visible: =If(App.ActiveScreen=Screen4,true,false)
+        Width: =72
+        Y: =344
+        ZIndex: =83
+
+    Image8_320 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-fill-and-sign-48'
+        OnSelect: =Navigate(Screen4);
+        Tooltip: ="TOOLBOX TALKS"
+        Width: =43
+        X: =12
+        Y: =355
+        ZIndex: =84
+
+    Image8_321 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-wpforms-36'
+        OnSelect: =Navigate(Screen3);
+        Tooltip: ="STANDARD FORMS"
+        Width: =43
+        X: =13
+        Y: =270
+        ZIndex: =85
+
+    Image8_322 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-policy-document-100'
+        OnSelect: =Navigate(Screen2);
+        Tooltip: ="DRIVER POLICIES "
+        Width: =43
+        X: =12
+        Y: =194
+        ZIndex: =86
+
+    Image8_323 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-project-management-100'
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Tooltip: ="CORE MANAGEMENT"
+        Width: =43
+        X: =18
+        Y: =114
+        ZIndex: =87
+
+    Icon1_65 As icon.Hamburger:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Hamburger
+        Width: =43
+        X: =16
+        Y: =21
+        ZIndex: =88
+
+    Label1_674 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Size: =6
+        Text: ="Core Management System"
+        Width: =66
+        X: =6
+        Y: =154
+        ZIndex: =89
+
+    Label1_675 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: =Navigate(Screen2);
+        Size: =6
+        Text: ="Driver Policies"
+        Width: =66
+        X: =3
+        Y: =232
+        ZIndex: =90
+
+    Label1_676 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =24
+        OnSelect: =Navigate(Screen3);
+        Size: =6
+        Text: ="Standard Forms"
+        Width: =66
+        Y: =311
+        ZIndex: =91
+
+    Label1_677 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        OnSelect: =Navigate(Screen4);
+        Size: =6
+        Text: ="ToolBox Talks"
+        Width: =52
+        X: =6
+        Y: =393
+        ZIndex: =92
+
+    Label1_678 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="Settings"
+        Width: =66
+        Y: =480
+        ZIndex: =93
+
+    Label1_842 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="User Guide"
+        Width: =66
+        X: =2
+        Y: =567
+        ZIndex: =94
+
+    Icon15_6 As icon.History:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =21
+        Icon: =Icon.History
+        OnSelect: |-
+            =UpdateContext({First:false,gal:true})
+        Width: =43
+        X: =1311
+        Y: =16
+        ZIndex: =95
+
+    Icon2_10 As icon.Add:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =27
+        Icon: =Icon.Add
+        OnSelect: |-
+            =NewForm(Form11);
+            UpdateContext({First:true,gal:false});
+            Set(setVar,false);
+            Set(setVar,true);
+        Width: =23
+        X: =1279
+        Y: =13
+        ZIndex: =96
+
+    "Gallery4_10 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DelayItemLoading: =true
+        Height: =616
+        Items: ='BP 108S'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplateSize: =38
+        Transition: =Transition.Push
+        Visible: =gal
+        Width: =706
+        X: =346
+        Y: =80
+        ZIndex: =97
+
+        Button10_10 As button:
+            BorderColor: =
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =If(ThisItem.IsSelected,RGBA(24, 0, 102, 0.35), 50%,Color.WhiteSmoke)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =""
+            Width: =668
+            X: =10
+            ZIndex: =1
+
+        Label1_986 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: |-
+                =ThisItem.'Depot Name:'
+            Width: =113
+            X: =21
+            Y: =14
+            ZIndex: =2
+
+        Label1_989 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Date
+            X: =276
+            Y: =14
+            ZIndex: =5
+
+        Icon1_14 As icon.Edit:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =22
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =EditForm(Form11);
+                UpdateContext({First:true,gal:false})
+            Visible: =gal
+            Width: =24
+            X: =617
+            Y: =8
+            ZIndex: =6
+
+        Icon16_9 As icon.Trash:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =Remove('BP 108S', Gallery4_10.Selected); If (IsEmpty(Errors('BP 108S',Gallery4_10.Selected)),'BP 108S');
+                UpdateContext({Delete:false});
+                Notify("Bp 108 Record Deleted", NotificationType.Success);
+                NewForm(Form3)
+            Visible: =false
+            Width: =23
+            X: =655
+            Y: =8
+            ZIndex: =9
+
+        Label1_987 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: |-
+                =ThisItem.'Name:'
+            Width: =113
+            X: =134
+            Y: =14
+            ZIndex: =10
+
+    "'Division name label_18' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Depot Name"
+        Visible: =gal
+        Width: =121
+        X: =363
+        Y: =65
+        ZIndex: =99
+
+    "'Company name label_9' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Date Completed"
+        Visible: =gal
+        Width: =140
+        X: =624
+        Y: =65
+        ZIndex: =100
+
+    "'Division name label_19' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Name"
+        Visible: =gal
+        Width: =121
+        X: =484
+        Y: =65
+        ZIndex: =101
+
+    Form11 As form:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DataSource: ='BP 108S'
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =102
+
+        "'Depot Name:_DataCard2' As typedDataCard.textualEditCard":
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr948_depotname"
+            Default: |-
+                =ThisItem.'Depot Name:'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'BP 108S'],DataSourceInfo.DisplayName,"cr948_depotname")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'BP 108S'], DataSourceInfo.MaxLength, "cr948_depotname")
+            Required: =true
+            Update: =DataCardValue21.Text
+            Width: =266
+            X: =0
+            Y: =0
+            ZIndex: =103
+
+            DataCardKey24 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue21 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(62, 74, 83, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                ZIndex: =2
+
+            ErrorMessage16 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue21.Y + DataCardValue21.Height
+                ZIndex: =3
+
+            StarVisible16 As label:
+                Align: =Align.Center
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey24.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey24.Y
+                ZIndex: =4
+
+        "'Created On_DataCard9' As typedDataCard.textualViewCard":
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="createdon"
+            Default: =ThisItem.'Created On'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'BP 108S'],DataSourceInfo.DisplayName,"createdon")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =266
+            X: =1
+            Y: =0
+            ZIndex: =103
+
+            DataCardKey25 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue22 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =13
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                ZIndex: =2
+
+        Date_DataCard2 As typedDataCard.dateTimeEditCard:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr948_date"
+            Default: =ThisItem.Date
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'BP 108S'],DataSourceInfo.DisplayName,"cr948_date")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =If(Not IsBlank(DateValue3.SelectedDate), DateValue3.SelectedDate + Time(Value(HourValue1.Selected.Value), Value(MinuteValue1.Selected.Value), 0))
+            Width: =266
+            X: =2
+            Y: =0
+            ZIndex: =103
+
+            DataCardKey26 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DateValue3 As datepicker:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DefaultDate: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =RGBA(0, 0, 0, 1)
+                HoverDateFill: =RGBA(62, 74, 83, 1)
+                IconBackground: =RGBA(100, 118, 132, 1)
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                SelectedDateFill: =RGBA(100, 118, 132, 1)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =(Parent.Width - 60) / 2
+                X: =30
+                Y: =DataCardKey26.Y + DataCardKey26.Height + 5
+                ZIndex: =2
+
+            HourValue1 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Text(Hour(Parent.Default),"00")
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =DateValue3.Height
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(62, 74, 83, 1)
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(197, 203, 207, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =DateValue3.Width / 2 - 10
+                X: =DateValue3.X + DateValue3.Width + 10
+                Y: =DateValue3.Y
+                ZIndex: =3
+
+            Separator1 As label:
+                Align: =Align.Center
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =HourValue1.Height
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =13
+                Text: |-
+                    =":"
+                Width: =10
+                Wrap: =false
+                X: =HourValue1.X + HourValue1.Width
+                Y: =HourValue1.Y
+                ZIndex: =4
+
+            MinuteValue1 As dropdown:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Text(Minute(Parent.Default),"00")
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                Height: =HourValue1.Height
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(62, 74, 83, 1)
+                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
+                PaddingBottom: =5
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PaddingRight: =5
+                PaddingTop: =5
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(197, 203, 207, 1)
+                SelectionFill: =RGBA(100, 118, 132, 1)
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =HourValue1.Width
+                X: =HourValue1.X + HourValue1.Width + Separator1.Width
+                Y: =HourValue1.Y
+                ZIndex: =5
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =HourValue1.Y + HourValue1.Height
+                ZIndex: =6
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey26.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey26.Y
+                ZIndex: =7
+
+    Button9_13 As button:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =28
+        HoverBorderColor: =RGBA(255, 255, 255, 1)
+        HoverColor: =RGBA(39, 113, 194, 1)
+        HoverFill: =
+        OnSelect: |
+            =Patch('BP 108S',LookUp('BP 108S','Version Number'=Gallery4_10.Selected.'Version Number'),
+            {'Depot Name:':txtDepotName_BP108.Text,
+            Date:dte_Date_BP108.SelectedDate,
+            'Name:':txtName_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 1 ':txtItemOne_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 2':txtItemTwo_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 3':txtItemThree_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 4':txtItemFour_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 5':txtItemFive_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 6':txtItemSix_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 7':txtItemSeven_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 8':txtItemEight_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 9':txtItemNine_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 10':txtItemTen_BP108.Text,
+            'Item (be specific, i.e. Grade, BS EN Number)- 11':txtItemEleven_BP108.Text,
+            'Issue Date - 1 ':dteIssueDateOne_BP108.SelectedDate,
+            'Issue Date - 2':dteIssueDateTwo_BP108.SelectedDate,
+            'Issue Date - 3':dteIssueDateThree_BP108.SelectedDate,
+            'Issue Date - 4':dteIssueDateFour_BP108.SelectedDate,
+            'Issue Date - 5':dteIssueDateFive_BP108.SelectedDate,
+            'Issue Date - 6':dteIssueDatesSix_BP108.SelectedDate,
+            'Issue Date - 7':dteIssueDatesSeven_BP108.SelectedDate,
+            'Issue Date - 8':dteIssueDatesEight_BP108.SelectedDate,
+            'Issue Date - 9':dteIssueDatesNine_BP108.SelectedDate,
+            'Issue Date - 10':dteIssueDatesTen_BP108.SelectedDate,
+            'Issue Date - 11':dteIssueDatesEleven_BP108.SelectedDate,
+            'Instruction Given Y/N - 1':tglInstructionOne_BP108.Value,
+            'Instruction Given Y/N - 2':tglInstructionTwo_BP108.Value,
+            'Instruction Given Y/N - 3':tglInstructionThree_BP108.Value,
+            'Instruction Given Y/N - 4':tglInstructionFour_BP108.Value,
+            'Instruction Given Y/N - 5':tglInstructionFive_BP108.Value,
+            'Instruction Given Y/N - 6':tglInstructionSix_BP108.Value,
+            'Instruction Given Y/N - 7':tglInstructionEight_BP108.Value,
+            'Instruction Given Y/N - 8':tglInstructionNine_BP108.Value,
+            'Instruction Given Y/N - 9':tglInstructionTen_BP108.Value,
+            'Instruction Given Y/N - 10':tglInstructionEleven_BP108.Value,
+            'Instruction Given Y/N - 11':tglInstructionTwelve_BP108.Value,
+            'Received by -1':txtRecievedByOne_BP108.Text,
+            'Received by - 2':txtRecievedByTwo_BP108.Text,
+            'Received by - 3':txtRecievedByThree_BP108.Text,
+            'Received by - 4':txtRecievedByFour_BP108.Text,
+            'Received by - 5':txtRecievedByFive_BP108.Text,
+            'Received by - 6':txtRecievedBySix_BP108.Text,
+            'Received by - 7':txtRecievedBySeven_BP108.Text,
+            'Received by - 8':txtRecievedByEight_BP108.Text,
+            'Received by - 9':txtRecievedByNine_BP108.Text,
+            'Received by - 10':txtRecievedByTen_BP108.Text,
+            'Received by - 11':txtRecievedByEleven_BP108.Text,
+            'Issued by - 1':txtIssuedByOne_BP108.Text,
+            'Issued by - 2':txtIssuedByTwo_BP108.Text,
+            'Issued by - 3':txtIssuedByThree_BP108.Text,
+            'Issued by - 4':txtIssuedByFour_BP108.Text,
+            'Issued by - 5':txtIssuedByFive_BP108.Text,
+            'Issued by - 6':txtIssuedBySix_BP108.Text,
+            'Issued by - 7':txtIssuedBySeven_BP108.Text,
+            'Issued by - 8':txtIssuedByEight_BP108.Text,
+            'Issued by - 9':txtIssuedByNine_BP108.Text,
+            'Issued by - 10':txtIssuedByTen_BP108.Text,
+            'Issued by - 11':txtIssuedByEleven_BP108.Text});
+            Set(setVar,false);
+            Set(setVar,true);
+            NewForm(Form11);
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =First && If(Form11.Mode = FormMode.Edit,true, false)
+        Width: =98
+        X: =636
+        Y: =685
+        ZIndex: =103
+

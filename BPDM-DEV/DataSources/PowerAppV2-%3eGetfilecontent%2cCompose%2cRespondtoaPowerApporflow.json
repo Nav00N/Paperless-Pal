@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "5f7d1892-c471-4b8f-80a4-1978d4818007",
+    "Name": "PowerAppV2->Getfilecontent,Compose,RespondtoaPowerApporflow",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": null
+  }
+]

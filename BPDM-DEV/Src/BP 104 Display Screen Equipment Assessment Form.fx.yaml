@@ -1,0 +1,3651 @@
+"'BP 104 Display Screen Equipment Assessment Form' As screen":
+    BackgroundImage: =
+    Fill: =RGBA(215, 223, 240, .5)
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: |-
+        =UpdateContext({galleryvis2:false,Vis:false});
+        Reset(gal_SideNav_7);
+
+    Form5 As form:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DataSource: ='BP 104S'
+        Visible: =false
+        Width: =586
+        X: =40
+        Y: =40
+        ZIndex: =1
+
+        Depot_DataCard2 As typedDataCard.textualEditCard:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr948_depot"
+            Default: =ThisItem.Depot
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'BP 104S'],DataSourceInfo.DisplayName,"cr948_depot")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'BP 104S'], DataSourceInfo.MaxLength, "cr948_depot")
+            Required: =true
+            Update: =DataCardValue9.Text
+            Width: =195
+            X: =0
+            Y: =0
+            ZIndex: =143
+
+            DataCardKey12 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue9 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                BorderThickness: =2
+                Color: =RGBA(255, 255, 255, 1)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
+                DisplayMode: =Parent.DisplayMode
+                Fill: =RGBA(0, 0, 0, 1)
+                FocusedBorderThickness: =4
+                HoverBorderColor: =RGBA(197, 203, 207, 1)
+                HoverColor: =RGBA(255, 255, 255, 1)
+                HoverFill: =RGBA(62, 74, 83, 1)
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Size: =13
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey12.Y + DataCardKey12.Height + 5
+                ZIndex: =2
+
+            ErrorMessage10 As label:
+                AutoHeight: =true
+                Color: =RGBA(255, 51, 51, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue9.Y + DataCardValue9.Height
+                ZIndex: =3
+
+            StarVisible10 As label:
+                Align: =Align.Center
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =DataCardKey12.Height
+                Size: =13
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey12.Y
+                ZIndex: =4
+
+        "'Created On_DataCard3' As typedDataCard.textualViewCard":
+            BorderColor: =RGBA(197, 203, 207, 1)
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="createdon"
+            Default: =ThisItem.'Created On'
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@'BP 104S'],DataSourceInfo.DisplayName,"createdon")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =195
+            X: =1
+            Y: =0
+            ZIndex: =143
+
+            DataCardKey13 As label:
+                AutoHeight: =true
+                Color: =RGBA(197, 203, 207, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                Height: =34
+                Size: =13
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue10 As label:
+                AutoHeight: =true
+                BorderColor: =RGBA(197, 203, 207, 1)
+                Color: =RGBA(255, 255, 255, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisplayMode: =Parent.DisplayMode
+                Height: =27
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =13
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey13.Y + DataCardKey13.Height + 5
+                ZIndex: =2
+
+    Rectangle3_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Fill: =Color.WhiteSmoke
+        Height: =679
+        Width: =429
+        X: =908
+        Y: =62
+        ZIndex: =2
+
+    "'Update Button_2' As button":
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |+
+            =Patch('BP 104S',LookUp('BP 104S',FullName=Gallery4_2.Selected.FullName),{Depot:TextInput1_144.Text,
+            FullName:TextInput1_146.Text,
+            'Depot Manager':TextInput1_147.Text,
+            Department:TextInput1_145.Text,
+            'Describe the lighting at your workstation.':Dropdown2_182.Selected.Value,
+            'Do you get distracting reflections on your screen?':Dropdown2_183.Selected.Value,
+            'What control do you have over local lighting?':Dropdown2_190.Selected.Value,
+            'At your workstation is it usually':Dropdown2_203.Selected.Value,
+            'Is the air around your workstation':Dropdown2_204.Selected.Value,
+            'Are you distracted by noise from work equipment?':Dropdown2_205.Selected.Value,
+            'Describe the amount of space around your station':Dropdown2_206.Selected.Value,
+            'Can you adjust the height of your seat?':Dropdown2_207.Selected.Value,
+            'Can you adjust the height and angle of  backrest':Dropdown2_208.Selected.Value,
+            'Is the chair stable?':Dropdown2_209.Selected.Value,
+            'Does It allow Movement':Dropdown2_210.Selected.Value,
+            'Is the chair in a good state of repair?':Dropdown2_211.Selected.Value,
+            'Is the desk in a good state of repair?':Dropdown2_212.Selected.Value,
+            'Is the height of the desk suitable?':Dropdown2_213.Selected.Value,
+            'Does the desk have a non-reflective surface?':Dropdown2_214.Selected.Value,
+            'If you cannot place your feet on the floor whilst ':Dropdown2_235.Selected.Value,
+            'If it would be of benefit to use a document holder':Dropdown2_216.Selected.Value,
+            'Can you easily adjust the brightness and contrast':Dropdown2_217.Selected.Value,
+            'Does the screen tilt and swivel freely?':Dropdown2_218.Selected.Value,
+            'Is the screen image stable, clear and free ':Dropdown2_219.Selected.Value,
+            'Is the screen at a height that is comfortable ':Dropdown2_220.Selected.Value,
+            'Is the desk keyboard separate from the screen?':Dropdown2_221.Selected.Value,
+            'Can you raise and lower the keyboard height?':Dropdown2_222.Selected.Value,
+            'Can you easily see the symbols on the keys?':Dropdown2_223.Selected.Value,
+            'Is there enough space to rest your hands ':Dropdown2_224.Selected.Value,
+            'Do you understand how to use the software?':Dropdown2_225.Selected.Value,
+            'Have you received information on the correct':Dropdown2_226.Selected.Value,
+            'Have you been trained in the use of the software?':Dropdown2_227.Selected.Value,
+            'If you had a problem relating to display screen ':Dropdown2_228.Selected.Value,
+            'Do you understand the arrangements for eye ':Dropdown2_229.Selected.Value,
+            '(a)  Do you normally use DSE for continuous near':Dropdown2_230.Selected.Value,
+            'Do you use DSE like this on a daily basis?':Dropdown2_231.Selected.Value,
+            '(c)  Do you have to transfer information quickly ':Dropdown2_232.Selected.Value,
+            '(d)   Do you regularly have to apply high levels ':Dropdown2_233.Selected.Value,
+            '(e)   Are you highly dependant on the use of DSE o':Dropdown2_234.Selected.Value,
+            'No Further Actions Required':Dropdown2_236.Selected.Value,
+            'Further Action 1':TextInput7.Text,
+            'Further Action -2':TextInput7_1.Text,
+            'Further Action -3':TextInput7_2.Text,
+            'Further Action -4':TextInput7_3.Text,
+            'Further Action -5':TextInput7_4.Text,
+            'Responsibility- 1 ':TextInput7_5.Text,
+            'Responsibility- 2':TextInput7_6.Text,
+            'Responsibility- 3':TextInput7_7.Text,
+            'Responsibility- 4':TextInput7_8.Text,
+            'Responsibility- 5':TextInput7_9.Text,
+            'Time Scale -1 ':TextInput7_10.Text,
+            'Time Scale -2':TextInput7_11.Text,
+            'Time Scale -3':TextInput7_12.Text,
+            'Time Scale -4':TextInput7_13.Text,
+            'Time Scale -5':TextInput7_14.Text,
+            'Date Actions Completed-1':DatePicker6.SelectedDate,
+            'Date Actions Completed-2':DatePicker6_1.SelectedDate,
+            'Date Actions Completed-3':DatePicker6_2.SelectedDate,
+            'Date Actions Completed-4':DatePicker6_3.SelectedDate,
+            'Date Actions Completed-5':DatePicker6_4.SelectedDate,
+            Date:DatePicker1_1.SelectedDate});
+            Set(setVar1,false);
+            Set(setVar1,true);
+            UpdateContext({galleryvis2:false});
+            NewForm(Form5)
+            
+            
+            
+            
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =If(Form5.Mode = FormMode.Edit, true, false)
+        Width: =101
+        X: =1074
+        Y: =616
+        ZIndex: =3
+
+    Rectangle3_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Fill: =Color.WhiteSmoke
+        Height: =679
+        Width: =591
+        X: =289
+        Y: =62
+        ZIndex: =4
+
+    Rectangle3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Fill: =Color.WhiteSmoke
+        Height: =679
+        Width: =164
+        X: =99
+        Y: =62
+        ZIndex: =5
+
+    Rectangle1_186 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =50
+        Width: =1366
+        ZIndex: =6
+
+    Label1_176 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8
+        Text: |-
+            ="Depot Name:"
+        Width: =136
+        X: =957
+        Y: =216
+        ZIndex: =7
+
+    TextInput1_144 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.Depot)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =21
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar1
+        Size: =8
+        Width: =244
+        X: =1053
+        Y: =216
+        ZIndex: =8
+
+    Label1_177 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8
+        Text: |-
+            ="Department:"
+        Width: =136
+        X: =957
+        Y: =256
+        ZIndex: =9
+
+    TextInput1_145 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.Department)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =23
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar1
+        Size: =8
+        Width: =244
+        X: =1053
+        Y: =256
+        ZIndex: =10
+
+    Label1_178 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8
+        Text: |-
+            ="Name:"
+        Width: =110
+        X: =957
+        Y: =137
+        ZIndex: =11
+
+    TextInput1_146 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.FullName)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =21
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar1
+        Size: =8
+        Width: =244
+        X: =1053
+        Y: =137
+        ZIndex: =12
+
+    Label1_179 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8
+        Text: |-
+            ="Depot Manager:"
+        Width: =136
+        X: =957
+        Y: =174
+        ZIndex: =13
+
+    TextInput1_147 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Depot Manager')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =21
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =3
+        RadiusBottomRight: =3
+        RadiusTopLeft: =3
+        RadiusTopRight: =3
+        Reset: =setVar1
+        Size: =8
+        Width: =244
+        X: =1053
+        Y: =174
+        ZIndex: =14
+
+    Label1_180 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =8
+        Text: |-
+            ="Date:"
+        Visible: |-
+            =
+            true
+        Width: =136
+        X: =984
+        Y: =550
+        ZIndex: =15
+
+    DatePicker1_1 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form5.Mode= FormMode.New,Today(),Gallery4_2.Selected.Date)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =21
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        Reset: =setVar1
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =8
+        Visible: |-
+            =
+            true
+        Width: =171
+        X: =1080
+        Y: =551
+        ZIndex: =16
+
+    Label1_182 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="1.Lighting"
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =325
+        X: =338
+        Y: =141
+        ZIndex: =17
+
+    Label1_183 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Describe the lighting at your workstation."
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =325
+        X: =347
+        Y: =130
+        ZIndex: =18
+
+    Label1_184 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Do you get distracting reflections on your screen?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =325
+        X: =347
+        Y: =153
+        ZIndex: =19
+
+    Label1_185 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="What control do you have over local lighting?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =325
+        X: =347
+        Y: =176
+        ZIndex: =20
+
+    Label1_186 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="2.Temperature and Humidity"
+        Visible: =If(gal_SideNav_7.Selected.Value = "2.Temperature and Humidity", true,false)
+        Width: =325
+        X: =349
+        Y: =123
+        ZIndex: =21
+
+    Label1_187 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="At your workstation is it usually."
+        Visible: =If(gal_SideNav_7.Selected.Value = "2.Temperature and Humidity", true,false)
+        Width: =325
+        X: =349
+        Y: =146
+        ZIndex: =22
+
+    Label1_188 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the air around your workstation"
+        Visible: =If(gal_SideNav_7.Selected.Value = "2.Temperature and Humidity", true,false)
+        Width: =325
+        X: =349
+        Y: =169
+        ZIndex: =23
+
+    Label1_189 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="3.Noise"
+        Visible: =If(gal_SideNav_7.Selected.Value = "3.Noise & 4.Space", true,false)
+        Width: =325
+        X: =347
+        Y: =120
+        ZIndex: =24
+
+    Label1_190 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Are you distracted by noise from work equipment?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "3.Noise & 4.Space", true,false)
+        Width: =325
+        X: =347
+        Y: =146
+        ZIndex: =25
+
+    Label1_191 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="4.Space"
+        Visible: =If(gal_SideNav_7.Selected.Value = "3.Noise & 4.Space", true,false)
+        Width: =325
+        X: =347
+        Y: =171
+        ZIndex: =26
+
+    Label1_192 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Describe the amount of space around your workstation."
+        Visible: =If(gal_SideNav_7.Selected.Value = "3.Noise & 4.Space", true,false)
+        Width: =325
+        X: =347
+        Y: =193
+        ZIndex: =27
+
+    Label1_193 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="5.Seating"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =339
+        Y: =140
+        ZIndex: =28
+
+    Label1_194 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Can you adjust the height of your seat?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =349
+        Y: =108
+        ZIndex: =29
+
+    Label1_195 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Can you adjust the height and angle of the backrest?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =349
+        Y: =131
+        ZIndex: =30
+
+    Label1_196 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the chair stable?lighting?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =349
+        Y: =154
+        ZIndex: =31
+
+    Label1_197 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Does it allow movement?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =349
+        Y: =179
+        ZIndex: =32
+
+    Label1_198 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the chair in a good state of repair?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =349
+        Y: =204
+        ZIndex: =33
+
+    Label1_200 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the desk in a good state of repair?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =325
+        X: =347
+        Y: =146
+        ZIndex: =35
+
+    Label1_201 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the height of the desk suitable?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =325
+        X: =347
+        Y: =169
+        ZIndex: =36
+
+    Label1_202 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Does the desk have a non-reflective surface?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =325
+        X: =347
+        Y: =192
+        ZIndex: =37
+
+    Dropdown2_182 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Describe the lighting at your workstation.')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =["Too Bright","Too Low","About Right","N/A"]
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =150
+        X: =672
+        Y: =134
+        ZIndex: =38
+
+    Dropdown2_183 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Do you get distracting reflections on your screen?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =["Sometimes","Never","Constantly","N/A"]
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =150
+        X: =672
+        Y: =158
+        ZIndex: =39
+
+    Dropdown2_190 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'What control do you have over local lighting?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        Items: =["Full","None","Some","N/A"]
+        PressedColor: =RGBA(0, 0, 0, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =150
+        X: =672
+        Y: =181
+        ZIndex: =40
+
+    Dropdown2_203 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'At your workstation is it usually')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Too Warm","Too Cold","About Right","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "2.Temperature and Humidity", true,false)
+        Width: =150
+        X: =674
+        Y: =149
+        ZIndex: =41
+
+    Dropdown2_204 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the air around your workstation')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "2.Temperature and Humidity", true,false)
+        Width: =150
+        X: =674
+        Y: =172
+        ZIndex: =42
+
+    Dropdown2_205 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Are you distracted by noise from work equipment?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "3.Noise & 4.Space", true,false)
+        Width: =150
+        X: =672
+        Y: =149
+        ZIndex: =43
+
+    Dropdown2_206 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Describe the amount of space around your station')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "3.Noise & 4.Space", true,false)
+        Width: =150
+        X: =672
+        Y: =196
+        ZIndex: =44
+
+    Dropdown2_207 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Can you adjust the height of your seat?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =150
+        X: =674
+        Y: =111
+        ZIndex: =45
+
+    Dropdown2_208 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Can you adjust the height and angle of  backrest')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =150
+        X: =674
+        Y: =134
+        ZIndex: =46
+
+    Dropdown2_209 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the chair stable?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =150
+        X: =674
+        Y: =157
+        ZIndex: =47
+
+    Dropdown2_210 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Does It allow Movement')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =150
+        X: =674
+        Y: =182
+        ZIndex: =48
+
+    Dropdown2_211 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the chair in a good state of repair?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =150
+        X: =674
+        Y: =207
+        ZIndex: =49
+
+    Dropdown2_212 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the desk in a good state of repair?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =150
+        X: =672
+        Y: =149
+        ZIndex: =50
+
+    Dropdown2_213 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the height of the desk suitable?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =150
+        X: =672
+        Y: =172
+        ZIndex: =51
+
+    Dropdown2_214 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Does the desk have a non-reflective surface?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =150
+        X: =672
+        Y: =195
+        ZIndex: =52
+
+    Label1_205 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="8.Document Folder"
+        Visible: =If(gal_SideNav_7.Selected.Value = "8.Document Folder", true,false)
+        Width: =325
+        X: =877
+        Y: =112
+        ZIndex: =53
+
+    Label1_206 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =31
+        Size: =9
+        Text: ="	If it would be of benefit to use a document holder, has one been provided?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest & 8.Document Folder", true,false)
+        Width: =325
+        X: =347
+        Y: =191
+        ZIndex: =54
+
+    Dropdown2_216 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'If it would be of benefit to use a document holder')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest & 8.Document Folder", true,false)
+        Width: =150
+        X: =672
+        Y: =202
+        ZIndex: =55
+
+    Label1_208 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =33
+        Size: =9
+        Text: ="Can you easily adjust the brightness and contrast between the characters on screen and the background?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =325
+        X: =349
+        Y: =114
+        ZIndex: =57
+
+    Label1_209 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Does the screen tilt and swivel freely?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =325
+        X: =349
+        Y: =149
+        ZIndex: =58
+
+    Label1_210 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the screen image stable, clear and free from flicker?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =325
+        X: =349
+        Y: =172
+        ZIndex: =59
+
+    Label1_211 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="	Is the screen at a height that is comfortable for you?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =325
+        X: =349
+        Y: =197
+        ZIndex: =60
+
+    Dropdown2_217 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Can you easily adjust the brightness and contrast')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =150
+        X: =674
+        Y: =122
+        ZIndex: =61
+
+    Dropdown2_218 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Does the screen tilt and swivel freely?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =150
+        X: =674
+        Y: =152
+        ZIndex: =62
+
+    Dropdown2_219 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the screen image stable, clear and free ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =150
+        X: =674
+        Y: =175
+        ZIndex: =63
+
+    Dropdown2_220 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the screen at a height that is comfortable ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =150
+        X: =674
+        Y: =200
+        ZIndex: =64
+
+    Label1_212 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="10.Keyboard"
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =325
+        X: =339
+        Y: =142
+        ZIndex: =65
+
+    Label1_213 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Is the desk keyboard separate from the screen?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =325
+        X: =349
+        Y: =102
+        ZIndex: =66
+
+    Label1_214 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Can you raise and lower the keyboard height?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =325
+        X: =349
+        Y: =132
+        ZIndex: =67
+
+    Label1_215 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Can you easily see the symbols on the keys?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =325
+        X: =349
+        Y: =161
+        ZIndex: =68
+
+    Label1_216 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =27
+        Size: =9
+        Text: ="Is there enough space to rest your hands in from of the keyboard?movement?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =325
+        X: =349
+        Y: =195
+        ZIndex: =69
+
+    Dropdown2_221 As dropdown:
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is the desk keyboard separate from the screen?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =150
+        X: =674
+        Y: =105
+        ZIndex: =70
+
+    Dropdown2_222 As dropdown:
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Can you raise and lower the keyboard height?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =150
+        X: =674
+        Y: =135
+        ZIndex: =71
+
+    Dropdown2_223 As dropdown:
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Can you easily see the symbols on the keys?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =150
+        X: =674
+        Y: =164
+        ZIndex: =72
+
+    Dropdown2_224 As dropdown:
+        BorderColor: =RGBA(9, 33, 98, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Is there enough space to rest your hands ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =150
+        X: =674
+        Y: =197
+        ZIndex: =73
+
+    Label1_218 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Do you understand how to use the software?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =325
+        X: =349
+        Y: =108
+        ZIndex: =74
+
+    Dropdown2_225 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Do you understand how to use the software?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =150
+        X: =674
+        Y: =111
+        ZIndex: =75
+
+    Label1_219 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="12.Training"
+        Visible: =If(gal_SideNav_7.Selected.Value = "12.Training", true,false)
+        Width: =325
+        X: =878
+        Y: =79
+        ZIndex: =76
+
+    Label1_220 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Have you received information on the correct workstation layout?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =325
+        X: =349
+        Y: =154
+        ZIndex: =77
+
+    Label1_221 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =23
+        Size: =9
+        Text: ="Have you been trained in the use of the software?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =325
+        X: =349
+        Y: =177
+        ZIndex: =78
+
+    Label1_222 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =41
+        Size: =9
+        Text: ="If you had a problem relating to display screen work, would you know the correct procedure to follow?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =325
+        X: =349
+        Y: =200
+        ZIndex: =79
+
+    Dropdown2_226 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Have you received information on the correct')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =150
+        X: =674
+        Y: =156
+        ZIndex: =80
+
+    Dropdown2_227 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Have you been trained in the use of the software?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =150
+        X: =674
+        Y: =182
+        ZIndex: =81
+
+    Dropdown2_228 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'If you had a problem relating to display screen ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =150
+        X: =674
+        Y: =211
+        ZIndex: =82
+
+    Label1_223 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =54
+        Size: =9
+        Text: ="13.Do you understand the arrangements for eye and eyesight tests?"
+        Width: =325
+        X: =349
+        Y: =241
+        ZIndex: =83
+
+    Label1_224 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =54
+        Size: =9
+        Text: ="(a)   Do you normally use DSE for continuous near-continuous spells of 1 hour or more?"
+        Width: =325
+        X: =341
+        Y: =271
+        ZIndex: =84
+
+    Label1_225 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =54
+        Size: =9
+        Text: |-
+            ="(b)   If yes to (a).
+            Do you use DSE like this on a daily basis?
+            lighting?"
+        Width: =325
+        X: =342
+        Y: =319
+        ZIndex: =85
+
+    Dropdown2_229 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Do you understand the arrangements for eye ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =674
+        Y: =256
+        ZIndex: =86
+
+    Dropdown2_230 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'(a)  Do you normally use DSE for continuous near')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =672
+        Y: =293
+        ZIndex: =87
+
+    Dropdown2_231 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Do you use DSE like this on a daily basis?')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =672
+        Y: =334
+        ZIndex: =88
+
+    Label1_226 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =54
+        Size: =9
+        Text: ="(c)   Do you have to transfer information quickly to or from the   DSE?"
+        Width: =325
+        X: =343
+        Y: =368
+        ZIndex: =89
+
+    Label1_227 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =41
+        Size: =9
+        Text: ="(d)   Do you regularly have to apply high levels of attention and concentration?"
+        Width: =309
+        X: =353
+        Y: =417
+        ZIndex: =90
+
+    Label1_228 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =41
+        Size: =9
+        Text: ="(e)   Are you highly dependant on the use of DSE or have little choice in using it?"
+        Width: =313
+        X: =350
+        Y: =455
+        ZIndex: =91
+
+    Dropdown2_232 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'(c)  Do you have to transfer information quickly ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =672
+        Y: =387
+        ZIndex: =92
+
+    Dropdown2_233 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'(d)   Do you regularly have to apply high levels ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =672
+        Y: =428
+        ZIndex: =93
+
+    Dropdown2_234 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'(e)   Are you highly dependant on the use of DSE o')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =672
+        Y: =464
+        ZIndex: =94
+
+    Label1_229 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =19
+        Size: =9
+        Text: |-
+            ="TO BE COMPLETED BY COMPETENT PERSON:"
+        Width: =287
+        X: =463
+        Y: =504
+        ZIndex: =95
+
+    Label1_230 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =98
+        Size: =9
+        Text: ="I have reviewed this DSE Assessment and consider this person to be a ‘DSE’ user and therefore where eye sight tests are requested they will be paid for by the Company and a financial contribution made towards glasses required for ‘DSE’ work."
+        Width: =567
+        X: =310
+        Y: =523
+        ZIndex: =96
+
+    Label1_231 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =19
+        Size: =9
+        Text: |-
+            ="Signature of Competent Person: "
+        Width: =287
+        X: =957
+        Y: =299
+        ZIndex: =97
+
+    PenInput5 As inkControl:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =207
+        Width: =340
+        X: =957
+        Y: =328
+        ZIndex: =98
+
+    Label1_232 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="7.Footrest"
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest", true,false)
+        Width: =325
+        X: =878
+        Y: =87
+        ZIndex: =99
+
+    Label1_233 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        Height: =32
+        Size: =9
+        Text: ="If you cannot place your feet on the floor whilst keying in, has a footrest been provided?"
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest & 8.Document Folder", true,false)
+        Width: =325
+        X: =347
+        Y: =133
+        ZIndex: =100
+
+    Dropdown2_235 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'If you cannot place your feet on the floor whilst ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Ok","ADJUSTMENT MADE","REPAIR NEEDED","N/A"]
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest & 8.Document Folder", true,false)
+        Width: =150
+        X: =672
+        Y: =144
+        ZIndex: =101
+
+    Label1_234 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        Size: =9
+        Text: ="No Further Actions are Required"
+        Width: =210
+        X: =416
+        Y: =612
+        ZIndex: =102
+
+    Dropdown2_236 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Color: =RGBA(9, 33, 98, 1)
+        Default: =If(Form5.Mode= FormMode.New,"No",Gallery4_2.Selected.'No Further Actions Required')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        Height: =18
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Items: =["Yes","No"]
+        OnChange: |-
+            =If(
+                Dropdown2_236.Selected.Value = "Yes",
+                UpdateContext({Vis: true}),
+                UpdateContext({Vis: false})
+            )
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        Reset: =setVar1
+        SelectionFill: =RGBA(9, 33, 98, 1)
+        Size: =6
+        Width: =150
+        X: =672
+        Y: =619
+        ZIndex: =103
+
+    Button9_1 As button:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =30
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |+
+            =Patch('BP 104S',Defaults('BP 104S'),{Depot:TextInput1_144.Text,
+            FullName:TextInput1_146.Text,
+            'Depot Manager':TextInput1_147.Text,
+            Department:TextInput1_145.Text,
+            'Describe the lighting at your workstation.':Dropdown2_182.Selected.Value,
+            'Do you get distracting reflections on your screen?':Dropdown2_183.Selected.Value,
+            'What control do you have over local lighting?':Dropdown2_190.Selected.Value,
+            'At your workstation is it usually':Dropdown2_203.Selected.Value,
+            'Is the air around your workstation':Dropdown2_204.Selected.Value,
+            'Are you distracted by noise from work equipment?':Dropdown2_205.Selected.Value,
+            'Describe the amount of space around your station':Dropdown2_206.Selected.Value,
+            'Can you adjust the height of your seat?':Dropdown2_207.Selected.Value,
+            'Can you adjust the height and angle of  backrest':Dropdown2_208.Selected.Value,
+            'Is the chair stable?':Dropdown2_209.Selected.Value,
+            'Does It allow Movement':Dropdown2_210.Selected.Value,
+            'Is the chair in a good state of repair?':Dropdown2_211.Selected.Value,
+            'Is the desk in a good state of repair?':Dropdown2_212.Selected.Value,
+            'Is the height of the desk suitable?':Dropdown2_213.Selected.Value,
+            'Does the desk have a non-reflective surface?':Dropdown2_214.Selected.Value,
+            'If you cannot place your feet on the floor whilst ':Dropdown2_235.Selected.Value,
+            'If it would be of benefit to use a document holder':Dropdown2_216.Selected.Value,
+            'Can you easily adjust the brightness and contrast':Dropdown2_217.Selected.Value,
+            'Does the screen tilt and swivel freely?':Dropdown2_218.Selected.Value,
+            'Is the screen image stable, clear and free ':Dropdown2_219.Selected.Value,
+            'Is the screen at a height that is comfortable ':Dropdown2_220.Selected.Value,
+            'Is the desk keyboard separate from the screen?':Dropdown2_221.Selected.Value,
+            'Can you raise and lower the keyboard height?':Dropdown2_222.Selected.Value,
+            'Can you easily see the symbols on the keys?':Dropdown2_223.Selected.Value,
+            'Is there enough space to rest your hands ':Dropdown2_224.Selected.Value,
+            'Do you understand how to use the software?':Dropdown2_225.Selected.Value,
+            'Have you received information on the correct':Dropdown2_226.Selected.Value,
+            'Have you been trained in the use of the software?':Dropdown2_227.Selected.Value,
+            'If you had a problem relating to display screen ':Dropdown2_228.Selected.Value,
+            'Do you understand the arrangements for eye ':Dropdown2_229.Selected.Value,
+            '(a)  Do you normally use DSE for continuous near':Dropdown2_230.Selected.Value,
+            'Do you use DSE like this on a daily basis?':Dropdown2_231.Selected.Value,
+            '(c)  Do you have to transfer information quickly ':Dropdown2_232.Selected.Value,
+            '(d)   Do you regularly have to apply high levels ':Dropdown2_233.Selected.Value,
+            '(e)   Are you highly dependant on the use of DSE o':Dropdown2_234.Selected.Value,
+            'No Further Actions Required':Dropdown2_236.Selected.Value,
+            'Further Action 1':TextInput7.Text,
+            'Further Action -2':TextInput7_1.Text,
+            'Further Action -3':TextInput7_2.Text,
+            'Further Action -4':TextInput7_3.Text,
+            'Further Action -5':TextInput7_4.Text,
+            'Responsibility- 1 ':TextInput7_5.Text,
+            'Responsibility- 2':TextInput7_6.Text,
+            'Responsibility- 3':TextInput7_7.Text,
+            'Responsibility- 4':TextInput7_8.Text,
+            'Responsibility- 5':TextInput7_9.Text,
+            'Time Scale -1 ':TextInput7_10.Text,
+            'Time Scale -2':TextInput7_11.Text,
+            'Time Scale -3':TextInput7_12.Text,
+            'Time Scale -4':TextInput7_13.Text,
+            'Time Scale -5':TextInput7_14.Text,
+            'Date Actions Completed-1':DatePicker6.SelectedDate,
+            'Date Actions Completed-2':DatePicker6_1.SelectedDate,
+            'Date Actions Completed-3':DatePicker6_2.SelectedDate,
+            'Date Actions Completed-4':DatePicker6_3.SelectedDate,
+            'Date Actions Completed-5':DatePicker6_4.SelectedDate,
+            Date:DatePicker1_1.SelectedDate});
+            Set(setVar1,false);
+            Set(setVar1,true);
+            UpdateContext({galleryvis2:false});
+            NewForm(Form5);
+            Reset(gal_SideNav_7);
+            
+            
+            
+            
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =9
+        Text: ="Save"
+        Visible: =If(Form5.Mode = FormMode.New, true, false)
+        Width: =101
+        X: =1074
+        Y: =616
+        ZIndex: =104
+
+    Label1_203 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =20
+        Size: =10
+        Text: ="BP 104  Display Screen Self-Assessment"
+        Width: =283
+        X: =99
+        Y: =15
+        ZIndex: =105
+
+    gal_SideNav_7 As gallery.galleryVertical:
+        BorderColor: =RGBA(51, 51, 51, 1)
+        Default: |-
+            =LookUp(Table(
+                {Value: "1.Lighting"},
+                {Value: "2.Temperature and Humidity"},
+                {Value: "3.Noise & 4.Space"},
+                {Value: "5.Seating"},
+                {Value: "6.Desk"},
+                {Value: "7.Footrest & 8.Document Folder"},
+                {Value: "9.Display Screen"},
+                {Value: "10.KeyBoard"},
+                {Value: "11.Software & 12.Training"}
+                
+               
+             ), Value = "1.Lighting")
+        Height: =630
+        Items: |-
+            =Table(
+                {Value: "1.Lighting"},
+                {Value: "2.Temperature and Humidity"},
+                {Value: "3.Noise & 4.Space"},
+                {Value: "5.Seating"},
+                {Value: "6.Desk"},
+                {Value: "7.Footrest & 8.Document Folder"},
+                {Value: "9.Display Screen"},
+                {Value: "10.KeyBoard"},
+                {Value: "11.Software & 12.Training"}
+                
+               
+             )
+        Layout: =Layout.Vertical
+        OnSelect: =
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =69
+        Transition: =Transition.Push
+        Width: =123
+        X: =123
+        Y: =82
+        ZIndex: =106
+
+        lbl_SideNav_Current_7 As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(9, 33, 98, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =If(ThisItem.IsSelected,RGBA(9, 33, 98, 1),RGBA(0,0,0,0))
+            Height: =2
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =""
+            Visible: |
+                =true
+            Width: =110.71428571428571
+            X: =4
+            Y: =37
+            ZIndex: =2
+
+        Label25_7 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =32
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Value
+            Width: =114
+            X: =4
+            Y: =5
+            ZIndex: =3
+
+    Rectangle1_40 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        X: =65
+        Y: =112
+        ZIndex: =107
+
+    Rectangle1_52 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        X: =65
+        Y: =187
+        ZIndex: =108
+
+    Rectangle1_235 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =72
+        ZIndex: =109
+
+    "'User Logo_64' As image":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+        ImagePosition: =ImagePosition.Stretch
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =41
+        X: =17
+        Y: =713
+        ZIndex: =110
+
+    Image8_294 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-settings-64'
+        Tooltip: ="SETTINGS"
+        Width: =43
+        X: =11
+        Y: =440
+        ZIndex: =111
+
+    Image8_295 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        Image: ='icons8-user-manual-100'
+        ImagePosition: =ImagePosition.Stretch
+        OnSelect: |-
+            =Launch("https://henryboot.sharepoint.com/:w:/r/sites/itsystems/BPDM/_layouts/15/Doc.aspx?sourcedoc=%7B29F6C5EE-6186-45E5-A006-D8A31415DE8D%7D&file=Banner%20DMS%20Quick%20Start%20Guide.docx&action=default&mobileredirect=true");
+        Tooltip: ="USER GUIDE"
+        Width: =55
+        X: =6
+        Y: =520
+        ZIndex: =112
+
+    Rectangle1_236 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        Y: =112
+        ZIndex: =113
+
+    Rectangle1_237 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        Y: =187
+        ZIndex: =114
+
+    Rectangle1_238 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen3,true,false)
+        Width: =6
+        Y: =265
+        ZIndex: =115
+
+    Rectangle1_239 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen4,true,false)
+        Width: =6
+        Y: =344
+        ZIndex: =116
+
+    Rectangle3_164 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Visible: =If(App.ActiveScreen=Screen1,true,false)
+        Width: =71
+        Y: =112
+        ZIndex: =117
+
+    Rectangle3_165 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen2);
+        Visible: =If(App.ActiveScreen=Screen2,true,false)
+        Width: =71
+        Y: =188
+        ZIndex: =118
+
+    Rectangle3_166 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen3);
+        Visible: =If(App.ActiveScreen=Screen3,true,false)
+        Width: =71
+        Y: =265
+        ZIndex: =119
+
+    Rectangle3_167 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen4);
+        Visible: =If(App.ActiveScreen=Screen4,true,false)
+        Width: =72
+        Y: =344
+        ZIndex: =120
+
+    Image8_296 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-fill-and-sign-48'
+        OnSelect: =Navigate(Screen4);
+        Tooltip: ="TOOLBOX TALKS"
+        Width: =43
+        X: =12
+        Y: =355
+        ZIndex: =121
+
+    Image8_297 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-wpforms-36'
+        OnSelect: =Navigate(Screen3);
+        Tooltip: ="STANDARD FORMS"
+        Width: =43
+        X: =13
+        Y: =270
+        ZIndex: =122
+
+    Image8_298 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-policy-document-100'
+        OnSelect: =Navigate(Screen2);
+        Tooltip: ="DRIVER POLICIES "
+        Width: =43
+        X: =12
+        Y: =194
+        ZIndex: =123
+
+    Image8_299 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-project-management-100'
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Tooltip: ="CORE MANAGEMENT"
+        Width: =43
+        X: =18
+        Y: =114
+        ZIndex: =124
+
+    Icon1_61 As icon.Hamburger:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Hamburger
+        Width: =43
+        X: =16
+        Y: =21
+        ZIndex: =125
+
+    Label1_655 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Size: =6
+        Text: ="Core Management System"
+        Width: =66
+        X: =6
+        Y: =154
+        ZIndex: =126
+
+    Label1_656 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: =Navigate(Screen2);
+        Size: =6
+        Text: ="Driver Policies"
+        Width: =66
+        X: =3
+        Y: =232
+        ZIndex: =127
+
+    Label1_657 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =24
+        OnSelect: =Navigate(Screen3);
+        Size: =6
+        Text: ="Standard Forms"
+        Width: =66
+        Y: =311
+        ZIndex: =128
+
+    Label1_658 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        OnSelect: =Navigate(Screen4);
+        Size: =6
+        Text: ="ToolBox Talks"
+        Width: =52
+        X: =6
+        Y: =393
+        ZIndex: =129
+
+    Label1_659 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="Settings"
+        Width: =66
+        Y: =480
+        ZIndex: =130
+
+    Label1_837 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="User Guide"
+        Width: =66
+        X: =2
+        Y: =567
+        ZIndex: =131
+
+    Label1_491 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="1.Lighting"
+        Visible: =If(gal_SideNav_7.Selected.Value = "1.Lighting", true,false)
+        Width: =325
+        X: =347
+        Y: =107
+        ZIndex: =132
+
+    Label1_492 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =23
+        Size: =9
+        Text: ="5.Seating"
+        Visible: =If(gal_SideNav_7.Selected.Value = "5.Seating", true,false)
+        Width: =325
+        X: =341
+        Y: =85
+        ZIndex: =133
+
+    Label1_493 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =23
+        Size: =9
+        Text: ="6.Desk"
+        Visible: =If(gal_SideNav_7.Selected.Value = "6.Desk", true,false)
+        Width: =325
+        X: =347
+        Y: =128
+        ZIndex: =134
+
+    Label1_633 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =32
+        Size: =9
+        Text: ="7.Footrest"
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest & 8.Document Folder", true,false)
+        Width: =325
+        X: =347
+        Y: =106
+        ZIndex: =135
+
+    Label1_660 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =31
+        Size: =9
+        Text: ="8.Document Folder"
+        Visible: =If(gal_SideNav_7.Selected.Value = "7.Footrest & 8.Document Folder", true,false)
+        Width: =325
+        X: =347
+        Y: =162
+        ZIndex: =136
+
+    Label1_661 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =23
+        Size: =9
+        Text: ="9.Display Screen"
+        Visible: =If(gal_SideNav_7.Selected.Value = "9.Display Screen",true,false)
+        Width: =325
+        X: =350
+        Y: =94
+        ZIndex: =137
+
+    Label1_662 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =23
+        Size: =9
+        Text: ="10.keyboard"
+        Visible: =If(gal_SideNav_7.Selected.Value = "10.KeyBoard", true,false)
+        Width: =325
+        X: =350
+        Y: =75
+        ZIndex: =138
+
+    Label1_663 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =23
+        Size: =9
+        Text: ="11.Software"
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =325
+        X: =356
+        Y: =81
+        ZIndex: =139
+
+    Label1_664 As label:
+        Align: =Align.Right
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =23
+        Size: =9
+        Text: ="12.Training"
+        Visible: =If(gal_SideNav_7.Selected.Value = "11.Software & 12.Training", true,false)
+        Width: =325
+        X: =349
+        Y: =134
+        ZIndex: =140
+
+    Rectangle3_3 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        Fill: =Color.WhiteSmoke
+        Height: =719
+        Visible: =galleryvis2
+        Width: =1295
+        X: =71
+        Y: =49
+        ZIndex: =141
+
+    Icon15_2 As icon.History:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =21
+        Icon: =Icon.History
+        OnSelect: |-
+            =UpdateContext({galleryvis2:true})
+        Width: =43
+        X: =1308
+        Y: =13
+        ZIndex: =142
+
+    "Gallery4_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DelayItemLoading: =true
+        Height: =616
+        Items: ='BP 104S'
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowNavigation: =true
+        ShowScrollbar: =false
+        TemplateSize: =38
+        Transition: =Transition.Push
+        Visible: =galleryvis2
+        Width: =842
+        X: =246
+        Y: =96
+        ZIndex: =144
+
+        Button10_2 As button:
+            BorderColor: =
+            BorderThickness: =1
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =If(ThisItem.IsSelected,RGBA(24, 0, 102, 0.35), 50%,Color.WhiteSmoke)
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Select(Parent)
+            Size: =15
+            Text: =""
+            Width: =809
+            X: =10
+            ZIndex: =1
+
+        Label1_13 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =17
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.FullName
+            Width: =164
+            X: =21
+            Y: =11
+            ZIndex: =2
+
+        Label1_17 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Date
+            Width: =193
+            X: =641
+            Y: =11
+            ZIndex: =3
+
+        Label1_15 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.'Depot Manager'
+            X: =327
+            Y: =11
+            ZIndex: =5
+
+        Icon1_3 As icon.Edit:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =22
+            Icon: =Icon.Edit
+            OnSelect: |-
+                =EditForm(Form5);
+                UpdateContext({galleryvis2:false});
+                Reset(gal_SideNav_7);
+            Visible: =galleryvis2
+            Width: =24
+            X: =764
+            Y: =8
+            ZIndex: =6
+
+        Label1_16 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Department
+            X: =477
+            Y: =11
+            ZIndex: =8
+
+        Icon16_2 As icon.Trash:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledColor: =RGBA(244, 244, 244, 1)
+            Height: =30
+            Icon: =Icon.Trash
+            OnSelect: |-
+                =Remove('BP 104S', Gallery4_2.Selected); If (IsEmpty(Errors('BP 104S',Gallery4_2.Selected)),'BP 104S');
+                UpdateContext({Delete:false});
+                Notify("Bp 104 Record Deleted", NotificationType.Success);
+                NewForm(Form4)
+            Visible: =false
+            Width: =23
+            X: =926
+            Y: =6
+            ZIndex: =9
+
+        Label1_14 As label:
+            BorderColor: =RGBA(197, 203, 207, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =19
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Depot
+            Width: =113
+            X: =185
+            Y: =11
+            ZIndex: =10
+
+    "'Assessor name label_2' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Department"
+        Visible: =galleryvis2
+        X: =714
+        Y: =81
+        ZIndex: =145
+
+    "'Division name label_4' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Full Name"
+        Visible: =galleryvis2
+        Width: =121
+        X: =263
+        Y: =80
+        ZIndex: =146
+
+    "'Company name label_2' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Depot Manager"
+        Visible: =galleryvis2
+        Width: =140
+        X: =575
+        Y: =81
+        ZIndex: =147
+
+    "'start date label_2' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Date"
+        Visible: =galleryvis2
+        Width: =164
+        X: =895
+        Y: =80
+        ZIndex: =148
+
+    "'Division name label_5' As label":
+        BorderColor: =RGBA(0, 89, 178, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Bold
+        Height: =15
+        OnSelect: =
+        Size: =10
+        Text: ="Depot Name"
+        Visible: =galleryvis2
+        Width: =121
+        X: =435
+        Y: =81
+        ZIndex: =150
+
+    Icon15_4 As icon.History:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =21
+        Icon: =Icon.Add
+        OnSelect: |
+            =UpdateContext({galleryvis2:false});
+            NewForm(Form5);
+            
+            Reset(gal_SideNav_7);
+        Width: =43
+        X: =1265
+        Y: =13
+        ZIndex: =151
+
+    Rectangle7 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(0, 0, 0, .8)
+        Height: =768
+        Visible: =Vis
+        Width: =1366
+        ZIndex: =152
+
+    Button16 As button:
+        Color: =Color.WhiteSmoke
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Fill: =Color.WhiteSmoke
+        FontWeight: =FontWeight.Semibold
+        Height: =433
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        Size: =15
+        Text: =""
+        Visible: =Vis
+        Width: =1142
+        X: =123
+        Y: =165
+        ZIndex: =154
+
+    Label9 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =59
+        Size: =13
+        Text: ="Futhur Action"
+        Visible: =Vis
+        Width: =224
+        X: =206
+        Y: =197
+        ZIndex: =155
+
+    Label9_1 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =59
+        Size: =13
+        Text: ="Responsibility"
+        Visible: =Vis
+        Width: =224
+        X: =597
+        Y: =198
+        ZIndex: =156
+
+    Label9_2 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =59
+        Size: =13
+        Text: ="Time Scale"
+        Visible: =Vis
+        Width: =224
+        X: =869
+        Y: =197
+        ZIndex: =157
+
+    Label9_3 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        Height: =59
+        Size: =13
+        Text: ="Dtae Action Completed"
+        Visible: =Vis
+        Width: =224
+        X: =1020
+        Y: =197
+        ZIndex: =158
+
+    TextInput7 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Further Action 1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =380
+        X: =147
+        Y: =255
+        ZIndex: =159
+
+    TextInput7_1 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Further Action -2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =380
+        X: =147
+        Y: =305
+        ZIndex: =160
+
+    TextInput7_2 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Further Action -3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =380
+        X: =147
+        Y: =355
+        ZIndex: =161
+
+    TextInput7_3 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Further Action -4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =380
+        X: =147
+        Y: =405
+        ZIndex: =162
+
+    TextInput7_4 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Further Action -5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =380
+        X: =147
+        Y: =454
+        ZIndex: =163
+
+    TextInput7_5 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Responsibility- 1 ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =280
+        X: =543
+        Y: =256
+        ZIndex: =164
+
+    TextInput7_6 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Responsibility- 2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =280
+        X: =543
+        Y: =306
+        ZIndex: =165
+
+    TextInput7_7 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Responsibility- 3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =280
+        X: =543
+        Y: =356
+        ZIndex: =166
+
+    TextInput7_8 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Responsibility- 4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =280
+        X: =543
+        Y: =406
+        ZIndex: =167
+
+    TextInput7_9 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Responsibility- 5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =280
+        X: =543
+        Y: =455
+        ZIndex: =168
+
+    TextInput7_10 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Time Scale -1 ')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =150
+        X: =851
+        Y: =255
+        ZIndex: =169
+
+    TextInput7_11 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Time Scale -2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =150
+        X: =851
+        Y: =305
+        ZIndex: =170
+
+    TextInput7_12 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Time Scale -3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =150
+        X: =851
+        Y: =355
+        ZIndex: =171
+
+    TextInput7_13 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Time Scale -4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =150
+        X: =851
+        Y: =405
+        ZIndex: =172
+
+    TextInput7_14 As text:
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =If(Form5.Mode= FormMode.New,"",Gallery4_2.Selected.'Time Scale -5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Reset: =setVar1
+        Size: =11
+        Visible: =Vis
+        Width: =150
+        X: =851
+        Y: =454
+        ZIndex: =173
+
+    DatePicker6 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form5.Mode= FormMode.New,Today(),Gallery4_2.Selected.'Date Actions Completed-1')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =11
+        Visible: =Vis
+        Width: =183
+        X: =1023
+        Y: =255
+        ZIndex: =174
+
+    DatePicker6_1 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form5.Mode= FormMode.New,Today(),Gallery4_2.Selected.'Date Actions Completed-2')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =11
+        Visible: =Vis
+        Width: =183
+        X: =1023
+        Y: =305
+        ZIndex: =175
+
+    DatePicker6_2 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form5.Mode= FormMode.New,Today(),Gallery4_2.Selected.'Date Actions Completed-3')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =11
+        Visible: =Vis
+        Width: =183
+        X: =1023
+        Y: =355
+        ZIndex: =176
+
+    DatePicker6_3 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form5.Mode= FormMode.New,Today(),Gallery4_2.Selected.'Date Actions Completed-4')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =11
+        Visible: =Vis
+        Width: =183
+        X: =1023
+        Y: =405
+        ZIndex: =177
+
+    DatePicker6_4 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DefaultDate: =If(Form5.Mode= FormMode.New,Today(),Gallery4_2.Selected.'Date Actions Completed-5')
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =35
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        PaddingTop: =5
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Size: =11
+        Visible: =Vis
+        Width: =183
+        X: =1023
+        Y: =454
+        ZIndex: =178
+
+    Button17 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({Vis:false})
+        Text: ="Back To Main"
+        Visible: =Vis
+        X: =616
+        Y: =529
+        ZIndex: =179
+
+    Icon22 As icon.ExpandView:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =23
+        Icon: =Icon.ExpandView
+        OnSelect: |-
+            =UpdateContext({Vis:true})
+        Visible: =If(Dropdown2_236.Selected.Value ="Yes",true,false)
+        Width: =25
+        X: =829
+        Y: =616
+        ZIndex: =180
+

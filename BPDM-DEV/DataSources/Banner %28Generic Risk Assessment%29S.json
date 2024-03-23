@@ -1,0 +1,101 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bannergenericriskassessments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bannergenericriskassessment",
+    "MaxGetRowsCount": 500,
+    "Name": "Banner (Generic Risk Assessment)S",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr948_bannergenericriskassessment_AsyncOperations": "System Jobs",
+      "cr948_bannergenericriskassessment_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bannergenericriskassessment_DuplicateBaseRecord": "Duplicate Records (cr948_bannergenericriskassessment_DuplicateBaseRecord)",
+      "cr948_bannergenericriskassessment_DuplicateMatchingRecord": "Duplicate Records (cr948_bannergenericriskassessment_DuplicateMatchingRecord)",
+      "cr948_bannergenericriskassessment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bannergenericriskassessment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bannergenericriskassessment_ProcessSession": "Process Sessions",
+      "cr948_bannergenericriskassessment_SyncErrors": "Sync Errors",
+      "cr948_bannergenericriskassessmentid": "Banner (Generic Risk Assessment)",
+      "cr948_date": "Date",
+      "cr948_depotlocation": "Depot Location",
+      "cr948_name": "Name",
+      "cr948_signature": "Signature",
+      "cr948_signatureid": "cr948_SignatureId",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Banner (Generic Risk Assessment)S",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Banner (Generic Risk Assessment)S (Views)",
+    "Name": "_cr948_bannergenericriskassessment_views",
+    "RelatedEntityName": "Banner (Generic Risk Assessment)S",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "29fef0e2-c0f5-4fb9-bdb9-2bf07bb83522": "Active Banner (Generic Risk Assessment)S",
+      "38e79aeb-1be8-4185-94eb-f1f2454663fc": "Banner (Generic Risk Assessment) Lookup View",
+      "47228bba-03ab-4a3d-be1e-d2419f70a710": "Banner (Generic Risk Assessment) Advanced Find View",
+      "8eb8ef93-d56c-4a8d-a463-378a8d5afd1a": "Banner (Generic Risk Assessment) Associated View",
+      "d49571b5-06e0-43a1-a94b-423502aa4726": "Inactive Banner (Generic Risk Assessment)S"
+    }
+  },
+  {
+    "DisplayName": "Status (Banner (Generic Risk Assessment)S)",
+    "Name": "cr948_bannergenericriskassessment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Banner (Generic Risk Assessment)S"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Banner (Generic Risk Assessment)S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Banner (Generic Risk Assessment)S)",
+    "Name": "cr948_bannergenericriskassessment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Banner (Generic Risk Assessment)S"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Banner (Generic Risk Assessment)S",
+    "Type": "OptionSetInfo"
+  }
+]

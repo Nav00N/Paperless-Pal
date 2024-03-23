@@ -1,0 +1,1488 @@
+Screen3 As screen:
+    BackgroundImage: =
+    ImagePosition: =ImagePosition.Stretch
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+
+    Image1_47 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =263
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =107
+        X: =1242
+        Y: =122
+        ZIndex: =1
+
+    Image1_71 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =263
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =107
+        X: =1242
+        Y: =424
+        ZIndex: =2
+
+    Rectangle1_181 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =50
+        Width: =1366
+        ZIndex: =3
+
+    Image1_26 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =259
+        X: =92
+        Y: =77
+        ZIndex: =4
+
+    Image1_27 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =93
+        Y: =214
+        ZIndex: =5
+
+    Image1_28 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =385
+        Y: =347
+        ZIndex: =6
+
+    Image1_29 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =679
+        Y: =480
+        ZIndex: =7
+
+    Image1_30 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =114
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =384
+        Y: =76
+        ZIndex: =8
+
+    Image1_31 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =384
+        Y: =213
+        ZIndex: =9
+
+    Image1_32 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =680
+        Y: =347
+        ZIndex: =10
+
+    Image1_33 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =969
+        Y: =480
+        ZIndex: =11
+
+    Image1_34 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =112
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =259
+        X: =969
+        Y: =618
+        ZIndex: =12
+
+    Image1_35 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =679
+        Y: =214
+        ZIndex: =13
+
+    Image1_36 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =112
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =970
+        Y: =346
+        ZIndex: =14
+
+    Image1_37 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =111
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =93
+        Y: =620
+        ZIndex: =15
+
+    Image1_38 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =679
+        Y: =77
+        ZIndex: =16
+
+    Image1_39 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =116
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =259
+        X: =969
+        Y: =209
+        ZIndex: =17
+
+    Image1_40 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =93
+        Y: =480
+        ZIndex: =18
+
+    Image1_41 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =112
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =384
+        Y: =620
+        ZIndex: =19
+
+    Image1_42 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =112
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =969
+        Y: =76
+        ZIndex: =20
+
+    Image1_43 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =94
+        Y: =348
+        ZIndex: =21
+
+    Image1_44 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =110
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =384
+        Y: =482
+        ZIndex: =22
+
+    Image1_45 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =113
+        Image: ='world-h-s-day-min'
+        ImagePosition: =ImagePosition.Fill
+        Width: =258
+        X: =679
+        Y: =620
+        ZIndex: =23
+
+    Button1_13 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: |-
+            =Navigate('BP 100 Depot Fire Risk Assessment Form');
+            NewForm(Form3);
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =92
+        Y: =77
+        ZIndex: =24
+
+    Button1_14 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =113
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: |-
+            =Navigate('BP 101 Depot Induction Record Form');
+            NewForm(Form3);
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =384
+        Y: =77
+        ZIndex: =25
+
+    Button1_15 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: |-
+            =Navigate('BP 122 H&S Bulletin');
+            NewForm(Form7);
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =969
+        Y: =618
+        ZIndex: =26
+
+    Button1_16 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =113
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 103 Depot Risk Register Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =257
+        X: =680
+        Y: =77
+        ZIndex: =27
+
+    Button1_17 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =111
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: |-
+            =Navigate('BP 104 Display Screen Equipment Assessment Form');
+            NewForm(Form5);
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =255
+        X: =970
+        Y: =76
+        ZIndex: =28
+
+    Button1_18 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =111
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 105 Hazardous Waste Consignment Note Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =93
+        Y: =215
+        ZIndex: =29
+
+    Button1_19 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =113
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 106 Lifting Equipment Register Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =384
+        Y: =213
+        ZIndex: =30
+
+    Button1_20 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =113
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 107 Noise Dose Assessment Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =679
+        Y: =214
+        ZIndex: =31
+
+    Button1_21 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =115
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 108 Personal Protective Equipment Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =969
+        Y: =210
+        ZIndex: =32
+
+    Button1_22 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =113
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 109 Personal Vibration Exposure Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =94
+        Y: =348
+        ZIndex: =33
+
+    Button1_23 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 111 Risk Assessment Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =385
+        Y: =348
+        ZIndex: =34
+
+    Button1_24 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 112 Training Matrix Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =680
+        Y: =348
+        ZIndex: =35
+
+    Button1_37 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 113 Waste Transfer Note Form');
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =970
+        Y: =346
+        ZIndex: =36
+
+    Button1_38 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =110
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 114 Depot SHE Check Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =257
+        X: =93
+        Y: =482
+        ZIndex: =37
+
+    Button1_39 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =109
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 115 Record Of Briefing Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =384
+        Y: =482
+        ZIndex: =38
+
+    Button1_40 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =113
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 116 Accident/Incident Form');
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =679
+        Y: =481
+        ZIndex: =39
+
+    Button1_41 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 117 Manual Handling Assessment Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =255
+        X: =970
+        Y: =480
+        ZIndex: =40
+
+    Button1_42 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =109
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 118 COSHH Assessment Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =93
+        Y: =621
+        ZIndex: =41
+
+    Button1_43 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 119 Loading Unloading asessment')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =384
+        Y: =620
+        ZIndex: =42
+
+    Button1_44 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =112
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 121 Lone working Report Form')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =258
+        X: =679
+        Y: =620
+        ZIndex: =43
+
+    Label3_16 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: |-
+            =Navigate('BP 100 Depot Fire Risk Assessment Form');
+            NewForm(Form3);
+        Size: =10
+        Text: ="BP 100 Depot Fire Risk Assessment Form"
+        Width: =196
+        X: =98
+        Y: =110
+        ZIndex: =44
+
+    Label3_17 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 105 Hazardous Waste Consignment Note Form')
+        Size: =10
+        Text: ="BP 105 Hazardous Waste Consignment Note Form"
+        Width: =196
+        X: =107
+        Y: =245
+        ZIndex: =45
+
+    Label3_18 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 111 Risk Assessment Form')
+        Size: =10
+        Text: ="BP 111 Risk Assessment Form"
+        Width: =196
+        X: =412
+        Y: =381
+        ZIndex: =46
+
+    Label3_19 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 116 Accident/Incident Form');
+        Size: =10
+        Text: ="BP 116 Accident-Incident Notification Form"
+        Width: =196
+        X: =708
+        Y: =514
+        ZIndex: =47
+
+    Label3_20 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: |-
+            =Navigate('BP 101 Depot Induction Record Form');
+            NewForm(Form3);
+        Size: =10
+        Text: ="BP 101 Depot Induction Record Form"
+        Width: =196
+        X: =398
+        Y: =110
+        ZIndex: =48
+
+    Label3_21 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 106 Lifting Equipment Register Form')
+        Size: =10
+        Text: ="BP 106 Lifting Equipment Register Form"
+        Width: =196
+        X: =411
+        Y: =245
+        ZIndex: =49
+
+    Label3_22 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: |-
+            =Navigate('BP 112 Training Matrix Form');
+            NewForm(Form8);
+        Size: =10
+        Text: ="BP 112 Copy of Training Matrix Form"
+        Width: =196
+        X: =709
+        Y: =382
+        ZIndex: =50
+
+    Label3_23 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 117 Manual Handling Assessment Form')
+        Size: =10
+        Text: ="BP 117 Manual Handling Assessment Form"
+        Width: =196
+        X: =975
+        Y: =504
+        ZIndex: =51
+
+    Label3_25 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 107 Noise Dose Assessment Form')
+        Size: =10
+        Text: ="BP 107 Noise Dose Assessment Form "
+        Width: =196
+        X: =708
+        Y: =246
+        ZIndex: =52
+
+    Label3_26 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 113 Waste Transfer Note Form');
+        Size: =10
+        Text: ="BP 113 Waste Transfer Note Form"
+        Width: =196
+        X: =976
+        Y: =375
+        ZIndex: =53
+
+    Label3_27 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 118 COSHH Assessment Form')
+        Size: =10
+        Text: ="BP 118 COSHH Assessment Form v2 "
+        Width: =196
+        X: =107
+        Y: =649
+        ZIndex: =54
+
+    Label3_28 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 103 Depot Risk Register Form')
+        Size: =10
+        Text: ="BP 103 Depot Risk Register Form"
+        Width: =196
+        X: =708
+        Y: =111
+        ZIndex: =55
+
+    Label3_29 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 108 Personal Protective Equipment Form')
+        Size: =10
+        Text: ="BP 108 Personal Protective Equipment Form"
+        Width: =196
+        X: =975
+        Y: =243
+        ZIndex: =56
+
+    Label3_30 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 114 Depot SHE Check Form')
+        Size: =10
+        Text: ="BP 114 Depot SHE Check Form "
+        Width: =196
+        X: =107
+        Y: =513
+        ZIndex: =57
+
+    Label3_31 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 119 Loading Unloading asessment')
+        Size: =10
+        Text: ="BP 119 Loading-Unloading Assessment  Form"
+        Width: =196
+        X: =411
+        Y: =649
+        ZIndex: =58
+
+    Label3_32 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: |-
+            =Navigate('BP 104 Display Screen Equipment Assessment Form');
+            NewForm(Form5);
+        Size: =10
+        Text: ="BP 104 Display Screen Equipment Assessment Form"
+        Width: =196
+        X: =975
+        Y: =108
+        ZIndex: =59
+
+    Label3_33 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 109 Personal Vibration Exposure Form')
+        Size: =10
+        Text: ="BP 109 Personal Vibration Exposure Form"
+        Width: =196
+        X: =108
+        Y: =381
+        ZIndex: =60
+
+    Label3_34 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =73
+        OnSelect: =Navigate('BP 115 Record Of Briefing Form')
+        Size: =10
+        Text: ="BP 115 Record of Briefing Form "
+        Width: =196
+        X: =411
+        Y: =513
+        ZIndex: =61
+
+    Label3_36 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =51
+        OnSelect: =Navigate('BP 121 Lone working Report Form')
+        Size: =10
+        Text: ="BP 121 Lone Working Report Sheet"
+        Width: =224
+        X: =705
+        Y: =650
+        ZIndex: =62
+
+    Label3_37 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =82
+        OnSelect: |-
+            =Navigate('BP 122 H&S Bulletin');
+            NewForm(Form7);
+        Size: =10
+        Text: |-
+            ="BP 122 H&S Bulletin 
+            "
+        Width: =223
+        X: =983
+        Y: =633
+        ZIndex: =63
+
+    Label3_63 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =53
+        Size: =11
+        Text: ="Standard Forms"
+        Width: =346
+        X: =92
+        ZIndex: =64
+
+    Image1_2 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =44
+        Image: ='auueeo3zeFxyYHeLedjIJ5QpWS4HxBsDHK9XlspS__1_-removebg-preview'
+        Width: =141
+        X: =1225
+        Y: =3
+        ZIndex: =65
+
+    Rectangle1_30 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        X: =65
+        Y: =112
+        ZIndex: =66
+
+    Rectangle1_46 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        X: =65
+        Y: =187
+        ZIndex: =67
+
+    Rectangle1_205 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =72
+        ZIndex: =68
+
+    "'User Logo_58' As image":
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =42
+        Image: =Office365Users.UserPhoto(Office365Users.MyProfile().Id)
+        ImagePosition: =ImagePosition.Stretch
+        RadiusBottomLeft: =50
+        RadiusBottomRight: =50
+        RadiusTopLeft: =50
+        RadiusTopRight: =50
+        Width: =41
+        X: =17
+        Y: =713
+        ZIndex: =69
+
+    Image8_258 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-settings-64'
+        Tooltip: ="SETTINGS"
+        Width: =43
+        X: =11
+        Y: =440
+        ZIndex: =70
+
+    Image8_259 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =52
+        Image: ='icons8-user-manual-100'
+        ImagePosition: =ImagePosition.Stretch
+        OnSelect: |-
+            =Launch("https://henryboot.sharepoint.com/:w:/r/sites/itsystems/BPDM/_layouts/15/Doc.aspx?sourcedoc=%7B29F6C5EE-6186-45E5-A006-D8A31415DE8D%7D&file=Banner%20DMS%20Quick%20Start%20Guide.docx&action=default&mobileredirect=true");
+        Tooltip: ="USER GUIDE"
+        Width: =55
+        X: =6
+        Y: =520
+        ZIndex: =71
+
+    Rectangle1_206 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen1,true,false)
+        Width: =6
+        Y: =112
+        ZIndex: =72
+
+    Rectangle1_207 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen2,true,false)
+        Width: =6
+        Y: =187
+        ZIndex: =73
+
+    Rectangle1_208 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen3,true,false)
+        Width: =6
+        Y: =265
+        ZIndex: =74
+
+    Rectangle1_209 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =75
+        Visible: =If(App.ActiveScreen= Screen4,true,false)
+        Width: =6
+        Y: =344
+        ZIndex: =75
+
+    Rectangle3_140 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Visible: =If(App.ActiveScreen=Screen1,true,false)
+        Width: =71
+        Y: =112
+        ZIndex: =76
+
+    Rectangle3_141 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen2);
+        Visible: =If(App.ActiveScreen=Screen2,true,false)
+        Width: =71
+        Y: =188
+        ZIndex: =77
+
+    Rectangle3_142 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: =Navigate(Screen3);
+        Visible: =If(App.ActiveScreen=Screen3,true,false)
+        Width: =71
+        Y: =265
+        ZIndex: =78
+
+    Rectangle3_143 As rectangle:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Fill: =RGBA(255, 255, 255, .1)
+        Height: =75
+        OnSelect: |-
+            =Navigate(Screen4);
+            UpdateContext({ToolMain: true ,signDermatities: false ,Dermatities: false ,sign: false ,back: false ,Atom: false ,fire: false ,signFire: false ,fork: false ,signFork: false ,Hav: false ,signHav: false ,House: false ,signHouse: false ,Hear: false ,signHear: false ,Lad: false ,signLad: false ,Lift: false ,signLift: false ,Load: false ,signLoad: false ,Personal: false ,SignPersonal: false ,Protective: false ,signProtective: false ,Resp: false ,signResp: false ,Slip: false ,signSlips: false ,split: false ,signsplit: false ,summer: false ,signSummer: false ,tet: false ,signtet: false ,use: false ,signUse: false ,man: false ,signMan: false ,signAtom: false ,work: false ,singwork: false ,vec: false,signvec:false,win:false,signwin:false,sol:false,signsol:false})
+        Visible: =If(App.ActiveScreen=Screen4,true,false)
+        Width: =72
+        Y: =344
+        ZIndex: =79
+
+    Image8_260 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-fill-and-sign-48'
+        OnSelect: |-
+            =Navigate(Screen4);
+            UpdateContext({ToolMain: true ,signDermatities: false ,Dermatities: false ,sign: false ,back: false ,Atom: false ,fire: false ,signFire: false ,fork: false ,signFork: false ,Hav: false ,signHav: false ,House: false ,signHouse: false ,Hear: false ,signHear: false ,Lad: false ,signLad: false ,Lift: false ,signLift: false ,Load: false ,signLoad: false ,Personal: false ,SignPersonal: false ,Protective: false ,signProtective: false ,Resp: false ,signResp: false ,Slip: false ,signSlips: false ,split: false ,signsplit: false ,summer: false ,signSummer: false ,tet: false ,signtet: false ,use: false ,signUse: false ,man: false ,signMan: false ,signAtom: false ,work: false ,singwork: false ,vec: false,signvec:false,win:false,signwin:false,sol:false,signsol:false})
+        Tooltip: ="TOOLBOX TALKS"
+        Width: =43
+        X: =12
+        Y: =355
+        ZIndex: =80
+
+    Image8_261 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-wpforms-36'
+        OnSelect: =Navigate(Screen3);
+        Tooltip: ="STANDARD FORMS"
+        Width: =43
+        X: =12
+        Y: =278
+        ZIndex: =81
+
+    Image8_262 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-policy-document-100'
+        OnSelect: =Navigate(Screen2);
+        Tooltip: ="DRIVER POLICIES "
+        Width: =43
+        X: =12
+        Y: =194
+        ZIndex: =82
+
+    Image8_263 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =41
+        Image: ='icons8-project-management-100'
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Tooltip: ="CORE MANAGEMENT"
+        Width: =43
+        X: =18
+        Y: =114
+        ZIndex: =83
+
+    Icon1_55 As icon.Hamburger:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
+        Height: =28
+        Icon: =Icon.Hamburger
+        Width: =43
+        X: =16
+        Y: =21
+        ZIndex: =84
+
+    Label1_639 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: |-
+            =UpdateContext({Main:true,IndexMain:false,IndexEditform:false,IndexMain1:false,IndexMain2:false,SystemMain:false,SystemMain1:false,SafeworkMain:false,AppendixB:false,GenericMain:false,GenericHistroy:false});
+            Navigate(Screen1);
+        Size: =6
+        Text: ="Core Management System"
+        Width: =66
+        X: =6
+        Y: =154
+        ZIndex: =85
+
+    Label1_640 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        OnSelect: =Navigate(Screen2);
+        Size: =6
+        Text: ="Driver Policies"
+        Width: =66
+        X: =3
+        Y: =232
+        ZIndex: =86
+
+    Label1_641 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =24
+        OnSelect: =Navigate(Screen3);
+        Size: =6
+        Text: ="Standard Forms"
+        Width: =66
+        Y: =316
+        ZIndex: =87
+
+    Label1_642 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =26
+        OnSelect: |-
+            =Navigate(Screen4);
+            UpdateContext({ToolMain: true ,signDermatities: false ,Dermatities: false ,sign: false ,back: false ,Atom: false ,fire: false ,signFire: false ,fork: false ,signFork: false ,Hav: false ,signHav: false ,House: false ,signHouse: false ,Hear: false ,signHear: false ,Lad: false ,signLad: false ,Lift: false ,signLift: false ,Load: false ,signLoad: false ,Personal: false ,SignPersonal: false ,Protective: false ,signProtective: false ,Resp: false ,signResp: false ,Slip: false ,signSlips: false ,split: false ,signsplit: false ,summer: false ,signSummer: false ,tet: false ,signtet: false ,use: false ,signUse: false ,man: false ,signMan: false ,signAtom: false ,work: false ,singwork: false ,vec: false,signvec:false,win:false,signwin:false,sol:false,signsol:false})
+        Size: =6
+        Text: ="ToolBox Talks"
+        Width: =52
+        X: =6
+        Y: =393
+        ZIndex: =88
+
+    Label1_643 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="Settings"
+        Width: =66
+        Y: =480
+        ZIndex: =89
+
+    Label1_820 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =6
+        Text: ="User Guide"
+        Width: =66
+        X: =2
+        Y: =567
+        ZIndex: =90
+
+    Button1_45 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =263
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 123 Minor Works Competence Assessment')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =107
+        X: =1242
+        Y: =122
+        ZIndex: =91
+
+    Label3_35 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =144
+        OnSelect: =Navigate('BP 123 Minor Works Competence Assessment')
+        Size: =10
+        Text: ="BP 123 Minor Works Competence Assessment"
+        Width: =101
+        X: =1248
+        Y: =108
+        ZIndex: =92
+
+    Button1_46 As button:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(0, 0, 0, .3)
+        FontWeight: =FontWeight.Semibold
+        Height: =263
+        HoverBorderColor: =
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(0, 0, 0, .4)
+        OnSelect: =Navigate('BP 124 Director Health and Safety Tour')
+        PressedFill: =
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Size: =15
+        Text: =""
+        Width: =107
+        X: =1242
+        Y: =424
+        ZIndex: =93
+
+    Label3_68 As label:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Font: =Font.'Lato Black'
+        FontWeight: =FontWeight.Semibold
+        Height: =93
+        OnSelect: =Navigate('BP 124 Director Health and Safety Tour')
+        Size: =10
+        Text: ="BP 124 Director Health and Safety Tour"
+        Width: =80
+        X: =1248
+        Y: =436
+        ZIndex: =94
+

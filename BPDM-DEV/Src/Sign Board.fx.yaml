@@ -1,0 +1,827 @@
+"'Sign Board' As screen":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
+    OnVisible: =
+
+    Rectangle1_319 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =8
+        ZIndex: =1
+
+    Rectangle1_320 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =768
+        Width: =8
+        X: =1358
+        ZIndex: =2
+
+    Rectangle1_317 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =50
+        Width: =1366
+        ZIndex: =3
+
+    Image1_4 As image:
+        BorderColor: =RGBA(197, 203, 207, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =DisplayMode.View
+        Height: =44
+        Image: ='auueeo3zeFxyYHeLedjIJ5QpWS4HxBsDHK9XlspS__1_-removebg-preview'
+        Width: =141
+        X: =1225
+        Y: =3
+        ZIndex: =4
+
+    Rectangle1_318 As rectangle:
+        BorderColor: =RGBA(255, 255, 255, 1)
+        BorderThickness: =1
+        Fill: =RGBA(5, 23, 71, 1)
+        Height: =15
+        Width: =1366
+        Y: =753
+        ZIndex: =5
+
+    Dropdown3 As dropdown:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        BorderThickness: =1
+        ChevronBackground: =RGBA(9, 33, 98, 1)
+        ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+        ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+        ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+        Default: ="Banner Depot"
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =26
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(197, 203, 207, 1)
+        SelectionFill: =RGBA(100, 118, 132, 1)
+        Size: =13
+        Width: =321
+        X: =401
+        Y: =12
+        ZIndex: =6
+
+    DatePicker5 As datepicker:
+        BorderThickness: =1
+        CalendarHeaderFill: =RGBA(100, 118, 132, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =26
+        HoverDateFill: =RGBA(62, 74, 83, 1)
+        IconBackground: =RGBA(100, 118, 132, 1)
+        SelectedDateFill: =RGBA(100, 118, 132, 1)
+        Width: =175
+        X: =757
+        Y: =12
+        ZIndex: =7
+
+    PenInput9 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =31
+        Y: =133
+        ZIndex: =8
+
+    TextInput4 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="1.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =31
+        Y: =87
+        ZIndex: =9
+
+    PenInput9_1 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =361
+        Y: =133
+        ZIndex: =10
+
+    TextInput4_1 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="2.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =361
+        Y: =87
+        ZIndex: =11
+
+    PenInput9_2 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =699
+        Y: =133
+        ZIndex: =12
+
+    TextInput4_2 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="3.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =699
+        Y: =87
+        ZIndex: =13
+
+    PenInput9_3 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =1029
+        Y: =133
+        ZIndex: =14
+
+    TextInput4_3 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="4.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =1029
+        Y: =87
+        ZIndex: =15
+
+    PenInput9_4 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =31
+        Y: =449
+        ZIndex: =16
+
+    TextInput4_4 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="5.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =31
+        Y: =403
+        ZIndex: =17
+
+    PenInput9_5 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =361
+        Y: =449
+        ZIndex: =18
+
+    TextInput4_5 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="6.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =361
+        Y: =403
+        ZIndex: =19
+
+    PenInput9_6 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =699
+        Y: =449
+        ZIndex: =20
+
+    TextInput4_6 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="7.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =699
+        Y: =403
+        ZIndex: =21
+
+    PenInput9_7 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =1029
+        Y: =449
+        ZIndex: =22
+
+    TextInput4_7 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="8.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "1",true,false)
+        Width: =315
+        X: =1029
+        Y: =403
+        ZIndex: =23
+
+    "TabList3 As 'Tab list'.pcfdataset":
+        BasePaletteColor: =RGBA(9, 33, 98, 1)
+        DefaultSelectedItems: =First('New tables')
+        DisplayMode: =DisplayMode.Edit
+        Font: =""
+        FontItalic: =false
+        FontSize: =20
+        FontStrikethrough: =false
+        FontUnderline: =false
+        FontWeight: =""
+        Height: =74
+        Items: ='New tables'
+        Size: ='TabList.Size'.Large
+        Width: =165
+        X: =619
+        Y: =679
+        ZIndex: =24
+
+        "'New column1' As pcfDataField.textualColumn":
+            FieldDisplayName: ="New column"
+            FieldName: ="cr0c5_newcolumn"
+            FieldType: ="s"
+            FieldVariantName: ="textualColumn"
+            Order: =1
+            ZIndex: =1
+
+    PenInput9_8 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =31
+        Y: =134
+        ZIndex: =25
+
+    TextInput4_8 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="9.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        OnChange: =
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =31
+        Y: =88
+        ZIndex: =26
+
+    PenInput9_9 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =361
+        Y: =134
+        ZIndex: =27
+
+    TextInput4_9 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="10.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =361
+        Y: =88
+        ZIndex: =28
+
+    PenInput9_10 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =699
+        Y: =134
+        ZIndex: =29
+
+    TextInput4_10 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="11.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =699
+        Y: =88
+        ZIndex: =30
+
+    PenInput9_11 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =1029
+        Y: =134
+        ZIndex: =31
+
+    TextInput4_11 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="12.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =1029
+        Y: =88
+        ZIndex: =32
+
+    PenInput9_12 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =31
+        Y: =450
+        ZIndex: =33
+
+    TextInput4_12 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="13.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =31
+        Y: =404
+        ZIndex: =34
+
+    PenInput9_13 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =361
+        Y: =450
+        ZIndex: =35
+
+    TextInput4_13 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="14.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =361
+        Y: =404
+        ZIndex: =36
+
+    PenInput9_14 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =699
+        Y: =450
+        ZIndex: =37
+
+    TextInput4_14 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="15.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =699
+        Y: =404
+        ZIndex: =38
+
+    PenInput9_15 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =1029
+        Y: =450
+        ZIndex: =39
+
+    TextInput4_15 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="16.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =Sign && If(TabList3.Selected.'New column'= "2",true,false) 
+        Width: =315
+        X: =1029
+        Y: =404
+        ZIndex: =40
+
+    PenInput9_16 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =31
+        Y: =133
+        ZIndex: =41
+
+    TextInput4_16 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="17.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =31
+        Y: =87
+        ZIndex: =42
+
+    PenInput9_17 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =361
+        Y: =133
+        ZIndex: =43
+
+    TextInput4_17 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="18.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =361
+        Y: =87
+        ZIndex: =44
+
+    PenInput9_18 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =699
+        Y: =133
+        ZIndex: =45
+
+    TextInput4_18 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="19.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =699
+        Y: =87
+        ZIndex: =46
+
+    PenInput9_19 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =1029
+        Y: =133
+        ZIndex: =47
+
+    TextInput4_19 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="20.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =1029
+        Y: =87
+        ZIndex: =48
+
+    PenInput9_20 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =31
+        Y: =449
+        ZIndex: =49
+
+    TextInput4_20 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="21.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =31
+        Y: =403
+        ZIndex: =50
+
+    PenInput9_21 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =361
+        Y: =449
+        ZIndex: =51
+
+    TextInput4_21 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="22.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =361
+        Y: =403
+        ZIndex: =52
+
+    PenInput9_22 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =699
+        Y: =449
+        ZIndex: =53
+
+    TextInput4_22 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="23.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =699
+        Y: =403
+        ZIndex: =54
+
+    PenInput9_23 As inkControl:
+        Color: =RGBA(255, 255, 255, 1)
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =1029
+        Y: =449
+        ZIndex: =55
+
+    TextInput4_23 As text:
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="24.Name"
+        HoverBorderColor: =RGBA(197, 203, 207, 1)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(62, 74, 83, 1)
+        Size: =9
+        Visible: =If(TabList3.Selected.'New column'= "3",true,false)
+        Width: =315
+        X: =1029
+        Y: =403
+        ZIndex: =56
+
+    Button14_2 As button:
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(9, 33, 98, 1)
+        FontWeight: =FontWeight.Semibold
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+        OnSelect: |-
+            =UpdateContext({Sign:true})
+        Size: =15
+        Text: ="Next"
+        X: =1139
+        Y: =696
+        ZIndex: =57
+

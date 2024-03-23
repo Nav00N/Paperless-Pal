@@ -1,0 +1,114 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bp112ses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bp112s",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 112S_1",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_attachment1": "Attachment 1 ",
+      "cr0c5_attachment2": "Attachment 2",
+      "cr0c5_attachment3": "Attachment 3",
+      "cr0c5_attachment4": "Attachment 4",
+      "cr0c5_attachment5": "Attachment 5",
+      "cr0c5_attachment6": "Attachment 6",
+      "cr948_assessorsname": "Assessors Name",
+      "cr948_bp112s_AsyncOperations": "System Jobs",
+      "cr948_bp112s_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bp112s_DuplicateBaseRecord": "Duplicate Records (cr948_bp112s_DuplicateBaseRecord)",
+      "cr948_bp112s_DuplicateMatchingRecord": "Duplicate Records (cr948_bp112s_DuplicateMatchingRecord)",
+      "cr948_bp112s_FileAttachments": "FileAttachments",
+      "cr948_bp112s_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bp112s_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bp112s_ProcessSession": "Process Sessions",
+      "cr948_bp112s_SyncErrors": "Sync Errors",
+      "cr948_bp112sid": "BP 112S",
+      "cr948_digger5tonne": "360 Digger < 5 Tonne",
+      "cr948_dumper5tonne": "Dumper <5 Tonne ",
+      "cr948_dumper5tonnee": "Dumper  >5 Tonnee",
+      "cr948_enterplantname": "Plant Name",
+      "cr948_gigger5tonne": "360 Gigger >5 Tonne",
+      "cr948_hiab": "Hiab",
+      "cr948_nameoftheauthorisedperson": "Name of the Authorised Person",
+      "cr948_puwer98": "Puwer 98",
+      "cr948_ramaxroller": "Ramax Roller",
+      "cr948_telehandler614mtrs": "Telehandler (6-14 mtrs)",
+      "createdby": "Created By",
+      "createdon": "Date Created",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 112S_1",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 112S_1 (Views)",
+    "Name": "_cr948_bp112s_views",
+    "RelatedEntityName": "BP 112S_1",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "37942c28-6fdd-47b2-96a7-a8ff99788c14": "Inactive BP 112S",
+      "829e1c9b-e3fc-4c4f-8f2c-0f7f58a0edd0": "BP 112 Copy of Training Matrix Form",
+      "8c1040f0-680b-4da5-bccc-086f85152a26": "BP 112S Lookup View",
+      "9c1bce32-7fac-497c-9435-1cf221c59736": "BP 112S Associated View",
+      "d4c047ee-88fb-4e75-87a0-ae78bb407895": "BP 112S Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (BP 112S_1)",
+    "Name": "cr948_bp112s_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 112S_1"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 112S_1",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 112S_1)",
+    "Name": "cr948_bp112s_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 112S_1"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 112S_1",
+    "Type": "OptionSetInfo"
+  }
+]

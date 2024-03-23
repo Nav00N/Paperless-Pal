@@ -1,0 +1,187 @@
+{
+  "11b266bf-0ddd-4cee-9a2e-867e9bb0402d": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1676/1.0.1676.3617/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "11b266bf-0ddd-4cee-9a2e-867e9bb0402d"
+  },
+  "2c60e18e-a391-4318-bec2-38c9007ee2c7": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://henryboot.sharepoint.com/sites/itsystems/BPDM": {
+        "dataSources": {
+          "Driver Procedures": {
+            "tableName": "0beaa1df-27b8-41e3-a85f-7dc33064e40e"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Driver Procedures"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2c60e18e-a391-4318-bec2-38c9007ee2c7"
+  },
+  "78449e93-ff87-43b5-baad-a675091a3a4b": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://henryboot.sharepoint.com/sites/itsystems/BPDM": {
+        "dataSources": {
+          "Driver Policies": {
+            "tableName": "75e3e15f-576e-4a0a-885e-4ea1e7ea39c8"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Driver Policies"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "78449e93-ff87-43b5-baad-a675091a3a4b"
+  },
+  "8e5bd61a-93be-43cd-bed4-b760a89a0a02": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/alexsp/sporelease/1.0.1682.3673/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://henryboot.sharepoint.com/sites/itsystems/BPDM": {
+        "dataSources": {
+          "Documents_1": {
+            "tableName": "8e38b79d-e5bc-49e0-8641-25033e37bdc4"
+          },
+          "Environmental Plan App-B": {
+            "tableName": "4c460503-95fb-4346-9a25-936e73395f93"
+          },
+          "Generic Risk Assessment (Appendix C)": {
+            "tableName": "1121ec7a-f540-4477-b60f-7d91fbbf090c"
+          },
+          "Safe working Practice (Appendix A)": {
+            "tableName": "bc47f76c-4f8f-48da-ac66-85d000355a52"
+          },
+          "SHE SYSTEM (Banner Plant)": {
+            "tableName": "0d29ff9e-cfd7-4ca7-b3ae-144466b1ac6e"
+          }
+        }
+      },
+      "https://henryboot.sharepoint.com/sites/plc/groupit/dev": {
+        "dataSources": {
+          "Documents": {
+            "tableName": "970bb50c-b11d-4465-98dd-999e12546ab2"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Documents",
+      "Environmental Plan App-B",
+      "Generic Risk Assessment (Appendix C)",
+      "Safe working Practice (Appendix A)",
+      "SHE SYSTEM (Banner Plant)",
+      "Documents_1"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "90e5d43a-409e-42b4-b06e-3f34b653b18c"
+    ],
+    "id": "8e5bd61a-93be-43cd-bed4-b760a89a0a02"
+  },
+  "90e5d43a-409e-42b4-b06e-3f34b653b18c": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1680/1.0.1680.3652/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "8e5bd61a-93be-43cd-bed4-b760a89a0a02": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6f54a5c9-1eb8-4a26-8304-c820a98ec183"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "8e5bd61a-93be-43cd-bed4-b760a89a0a02"
+        },
+        "workflowEntityId": {},
+        "workflowName": {
+          "value": "6f54a5c9-1eb8-4a26-8304-c820a98ec183"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "PowerAppV2->Getfilecontent,Compose,RespondtoaPowerApporflow"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "8e5bd61a-93be-43cd-bed4-b760a89a0a02"
+    },
+    "dependents": [],
+    "id": "90e5d43a-409e-42b4-b06e-3f34b653b18c"
+  },
+  "c257af63-e1b4-48e3-a057-8e41b254513c": {
+    "appActions": [
+      "MyProfile",
+      "UserPhoto"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Users",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1672/1.0.1672.3545/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Users"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "c257af63-e1b4-48e3-a057-8e41b254513c"
+  }
+}

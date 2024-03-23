@@ -1,0 +1,155 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr948_bp101s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr948_bp101",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 101",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_attachment1": "Attachment 1 ",
+      "cr0c5_attachment2": "Attachment 2",
+      "cr0c5_attachment3": "Attachment 3",
+      "cr0c5_attachment4": "Attachment 4",
+      "cr0c5_attachment5": "Attachment 5",
+      "cr0c5_attachment6": "Attachment 6",
+      "cr0c5_listotherppethatmayberequiredtaskdropdown": "List other PPE that may be required task(Dropdown)",
+      "cr948_amiover18yearsofage": "Am I Over 18 Years Of Age",
+      "cr948_anyotherillhealthnotmentionedabovepleasest": "Any other Ill-Health Not mentioned above please st",
+      "cr948_areyouonanymedication": "Are you on any medication?",
+      "cr948_asbestosmanagementplan": "Asbestos Management Plan",
+      "cr948_bp101_AsyncOperations": "System Jobs",
+      "cr948_bp101_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr948_bp101_DuplicateBaseRecord": "Duplicate Records (cr948_bp101_DuplicateBaseRecord)",
+      "cr948_bp101_DuplicateMatchingRecord": "Duplicate Records (cr948_bp101_DuplicateMatchingRecord)",
+      "cr948_bp101_FileAttachments": "FileAttachments",
+      "cr948_bp101_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr948_bp101_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr948_bp101_ProcessSession": "Process Sessions",
+      "cr948_bp101_SyncErrors": "Sync Errors",
+      "cr948_bp101id": "BP 101",
+      "cr948_companysgenericriskassessmentsdepotspecifi": "Company’s Generic Risk Assessments & Depot Specifi",
+      "cr948_corehsemanagementsystemincludingappendixa": "Core HS&E Management System including Appendix A,",
+      "cr948_coshhplantoperationinformationandemployee": "COSHH/Plant operation Information and Employee ",
+      "cr948_depot": "Depot",
+      "cr948_donotoperateplantandequipmentunless": "Do NOT operate plant and equipment unless ",
+      "cr948_doyouhaveanymedicalcondition": "Do you have any medical condition ",
+      "cr948_doyouhavethefollowingppe": "Do you have the following PPE:",
+      "cr948_fireescaperoutesincludingfirewardenandfire": "Fire escape routes including fire warden and fire ",
+      "cr948_firstaiderarrangementandnameoffirstaiders": "First Aider arrangement and name of first aiders",
+      "cr948_haveyoureadandunderstand": "Have you read and understand ",
+      "cr948_haveyouunderstoodanyquestions": "Have You Understood: Any Questions ",
+      "cr948_ifavduusertherequirementtoselfassessment": "If a VDU user, the requirement to self-assessment",
+      "cr948_importanceofgoodhousekeeping": "Importance of good House Keeping",
+      "cr948_inductorname": "Inductor Name",
+      "cr948_inductorsign": "Inductor Sign ",
+      "cr948_inductorsigndate": " Inductor Sign Date",
+      "cr948_listotherppethatmayberequiredtaskspecific": "List other PPE that may be required task specific:",
+      "cr948_nameofsupervisor": "Name of supervisor",
+      "cr948_newcolumn": "Full Name",
+      "cr948_occupation": "Occupation",
+      "cr948_pperequirementsmanualhandling": "PPE requirements/Manual Handling",
+      "cr948_receivedcommunicatedacopyoftheprocedure": "Received/communicated a copy of the Procedure",
+      "cr948_securityarrangements": "Security arrangements",
+      "cr948_thereportingofenvironmentalincident": "The reporting of environmental incident ",
+      "cr948_therequirementforaccidentincidentreporting": "The requirement for Accident/Incident reporting",
+      "cr948_welfarefacilitieshygienefood": " Welfare Facilities/Hygiene/Food",
+      "cr948_workinghours": "Working Hours",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 101",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 101 (Views)",
+    "Name": "_cr948_bp101_views",
+    "RelatedEntityName": "BP 101",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "24118f8f-cfd4-4f4d-a5c5-3753ed4eaaeb": "BP 101 Advanced Find View",
+      "33f23f51-adfe-4b55-999e-8cbd3afaf5f4": "BP 101 Lookup View",
+      "5da5dc12-3f3a-4ace-a193-ebf4c6c3f3c1": "BP 101 Associated View",
+      "5fba8116-9ccd-442d-aaa2-a2855ff5fb30": "Inactive BP 101",
+      "b0a448e1-bf65-4a67-99b1-8530aa2200bf": "BP 102 SHE Depot Induction Record"
+    }
+  },
+  {
+    "DisplayName": "Have you read and understand  (BP 101)",
+    "Name": "cr948_bp101_cr948_haveyoureadandunderstand",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr948_haveyoureadandunderstand",
+        "OptionSetReferenceEntityName": "BP 101"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr948_haveyoureadandunderstand",
+    "RelatedEntityName": "BP 101",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (BP 101)",
+    "Name": "cr948_bp101_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 101"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 101",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 101)",
+    "Name": "cr948_bp101_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 101"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 101",
+    "Type": "OptionSetInfo"
+  }
+]

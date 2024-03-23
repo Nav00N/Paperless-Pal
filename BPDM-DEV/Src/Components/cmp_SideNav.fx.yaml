@@ -1,0 +1,65 @@
+cmp_SideNav As CanvasComponent:
+    Colour: =Color.White
+    CurrentIndicatorColour: =ColorFade(RGBA(95,118,120,1),70%)
+    Default: ="Item 1"
+    Fill: =RGBA(237, 237, 237, 1)
+    Height: =800
+    HoverFill: =RGBA(255,255,255,10%)
+    Items: |-
+        =Table(
+            {Value: "Item 1",Screen: App.ActiveScreen},
+            {Value: "Item 2",Screen: App.ActiveScreen},
+            {Value: "Item 3",Screen: App.ActiveScreen},
+            {Value: "Item 4",Screen: App.ActiveScreen}
+           
+         )
+    SelectedFill: =RGBA(255,255,255,10%)
+    Width: =72
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    gal_SideNav As gallery.galleryVertical:
+        BorderColor: =RGBA(51, 51, 51, 1)
+        Height: =800
+        Items: =cmp_SideNav.Items
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(ThisItem.Screen)
+        ShowScrollbar: =false
+        TemplatePadding: =0
+        TemplateSize: =58
+        Transition: =Transition.Push
+        Width: =72
+        ZIndex: =1
+
+        lbl_SideNav_Current As label:
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(237, 237, 237, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Fill: =If(ThisItem.Screen =App.ActiveScreen,Color.WhiteSmoke,RGBA(0,0,0,0))
+            Height: =3
+            OnSelect: =Select(Parent)
+            Size: =13
+            Text: =""
+            Visible: |
+                =true
+            Width: =72
+            Y: =55
+            ZIndex: =3
+
+        Label25 As label:
+            Align: =Align.Center
+            BorderColor: =RGBA(32, 54, 71, 1)
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =17
+            OnSelect: =Select(Parent)
+            Size: =8
+            Text: =ThisItem.Value
+            Width: =48
+            X: =12
+            Y: =36
+            ZIndex: =5
+

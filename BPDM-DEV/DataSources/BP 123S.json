@@ -1,0 +1,423 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c5_bp123s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c5_bp123",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 123S",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_assesssubcontractorcompetence": "Assess Sub-contractor Competence",
+      "cr0c5_bp123_AsyncOperations": "System Jobs",
+      "cr0c5_bp123_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c5_bp123_DuplicateBaseRecord": "Duplicate Records (cr0c5_bp123_DuplicateBaseRecord)",
+      "cr0c5_bp123_DuplicateMatchingRecord": "Duplicate Records (cr0c5_bp123_DuplicateMatchingRecord)",
+      "cr0c5_bp123_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c5_bp123_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c5_bp123_ProcessSession": "Process Sessions",
+      "cr0c5_bp123_SyncErrors": "Sync Errors",
+      "cr0c5_bp123id": "BP123",
+      "cr0c5_companyaddress": "Company Address",
+      "cr0c5_companyaddresspostcode": "Company AddressPost Code",
+      "cr0c5_companyregistrationnumber": "Company Registration Number",
+      "cr0c5_dateofregistration": "Date of Registration",
+      "cr0c5_dateofsignature": "Date of Signature",
+      "cr0c5_depot": "Depot",
+      "cr0c5_email": "Email",
+      "cr0c5_employeeprovideshstraining": "Employee Provides H&S Training",
+      "cr0c5_employeeprovidesinductiontraining": "Employee Provides Induction Training",
+      "cr0c5_employeesupervisormanagement": "Employee Supervisor Management",
+      "cr0c5_employersliabilitycoverconfirmed": "Employers Liability Cover Confirmed",
+      "cr0c5_employersliabilityinsurancecompany": "Employers Liability Insurance Company",
+      "cr0c5_employersliabilitypolicynumber": "Employers Liability Policy Number",
+      "cr0c5_employsubcontractors": "Employ Sub-contractors",
+      "cr0c5_externallyappointedhsconsultant": "Externally Appointed H&S Consultant",
+      "cr0c5_faxnumber": "Fax Number",
+      "cr0c5_healthandsafetytrainingnotapplicable": "Health and Safety training not applicable",
+      "cr0c5_inhousetrained": "In-house trained",
+      "cr0c5_jobtitle": "Job Title",
+      "cr0c5_nohealthandsafetytraining": "No Health and Safety Training",
+      "cr0c5_nopolicyavailable": "No Policy Available",
+      "cr0c5_organisationtype": "Organisation Type",
+      "cr0c5_organisationtypedescription": "Organisation Type Description",
+      "cr0c5_otherregistrationnumber": "Other Registration Number",
+      "cr0c5_printname": "Print Name",
+      "cr0c5_professionalliabilitycoverconfirmed": "Professional Liability Cover Confirmed",
+      "cr0c5_professionalliabilityinsurancecompany": "Professional Liability Insurance Company",
+      "cr0c5_professionalliabilitylevelofcover": "Professional Liability Level of Cover",
+      "cr0c5_professionalliabilitypolicynumber": "Professional Liability Policy Number",
+      "cr0c5_providehstrainingtosubcontractors": "Provide H&S Training to Sub-contractors",
+      "cr0c5_provideinductiontrainingtosubcontractors": "Provide Induction Training to Sub-contractors",
+      "cr0c5_publicliabilitycoverconfirmed": "Public Liability Cover Confirmed",
+      "cr0c5_publicliabilityinsurancecompany": "Public Liability Insurance Company",
+      "cr0c5_publicliabilitypolicynumber": "Public Liability Policy Number",
+      "cr0c5_registeredaddress": "Registered Address",
+      "cr0c5_registeredaddresspostcode": "Registered Address Post Code",
+      "cr0c5_registrationbody": "Registration Body",
+      "cr0c5_safesystemofwork": "Safe System of Work",
+      "cr0c5_safesystemofworkforsubcontractors": "Safe System of Work for Sub-Contractors",
+      "cr0c5_signature": "Signature",
+      "cr0c5_signatureid": "cr0c5_SignatureId",
+      "cr0c5_signedsafetypolicyattached": "Signed Safety Policy Attached",
+      "cr0c5_supervisormanagementofsubcontractors": "Supervisor Management of Sub-contractors",
+      "cr0c5_telephonenumber": "Telephone Number",
+      "cr0c5_vatregistrationnumber": "VAT Registration Number",
+      "cr0c5_websiteaddress": "Website Address",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 123S",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 123S (Views)",
+    "Name": "_cr0c5_bp123_views",
+    "RelatedEntityName": "BP 123S",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0ce4fefa-0caf-484b-9d3c-3f9cc1543f87": "Active BP123",
+      "19288c9f-176b-45ef-adc5-628f5512fcff": "BP123 Associated View",
+      "29675be3-fcf1-4484-9999-1d08f943ca93": "BP123 Lookup View",
+      "cbd43c1a-a93a-4009-8fb9-aa5a8c0f7623": "BP123 Advanced Find View",
+      "fcf3911c-c936-4295-b7c1-f86762656476": "Inactive BP123"
+    }
+  },
+  {
+    "DisplayName": "Employee Provides H&S Training (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_employeeprovideshstraining",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_employeeprovideshstraining",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_employeeprovideshstraining",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Employee Provides Induction Training (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_employeeprovidesinductiontraining",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_employeeprovidesinductiontraining",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_employeeprovidesinductiontraining",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Employee Supervisor Management (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_employeesupervisormanagement",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_employeesupervisormanagement",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_employeesupervisormanagement",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Employers Liability Cover Confirmed (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_employersliabilitycoverconfirmed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_employersliabilitycoverconfirmed",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_employersliabilitycoverconfirmed",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Employ Sub-contractors (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_employsubcontractors",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_employsubcontractors",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_employsubcontractors",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Externally Appointed H&S Consultant (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_externallyappointedhsconsultant",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_externallyappointedhsconsultant",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_externallyappointedhsconsultant",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Health and Safety training not applicable (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_healthandsafetytrainingnotapplicable",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_healthandsafetytrainingnotapplicable",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_healthandsafetytrainingnotapplicable",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "In-house trained (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_inhousetrained",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_inhousetrained",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_inhousetrained",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "No Health and Safety Training (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_nohealthandsafetytraining",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_nohealthandsafetytraining",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_nohealthandsafetytraining",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "No Policy Available (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_nopolicyavailable",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_nopolicyavailable",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_nopolicyavailable",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Professional Liability Cover Confirmed (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_professionalliabilitycoverconfirmed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_professionalliabilitycoverconfirmed",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_professionalliabilitycoverconfirmed",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Public Liability Cover Confirmed (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_publicliabilitycoverconfirmed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_publicliabilitycoverconfirmed",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_publicliabilitycoverconfirmed",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Safe System of Work (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_safesystemofwork",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_safesystemofwork",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_safesystemofwork",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Signed Safety Policy Attached (BP 123S)",
+    "Name": "cr0c5_bp123_cr0c5_signedsafetypolicyattached",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_signedsafetypolicyattached",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_signedsafetypolicyattached",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (BP 123S)",
+    "Name": "cr0c5_bp123_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 123S)",
+    "Name": "cr0c5_bp123_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 123S"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 123S",
+    "Type": "OptionSetInfo"
+  }
+]

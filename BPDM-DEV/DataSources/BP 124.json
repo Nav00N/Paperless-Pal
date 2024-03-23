@@ -1,0 +1,337 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "cr0c5_bp124s",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "cr0c5_bp124",
+    "MaxGetRowsCount": 500,
+    "Name": "BP 124",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr0c5_a1": "A1",
+      "cr0c5_a2": "A2",
+      "cr0c5_a3": "A3",
+      "cr0c5_a4": "A4",
+      "cr0c5_a5": "A5",
+      "cr0c5_a6": "A6",
+      "cr0c5_a7": "A7",
+      "cr0c5_b1": "B1",
+      "cr0c5_b2": "B2",
+      "cr0c5_b3": "B3",
+      "cr0c5_b4": "B4",
+      "cr0c5_bp124_AsyncOperations": "System Jobs",
+      "cr0c5_bp124_BulkDeleteFailures": "Bulk Delete Failures",
+      "cr0c5_bp124_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "cr0c5_bp124_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "cr0c5_bp124_ProcessSession": "Process Sessions",
+      "cr0c5_bp124_SyncErrors": "Sync Errors",
+      "cr0c5_bp124id": "BP 124",
+      "cr0c5_c1": "C1",
+      "cr0c5_c2": "C2",
+      "cr0c5_c3": "C3",
+      "cr0c5_d1": "D1",
+      "cr0c5_d10": "D10",
+      "cr0c5_d11": "D11",
+      "cr0c5_d12": "D12",
+      "cr0c5_d13": "D13",
+      "cr0c5_d2": "D2",
+      "cr0c5_d3": "D3",
+      "cr0c5_d4": "D4",
+      "cr0c5_d5": "D5",
+      "cr0c5_d6": "D6",
+      "cr0c5_d7": "D7",
+      "cr0c5_d8": "D8",
+      "cr0c5_d9": "D9",
+      "cr0c5_date": "Date",
+      "cr0c5_datesigned": "Date Signed",
+      "cr0c5_directorsname": "Directors Name",
+      "cr0c5_e1": "E1",
+      "cr0c5_e2": "E2",
+      "cr0c5_e3": "E3",
+      "cr0c5_e4": "E4",
+      "cr0c5_e5": "E5",
+      "cr0c5_e6": "E6",
+      "cr0c5_itemeightactions": "Item Eight Actions",
+      "cr0c5_itemeightcomments": "Item Eight Comments",
+      "cr0c5_itemeightcompleted": "Item Eight Completed",
+      "cr0c5_itemeightcompleteddate": "Item Eight Completed Date",
+      "cr0c5_itemeightname": "Item Eight Name",
+      "cr0c5_itemfiveactions": "Item Five Actions",
+      "cr0c5_itemfivecomments": "Item Five Comments",
+      "cr0c5_itemfivecompleted": "Item Five Completed",
+      "cr0c5_itemfivecompleteddate": "Item Five Completed Date",
+      "cr0c5_itemfivename": "Item Five Name",
+      "cr0c5_itemfouractions": "Item Four Actions",
+      "cr0c5_itemfourcomments": "Item Four Comments",
+      "cr0c5_itemfourcompleted": "Item Four Completed",
+      "cr0c5_itemfourcompleteddate": "Item Four Completed Date",
+      "cr0c5_itemfourname": "Item Four Name",
+      "cr0c5_itemoneactions": "Item One Actions",
+      "cr0c5_itemonecomments": "Item One Comments",
+      "cr0c5_itemonecompleted": "Item One Completed",
+      "cr0c5_itemonecompleteddate": "Item One Completed Date",
+      "cr0c5_itemonename": "Item One Name",
+      "cr0c5_itemsevenactions": "Item Seven Actions",
+      "cr0c5_itemsevencomments": "Item Seven Comments",
+      "cr0c5_itemsevencompleted": "Item Seven Completed",
+      "cr0c5_itemsevencompleteddate": "Item Seven Completed Date",
+      "cr0c5_itemsevenname": "Item Seven Name",
+      "cr0c5_itemsixactions": "Item Six Actions",
+      "cr0c5_itemsixcomments": "Item Six Comments",
+      "cr0c5_itemsixcompleted": "Item Six Completed",
+      "cr0c5_itemsixcompleteddate": "Item Six Completed Date",
+      "cr0c5_itemsixname": "Item Six Name",
+      "cr0c5_itemthreeactions": "Item Three Actions",
+      "cr0c5_itemthreecomments": "Item Three Comments",
+      "cr0c5_itemthreecompleted": "Item Three Completed",
+      "cr0c5_itemthreecompleteddate": "Item Three Completed Date",
+      "cr0c5_itemthreename": "Item Three Name",
+      "cr0c5_itemtwoactions": "Item Two Actions",
+      "cr0c5_itemtwocomments": "Item Two Comments",
+      "cr0c5_itemtwocompleted": "Item Two Completed",
+      "cr0c5_itemtwocompleteddate": "Item Two Completed Date",
+      "cr0c5_itemtwoname": "Item Two Name",
+      "cr0c5_newcolumn": "Depot",
+      "cr0c5_percentagescore": "Percentage Score",
+      "cr0c5_planttools": "Plant / Tools",
+      "cr0c5_printname": "Print Name",
+      "cr0c5_signature": "Signature",
+      "cr0c5_signatureid": "cr0c5_SignatureId",
+      "cr0c5_totalscore": "Total Score",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BP 124",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BP 124 (Views)",
+    "Name": "_cr0c5_bp124_views",
+    "RelatedEntityName": "BP 124",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "5620dd95-251f-4a4e-9b51-7d04bbf7dd3b": "BP 124 Advanced Find View",
+      "5a458a53-d4dd-44e7-bcef-1b89125b0146": "BP 124 Lookup View",
+      "717f255b-5998-4abe-813f-3709a61ad045": "Inactive BP 124",
+      "9e12c071-7ee1-443f-be68-fc81db6173ef": "BP 124 Associated View",
+      "b68b8858-9ded-40b8-be69-62253a29baee": "Active BP 124"
+    }
+  },
+  {
+    "DisplayName": "Item Eight Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemeightcompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemeightcompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemeightcompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item Five Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemfivecompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemfivecompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemfivecompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item Four Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemfourcompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemfourcompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemfourcompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item One Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemonecompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemonecompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemonecompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item Seven Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemsevencompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemsevencompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemsevencompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item Six Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemsixcompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemsixcompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemsixcompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item Three Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemthreecompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemthreecompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemthreecompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Item Two Completed (BP 124)",
+    "Name": "cr0c5_bp124_cr0c5_itemtwocompleted",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "cr0c5_itemtwocompleted",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "cr0c5_itemtwocompleted",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (BP 124)",
+    "Name": "cr0c5_bp124_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BP 124)",
+    "Name": "cr0c5_bp124_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BP 124"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BP 124",
+    "Type": "OptionSetInfo"
+  }
+]
