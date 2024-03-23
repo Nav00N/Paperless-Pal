@@ -2475,7 +2475,7 @@
                     'Inspection summary.New Controls':TextInput1_111.Text,
                     'Name(Print)':TextInput1_114.Text,
                     Comments:TextInput1_115.Text,
-                    Signature:PenInput2.Image,
+                   
                     'Attachment 1 ':{FileName:First(DataCardValue79_1.Attachments).Name,Value:First(DataCardValue79_1.Attachments).Value},
                     'Attachment 2':{FileName:First(DataCardValue79_2.Attachments).Name,Value:First(DataCardValue79_2.Attachments).Value},
                     'Attachment 3':{FileName:First(DataCardValue79_3.Attachments).Name,Value:First(DataCardValue79_3.Attachments).Value},
@@ -5174,7 +5174,7 @@
                     'Inspection summary.New Controls':TextInput1_111.Text,
                     'Name(Print)':TextInput1_114.Text,
                     Comments:TextInput1_115.Text,
-                    Signature:PenInput2.Image,
+               
                     'Attachment 1 ':{FileName:First(DataCardValue79_1.Attachments).Name,Value:First(DataCardValue79_1.Attachments).Value},
                     'Attachment 2':{FileName:First(DataCardValue79_2.Attachments).Name,Value:First(DataCardValue79_2.Attachments).Value},
                     'Attachment 3':{FileName:First(DataCardValue79_3.Attachments).Name,Value:First(DataCardValue79_3.Attachments).Value},
